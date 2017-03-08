@@ -1,0 +1,205 @@
+namespace xi = "http://www.w3.org/2001/XInclude"
+
+#
+#  This is a schema to validate input data information.
+#
+
+grammar {
+
+  # The root element is just a list
+  start = element list { listContent* }
+
+  # and inside the list there may be any number of persons defined, any
+  # number of source documents referenced and any number of places specified.
+  # If necessary, one may leave a notes here, but these are not processed.
+  listContent = ( Person* & Matrika* & Place* & Note* & Include*)
+
+  # A person definition
+  Person = element person { personContent }
+
+  # A person must have a unique identifier (unique across the persons),
+  # an attribute which says if it is a male or a female, a name definition.
+  # This is the minimal person content. Moreover there may be information
+  # about birth, death and wedding. And of course, each person may have
+  # exactly one mather and one father. I know that the wedding is poorly
+  # defined. Moreover, the wedding shoud be specified only for a woman.
+  # It is just a room for future improvements.
+  personContent = (
+      attribute id { text }
+      & attribute sex { "male" | "female" }
+      & Name
+      & Birth ?
+      & Wedding ?
+      & Death ?
+      & Father ?
+      & Mather ?
+      & Note *
+      & Place ?     # To be removed
+  )
+
+  # The name of the person.
+  Name = element name { nameContent }
+
+  # The first and the second part of the person name. The second name should
+  # be the birth name.
+  nameContent = (
+    text | (
+    element first { text } ?
+    & element second { text } ?
+    & element married { text } ? )
+  )
+
+  # Information about the person birth.
+  Birth = element birth { eventContent }
+
+  # Wedding information, only for woman
+  Wedding = element wedding { eventContent }
+
+  # The death information
+  Death = element death { eventContent }
+
+  # Each event could be entered eather explicitly or it could reference some
+  # record inside some information source.
+  eventContent = (
+    Reference | explicitEventContent
+  )
+
+  # Reference is just a href attribute which contains a value of id attribute
+  # of the referenced object.
+  Reference = ( attribute href { text } )
+
+  explicitEventContent = (
+      Citation ?
+      & Date ?
+      & Place ?
+      & Note *
+  )
+
+  Date = element date { dateContent }
+
+  Place = element place { placeContent }
+
+  Note = ( element notes { noteContent } | element note { noteContent } )
+
+  noteContent = ( text )
+
+  dateContent = ( text )
+
+    placeContent = (
+        text | (
+            attribute id { text } ?
+            & attribute href { text } ?
+            & District ?
+            & Parish ?
+            & Region ?
+            & House ?
+            & OldName ?
+        )
+    )
+
+    District = element district { text }
+    Parish = element parish { text }
+    Region = element region { text }
+    House = element house { text }
+    OldName = element old-name { text }
+
+
+  Matrika = element matrika { matrikaContent }
+
+  matrikaContent = ( 
+    Signatura ?
+    & element original-name { text } ?
+    & Record * 
+  )
+
+  # Unique identifier of the matrika.
+  Signatura = element signatura { signaturaContent }
+
+  signaturaContent = ( text )
+
+  Record = ( WeddingRecord | BirthRecord | DeathRecord )
+
+  WeddingRecord = element wedding { WeddingRecordContent }
+  BirthRecord = element birth { BirthRecordContent }
+  DeathRecord = element death { DeathRecordContent }
+
+  # Wedding information
+  WeddingRecordContent = (
+    ID ?
+    & Url ?
+    & Page ?
+    & Date ?
+    & Place ?
+    & Bride ?
+    & BrideRoom ?
+    & Note *
+  )
+
+  # Brith information
+  BirthRecordContent = (
+    ID ?             # an identifier, if the record should be referenced
+    & Url ?          # if the page is accessible on-line, the url of the page
+    & Page ?         # a page where you can find the record
+    & Date ?         # date of birth
+    & Place ?        # a place of birth
+    & Name ?         # name of the person which was born
+    & Father ?       # a reference to mather
+    & Mather ?       # a reference to father
+    & Patrini *
+    & Note *
+  )
+
+  DeathRecordContent = (
+    ID ?
+    & Url ?
+    & Page ?
+    & Date ?
+    & Place ?
+    & Name ?
+    & Note *
+  )
+
+  Bride = element bride { Reference ? & element age { text } & Note ? }
+  BrideRoom = element bridegroom { Reference ? & element age { text } & Note ? }
+
+
+  commonRecordContent = (
+    Url ?
+    & Page?
+    & Date?
+    & Place?
+  )
+
+  # a reference to father
+  Father = element father { PeopleReference }
+  
+  # A reference to mather
+  Mather = element mather { PeopleReference }
+  
+  # A reference to patrini
+  Patrini = element patrini { PeopleReference }
+  
+  PeopleReference = ( Reference & Note )
+
+  Url = element url { text }
+
+  Page = element page { pageContent }
+
+  pageContent = ( text | Scan )
+
+  Scan = element scan { text }
+
+  Citation = (
+    attribute cite { text },
+    attribute page { text }?,
+    attribute scan { text }?
+  )
+
+  ID = ( attribute id { text } )
+
+  Include = element xi:include {
+    attribute parse { text },
+    attribute href { text }
+  }
+
+}
