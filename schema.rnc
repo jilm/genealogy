@@ -108,6 +108,7 @@ grammar {
 
   matrikaContent = ( 
     Signatura ?
+    & element archiv { text } ?
     & element original-name { text } ?
     & Record * 
   )
@@ -142,7 +143,7 @@ grammar {
     & Page ?         # a page where you can find the record
     & Date ?         # date of birth
     & Place ?        # a place of birth
-    & Name ?         # name of the person which was born
+    & Born ?         # name of the person which was born
     & Father ?       # a reference to mather
     & Mather ?       # a reference to father
     & Patrini *
@@ -159,9 +160,19 @@ grammar {
     & Note *
   )
 
-  Bride = element bride { Reference ? & element age { text } & Note ? }
-  BrideRoom = element bridegroom { Reference ? & element age { text } & Note ? }
-
+  Bride = element bride { 
+    Reference ? 
+    & element age { text } ?
+    & Note * 
+  }
+  
+  BrideRoom = element bridegroom { 
+    Reference ? 
+    & element age { text } ?
+    & Note * 
+  }
+  
+  Born = element born { PeopleReference }
 
   commonRecordContent = (
     Url ?
@@ -179,13 +190,13 @@ grammar {
   # A reference to patrini
   Patrini = element patrini { PeopleReference }
   
-  PeopleReference = ( Reference & Note )
+  PeopleReference = ( Reference & Note* )
 
   Url = element url { text }
 
   Page = element page { pageContent }
 
-  pageContent = ( text | Scan )
+  pageContent = ( text | Scan | (Scan & element page { text }) )
 
   Scan = element scan { text }
 
