@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<list>
+
+  <person id="PAVLIKFRANTISEK" sex="male">
+    <name>
+      <first>František</first>
+      <second>Pavlík</second>
+    </name>
+    <birth>
+      <date>1861</date>
+      <place>Lukov</place>
+    </birth>
+    <note>Nádeník v Moravských Budějovicích, dělník v Heřmanicích (na dráze)? šeledín v Lukově, obr. zemský 18. prapor</note>
+    <father href="PAVLIKANTONIN" />
+    <mather href="KREJCIKATERINA" />
+  </person>
+
+  <person id="KREJCIKATERINA" sex="female">
+    <name>
+      <first>Kateřina</first>
+      <second>Krejčí</second>
+      <married>Pavlíková</married>
+    </name>
+  </person>
+
+  <person id="PAVLIKANTONIN" sex="male">
+    <name>
+      <first>Antonín</first>
+      <second>Pavlík</second>
+    </name>
+    <note>Zedník v Nimpšově</note>
+  </person>
+
+  <person id="PAVLIKLUDMILA" sex="female">
+    <name>
+      <first>Ludmila</first>
+      <second>Pavlíková</second>
+      <married>Lusková</married>
+    </name>
+    <birth><date>6.11.1906</date>
+      <place>Moravské Budějovice</place>
+    </birth>
+    <death><date>13.2.1988</date></death>
+    <wedding cite="MO-MORAVSKEBUDEJOVICE-10682" scan="142" page="280">
+      <date>1.2.1935</date>
+      <place>Moravské Budějovice</place>
+    </wedding>
+    <father href="PAVLIKFRANTISEK" />
+    <mather href="VOJTECHANTONIE" />
+  </person>
+
+  <person id="PAVLIKMATHILDA" sex="female">
+    <name>
+      <first>Mathilda</first>
+      <second>Pavlíková</second>
+    </name>
+    <birth cite="MN-MORAVSKEBUDEJOVICE-10664" scan="361" page="717">
+      <date>11.3.1902</date>
+      <place>Heřmanice</place>
+    </birth>
+    <wedding><date>4.10.1927</date></wedding>
+    <father href="PAVLIKFRANTISEK" />
+    <mather href="VOJTECHANTONIE" />
+  </person>
+
+  <person id="PAVLIKFRANTISKA" sex="female">
+    <name>
+      <first>Františka</first>
+      <second>Pavlíková</second>
+      <married>Okřinová</married>
+    </name>
+    <birth><date>16.1.1905</date></birth>
+    <notes>
+  Matylda Navrátilová rozená Pavlíková, sestra Františky Okřínové
+  její dcera si vzala Františka Pejřila, měli dceru Martu a Milana a Ivušku, která zemřela v nemocnici.
+  František Pejřil měl ženu Vlastu.
+    </notes>
+    <father href="PAVLIKFRANTISEK" />
+    <mather href="VOJTECHANTONIE" />
+  </person>
+
+
+
+  <person id="VOJTECHANTONIE" sex="female">
+    <name>
+      <first>Antonie</first>
+      <second>Vojtěchová</second>
+      <married>Pavlíková</married>
+    </name>
+    <birth cite="MN-LUKOV-10603" scan="14" page="24">
+      <date>5.10.1864</date>
+      <place>Lukov 35</place>
+    </birth>
+    <death>
+      <date>26.11.1954</date>
+      <place>Jakubov</place>
+    </death>
+    <wedding cite="MO-LUKOV-10608" scan="36" page="67">
+      <date>18.10.1887</date>
+      <place>Lukov</place>
+    </wedding>
+    <note>služka v Lukově</note>
+    <father href="VOJTECHJAKUB" />
+    <mather href="PAPOUSEKROSALIE" />
+  </person>
+
+  <person id="VOJTECHJAKUB" sex="male" >
+    <name>
+      <first>Jakub</first>
+      <second>Vojtěch</second>
+    </name>
+    <note>domkář v Lukově</note>
+  </person>
+
+  <person id="VOJTECHFILIP" sex="male">
+    <name>
+      <first>Filip</first>
+      <second>Vojtěch</second>
+    </name>
+    <note>Domkář v Lukově</note>
+  </person>
+
+  <person id="PAPOUSEKROSALIE" sex="female" >
+    <name>
+      <first>Rosalie</first>
+      <second>Papoušek</second>
+      <married>Vojtěch</married>
+    </name>
+    <birth><date>1837</date></birth>
+    <father href="PAPOUSEKJAN" />
+    <mather href="BEROUNTEREZIE" />
+  </person>
+
+  <person id="PAPOUSEKJAN" sex="male">
+    <name>
+      <first>Jan</first>
+      <second>Papoušek</second>
+    </name>
+    <note>Domkář v Horním Újezdě</note>
+  </person>
+
+  <person id="BEROUNTEREZIE" sex="female">
+    <name>
+      <first>Terezie?</first>
+      <second>Beroun</second>
+      <married>Papoušková</married>
+    </name>
+  </person>
+
+  <person id="WYHNALEKPETRONELLA" sex="female">
+    <name>
+      <first>Petronella</first>
+      <second>Vyhnálek</second>
+    </name>
+    <father href="WYHNALEKJOHAN"/>
+    <mather href="SOBOTKAFRANTISKA" />
+  </person>
+
+  <person id="SOBOTKAFRANTISKA" sex="female">
+    <name>
+      <first>Františka</first>
+      <second>Sobotková</second>
+    </name>
+  </person>
+
+  <person id="WYHNALEKJOHAN" sex="male">
+    <name>
+      <first>Johann</first>
+      <second>Wyhnálek</second>
+    </name>
+  </person>
+
+
+  <matrika>
+    <signatura>10608</signatura>
+    <archiv>MZABrno</archiv>
+
+    <wedding>
+      <page><scan>20</scan><page>32</page></page>
+      <date>19.6.1860</date>
+      <place>Lukov</place>
+      <note>Lukov 15; Jakob Wojtech Schunidr??? ??? in Lukau, sohn der katolishn ??? chs nach ??? Filip Wojtech ??? in Lukau ??? und Petronia geb. Vyhnalek ???; 30let; Rosalia Papouschek, Dienstmagd (sluzebna) tochter der ? + Johan Papouschek, ??? in Obr??? ??? in Lukau, Nr. 12, ??? 23 let. </note>
+      <bridegroom href="VOJTECHJAKUB"/>
+      <bride href="PAPOUSEKROSALIE"/>
+    </wedding>
+    
+  </matrika>
+
+  <matrika>
+    <signatura>10602</signatura>
+    <archiv>MZABrno</archiv>
+
+    <birth>
+      <page><scan>8</scan><page>13</page></page>
+      <date>16.4.1830</date>
+      <place>Lukov 15</place>
+      <born href="VOJTECHJAKUB" />
+      <father href="VOJTECHFILIP" />
+      <mather href="WYHNALEKPETRONELLA" />
+    </birth>
+
+  </matrika>
+
+</list>
