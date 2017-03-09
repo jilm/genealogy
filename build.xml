@@ -1,0 +1,10 @@
+<project>
+
+  <target name="person-list">
+    <xslt style="stylesheet/makePersonList.xsl"
+          in="src/data/pavlik.xml"
+	  out="personList.xml" />
+  </target>
+
+
+</project>
