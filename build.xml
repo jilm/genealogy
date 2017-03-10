@@ -1,6 +1,13 @@
 <project>
 
+  <taskdef name="jing"
+           classname="com.thaiopensource.relaxng.util.JingTask" />
+
   <target name="person-list">
+    <jing rngfile="schema/schema.rnc"
+          compactsyntax="true" >
+      <fileset dir="src/data/" includes="*.xml" />
+    </jing>
     <xslt style="stylesheet/makePersonList.xsl"
           in="src/data/pavlik.xml"
 	  out="personList.xml" />

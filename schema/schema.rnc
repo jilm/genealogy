@@ -12,7 +12,7 @@ grammar {
   # and inside the list there may be any number of persons defined, any
   # number of source documents referenced and any number of places specified.
   # If necessary, one may leave a notes here, but these are not processed.
-  listContent = ( Person* & Matrika* & Place* & Note* & Include*)
+  listContent = ( Person* & Matrika* & PlaceDef* & Note* & Include*)
 
   # A person definition
   Person = element person { personContent }
@@ -79,29 +79,33 @@ grammar {
 
   Place = element place { placeContent }
 
+  PlaceDef = element place { placeDefContent }
+
   Note = ( element notes { noteContent } | element note { noteContent } )
 
   noteContent = ( text )
 
   dateContent = ( text )
 
-    placeContent = (
-        text | (
-            attribute id { text } ?
-            & attribute href { text } ?
-            & District ?
-            & Parish ?
-            & Region ?
-            & House ?
-            & OldName ?
-        )
+  placeContent = (
+    ( attribute href { text }, attribute house-nr { text } ? )
+    | ( text )
+  )
+
+    placeDefContent = (
+      attribute id { text }
+      & attribute href { text } ?
+      & District ?                 # okres
+      & Parish ?                   # farnost, obec
+      & Region ?                   # kraj
+      & FormerName ?
     )
 
     District = element district { text }
     Parish = element parish { text }
     Region = element region { text }
     House = element house { text }
-    OldName = element old-name { text }
+    FormerName = element former-name { text }
 
 
   Matrika = element matrika { matrikaContent }

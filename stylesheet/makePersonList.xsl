@@ -23,11 +23,19 @@
 
     -->
     <xsl:template match="person">
+        <xsl:variable name="id" select="@id" />
         <person>
-            <xsl:attribute name="id" select="@id" />
+            <xsl:attribute name="id" select="$id" />
             <xsl:attribute name="sex" select="@sex" />
             <xsl:apply-templates select="name" />
-            <xsl:apply-templates select="birth" />
+            <xsl:choose>
+                <xsl:when test="//birth/born[@href = $id]">
+                    <xsl:apply-templates select="//birth[born[@href = $id]]" />
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates select="birth" />
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:apply-templates select="wedding" />
             <xsl:apply-templates select="death" />
             <xsl:apply-templates select="father" />

@@ -2,6 +2,18 @@
 
 <list>
 
+  <place id="VYSOCINA-REGION" >
+    <region>Vysočina</region>
+  </place>
+
+  <place id="TREBIC-DISTRICT" href="VYSOCINA-REGION">
+    <district>Třebíč</district>
+  </place>
+
+  <place id="LUKOV" href="TREBIC-DISTRICT">
+    <parish>Lukov</parish>
+  </place>
+
   <person id="PAVLIKFRANTISEK" sex="male">
     <name>
       <first>František</first>
@@ -9,7 +21,7 @@
     </name>
     <birth>
       <date>1861</date>
-      <place>Lukov</place>
+      <place href="LUKOV" />
     </birth>
     <note>Nádeník v Moravských Budějovicích, dělník v Heřmanicích (na dráze)? šeledín v Lukově, obr. zemský 18. prapor</note>
     <father href="PAVLIKANTONIN" />
@@ -90,7 +102,7 @@
     </name>
     <birth cite="MN-LUKOV-10603" scan="14" page="24">
       <date>5.10.1864</date>
-      <place>Lukov 35</place>
+      <place href="LUKOV" house-nr="35" />
     </birth>
     <death>
       <date>26.11.1954</date>
@@ -98,7 +110,7 @@
     </death>
     <wedding cite="MO-LUKOV-10608" scan="36" page="67">
       <date>18.10.1887</date>
-      <place>Lukov</place>
+      <place href="LUKOV" />
     </wedding>
     <note>služka v Lukově</note>
     <father href="VOJTECHJAKUB" />
@@ -179,7 +191,7 @@
     <wedding>
       <page><scan>20</scan><page>32</page></page>
       <date>19.6.1860</date>
-      <place>Lukov</place>
+      <place href="LUKOV" />
       <note>Lukov 15; Jakob Wojtech Schunidr??? ??? in Lukau, sohn der katolishn ??? chs nach ??? Filip Wojtech ??? in Lukau ??? und Petronia geb. Vyhnalek ???; 30let; Rosalia Papouschek, Dienstmagd (sluzebna) tochter der ? + Johan Papouschek, ??? in Obr??? ??? in Lukau, Nr. 12, ??? 23 let. </note>
       <bridegroom href="VOJTECHJAKUB"/>
       <bride href="PAPOUSEKROSALIE"/>
@@ -194,7 +206,7 @@
     <birth>
       <page><scan>8</scan><page>13</page></page>
       <date>16.4.1830</date>
-      <place>Lukov 15</place>
+      <place href="LUKOV" house-nr="15" />
       <born href="VOJTECHJAKUB" />
       <father href="VOJTECHFILIP" />
       <mather href="WYHNALEKPETRONELLA" />
