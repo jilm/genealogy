@@ -26,7 +26,7 @@
 
         \begin{tikzpicture}\genealogytree[template=signpost, level size=3cm, box={width=2cm, height=3cm}]{
             parent{
-    <xsl:apply-templates />
+    <xsl:apply-templates select="//person[1]" />
             }
           } 
         \end{tikzpicture}
@@ -91,13 +91,17 @@
   -->
   <xsl:template match="mather">
     parent{
-      <xsl:apply-templates />
+      g[male]{<xsl:apply-templates select="name" />}
+      <xsl:apply-templates select="father" />
+      <xsl:apply-templates select="mather" />
     }
   </xsl:template>
 
   <xsl:template match="father">
     parent{
-      <xsl:apply-templates />
+      g[female]{<xsl:apply-templates select="name" />}
+      <xsl:apply-templates select="father" />
+      <xsl:apply-templates select="mather" />
     }
   </xsl:template>
 

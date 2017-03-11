@@ -30,4 +30,12 @@
 
   </target>
 
+  <target name="graph" depends="person-tree">
+
+    <xslt style="${xslt.dir}/makeGenTree.xsl"
+          in="${build.dir}/personTree.xml"
+	  out="${build.dir}/personTree.tex" />
+
+  </target>
+
 </project>
