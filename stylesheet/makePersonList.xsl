@@ -3,6 +3,8 @@
 <xsl:stylesheet version="2.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+    <xsl:import href="placeTemplate.xsl" />
+
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
 
     <!--
@@ -80,11 +82,13 @@
         </date>
     </xsl:template>
     
+    <!--
     <xsl:template match="place">
         <place>
             <xsl:apply-templates />
         </place>
     </xsl:template>
+    -->
 
     <xsl:template match="wedding">
         <wedding>
