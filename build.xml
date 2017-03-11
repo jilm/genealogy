@@ -1,17 +1,33 @@
 <project>
 
+  <property name="schema.dir" value="schema" />
+  <property name="xslt.dir" value="stylesheet" />
+  <property name="build.dir" value="build" />
+  <property name="src.dir" value="src/data" />
+
+
   <taskdef name="jing"
            classname="com.thaiopensource.relaxng.util.JingTask" />
 
   <target name="person-list">
-    <jing rngfile="schema/schema.rnc"
+
+    <jing rngfile="${schema.dir}/schema.rnc"
           compactsyntax="true" >
-      <fileset dir="src/data/" includes="*.xml" />
+      <fileset dir="${src.dir}" includes="*.xml" />
     </jing>
-    <xslt style="stylesheet/makePersonList.xsl"
-          in="src/data/pavlik.xml"
-	  out="personList.xml" />
+
+    <xslt style="${xslt.dir}/makePersonList.xsl"
+          in="${src.dir}/pavlik.xml"
+	  out="${build.dir}/personList.xml" />
+
   </target>
 
+  <target name="person-tree" depends="person-list">
+
+    <xslt style="${xslt.dir}/makePersonTree.xsl"
+          in="${build.dir}/personList.xml"
+	  out="${build.dir}/personTree.xml" />
+
+  </target>
 
 </project>
