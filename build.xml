@@ -36,6 +36,17 @@
           in="${build.dir}/personTree.xml"
 	  out="${build.dir}/personTree.tex" />
 
+    <exec executable="xelatex"
+          dir="${build.dir}">
+      <arg file="${build.dir}/personTree.tex" />
+    </exec>
+
+  </target>
+
+  <target name="clean">
+    <delete>
+      <fileset dir="${build.dir}" includes="*" />
+    </delete>
   </target>
 
 </project>

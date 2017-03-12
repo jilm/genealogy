@@ -12,6 +12,8 @@
 
   <xsl:output method="text" encoding="utf-8" />
 
+  <xsl:variable name="birth-symbol" select="'\gtrsymBorn{}'" />
+
   <xsl:template match="/">
 
 \documentclass[]{a0poster} 
@@ -38,21 +40,25 @@
     Convert a person
 
   -->
-  <xsl:template match="person[@sex='male']">
+  <xsl:template match="person[@sex='male']" priority="2" >
     g[male]{
-      <xsl:apply-templates select="name" />
+      <xsl:next-match />
       }
       <xsl:apply-templates select="father" />
       <xsl:apply-templates select="mather" />
   </xsl:template>
 
-  <xsl:template match="person[@sex='female']">
+  <xsl:template match="person[@sex='female']" priority="2" >
     g[female]{
-      <xsl:apply-templates select="name" />
-      <xsl:apply-templates select="birth" />
+      <xsl:next-match />
       }
       <xsl:apply-templates select="father" />
       <xsl:apply-templates select="mather" />
+  </xsl:template>
+
+  <xsl:template match="person | mather | father">
+      <xsl:apply-templates select="name" />
+      <xsl:apply-templates select="birth" />
   </xsl:template>
 
   <xsl:template match="name">
@@ -61,11 +67,11 @@
   </xsl:template>
 
   <xsl:template match="first">
-    \pref{<xsl:apply-templates />}
+    \pref{ <xsl:apply-templates /> }
   </xsl:template>
 
   <xsl:template match="second">
-    \surn{<xsl:apply-templates />}
+    \surn{ <xsl:apply-templates /> }
   </xsl:template>
 
   <xsl:template match="text()">
@@ -73,8 +79,27 @@
   </xsl:template>
 
   <xsl:template match="birth[date and place]">
-    \gtrsymBorn{}~
-    <xsl:apply-templates />
+    <xsl:variable name="date">
+      <xsl:apply-templates select="date" />
+    </xsl:variable>
+    <xsl:variable name="place">
+      <xsl:apply-templates select="place" />
+    </xsl:variable>
+    <xsl:value-of select="concat($birth-symbol, '~', $date, ', ', $place)" />
+  </xsl:template>
+
+  <xsl:template match="birth[date and not(place)]">
+    <xsl:variable name="date">
+      <xsl:apply-templates select="date" />
+    </xsl:variable>
+    <xsl:value-of select="concat($birth-symbol, '~', $date)" />
+  </xsl:template>
+
+  <xsl:template match="birth[not(date) and place]">
+    <xsl:variable name="place">
+      <xsl:apply-templates select="place" />
+    </xsl:variable>
+    <xsl:value-of select="concat($birth-symbol, '~', $place)" />
   </xsl:template>
 
   <xsl:template match="date">
@@ -89,17 +114,17 @@
   <!--
   
   -->
-  <xsl:template match="mather">
+  <xsl:template match="mather" priority="2">
     parent{
-      g[male]{<xsl:apply-templates select="name" />}
+      g[male]{<xsl:next-match />}
       <xsl:apply-templates select="father" />
       <xsl:apply-templates select="mather" />
     }
   </xsl:template>
 
-  <xsl:template match="father">
+  <xsl:template match="father" priority="2">
     parent{
-      g[female]{<xsl:apply-templates select="name" />}
+      g[female]{<xsl:next-match />}
       <xsl:apply-templates select="father" />
       <xsl:apply-templates select="mather" />
     }

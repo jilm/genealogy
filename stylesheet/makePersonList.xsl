@@ -29,6 +29,7 @@
         <person>
             <xsl:attribute name="id" select="$id" />
             <xsl:attribute name="sex" select="@sex" />
+            <xsl:variable name="birth" select="//birth[born[@href = $id]]" />
             <xsl:apply-templates select="name" />
             <xsl:choose>
                 <xsl:when test="//birth/born[@href = $id]">
@@ -40,9 +41,19 @@
             </xsl:choose>
             <xsl:apply-templates select="wedding" />
             <xsl:apply-templates select="death" />
+            <xsl:apply-templates select="$birth/father" />
             <xsl:apply-templates select="father" />
+            <xsl:apply-templates select="$birth/mather" />
             <xsl:apply-templates select="mather" />
         </person>
+    </xsl:template>
+
+    <xsl:template match="person" mode="birth-verified" >
+        <xsl:variable name="id" select="@id" />
+        <xsl:variable name="birth" select="//birth[born[@href = $id]]" />
+        <xsl:apply-templates select="$birth" />
+        <xsl:apply-templates select="$birth/father" />
+        <xsl:apply-templates select="$birth/mather" />
     </xsl:template>
 
     <!--
