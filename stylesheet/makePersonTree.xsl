@@ -43,26 +43,40 @@
         order. Moreover referenced information is resolved.
 
     -->
-    <xsl:template match="person">
+    <xsl:template match="person" priority="4">
         <xsl:variable name="id" select="@id" />
         <person>
             <xsl:attribute name="id" select="$id" />
             <xsl:attribute name="sex" select="@sex" />
-            <xsl:apply-templates select="." mode="content" />
+            <xsl:apply-templates select="name" />
+            <xsl:next-match />
         </person>
     </xsl:template>
 
+    <!-- The birth is specified directly inside the person element -->
+    <xsl:template match="person[birth]">
+	    <birth>
+            <xsl:apply-templates select="birth/date" />
+            <xsl:apply-templates select="birth/place" />
+        </birth>
+        <xsl:apply-templates select="father" />
+        <xsl:apply-templates select="mather" />
+    </xsl:template>
+
+	<!-- The birth is specified outside the person element. -->
+	<xsl:template match="person[contains(./@id, //birth/born/@href)]">
+        <xsl:variable name="ref" select="@id" />
+        <xsl:variable name="birth" select="//birth/born[@href = $ref]" />
+        <birth>
+            <xsl:apply-templates select="$birth/date" />
+            <xsl:apply-templates select="$birth/place" />
+        </birth>
+        <xsl:apply-templates select="$birth/father" />
+        <xsl:apply-templates select="$birth/mather" />
+	</xsl:template>
+	
     <xsl:template match="person" mode="content" >
         <xsl:variable name="id" select="@id" />
-            <xsl:apply-templates select="name" />
-            <xsl:choose>
-                <xsl:when test="//birth/born[@href = $id]">
-                    <xsl:apply-templates select="//birth[born[@href = $id]]" />
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:apply-templates select="birth" />
-                </xsl:otherwise>
-            </xsl:choose>
             <xsl:apply-templates select="wedding" />
             <xsl:apply-templates select="death" />
             <xsl:apply-templates select="father" />
