@@ -221,7 +221,7 @@
     <wedding>
       <page><scan>142</scan><page>280</page></page>
       <date>1.2.1932</date>
-      <place href="LUKOV" />Mor. Bud.
+      <place>Mor. Bud.</place>
       <note>ženich Lusk Ferdinand, dělník v Moravských Budějovicích, vojín v záloze děl. pl. č. 8, do Myslibořic příslušný manželský syn Luska Františka, dělníka v Krnčicích a Terezie rozeené Pavel Koukal z Mastníku. Rodiče oba kattolíci, oba mrtvi.
       ženich 34 let, narozen 25.5.1897 v Blížkovicícch okres moravské Budějovvice, VIII pagg 264
       nevěsta Pavlíková Ludmila u matky v Mor. Budějovicích, sem příslušná manželská dcera Františka Pavlíka, dělníka v Heřmanicích a Autonie rozené Jakub Vojtěcch z Lukova, rodiče oba katolíci, otec zemřel, matka žije
@@ -232,5 +232,21 @@
     </wedding>    
     
   </matrika>
+
+  <matrika>
+    10603, Lukov
+    <birth>
+      scan 20,
+      Lukov 68
+      Antonia Wojtech
+      Otec: Jakub Wojtech
+      Rozalia ...
+    </birth>
+  </matrika>
+
+  <birth>
+    10263, scan 39, Horni ujezd 47, 1836
+    Rosalia Papouschek, dcera Johana Papouschka a Therezie Beroun
+  </birth>
 
 </list>
