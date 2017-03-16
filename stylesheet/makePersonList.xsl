@@ -29,31 +29,29 @@
         <person>
             <xsl:attribute name="id" select="$id" />
             <xsl:attribute name="sex" select="@sex" />
-            <xsl:variable name="birth" select="//birth[born[@href = $id]]" />
+            <xsl:variable name="birth_verified" select="//birth[born[@href = $id]]" />
             <xsl:apply-templates select="name" />
             <xsl:choose>
-                <xsl:when test="//birth/born[@href = $id]">
-                    <xsl:apply-templates select="//birth[born[@href = $id]]" />
+                <xsl:when test="not(empty($birth_verified))">
+                    <birth verified="true">
+                        <xsl:apply-templates select="$birth_verified/date" />
+                        <xsl:apply-templates select="$birth_verified/place" />
+                        <xsl:apply-templates select="$birth_verified/father" />
+                        <xsl:apply-templates select="$birth_verified/mather" />
+                    </birth>
                 </xsl:when>
-                <xsl:otherwise>
-                    <xsl:apply-templates select="birth" />
-                </xsl:otherwise>
+                <xsl:when test="not(empty($birth))" >
+                    <birth verified="false">
+                        <xsl:apply-templates select="$birth/date" />
+                        <xsl:apply-templates select="$birth/place" />
+                        <xsl:apply-templates select="father" />
+                        <xsl:apply-templates select="mather" />
+                    </birth>
+                </xsl:when>
             </xsl:choose>
             <xsl:apply-templates select="wedding" />
             <xsl:apply-templates select="death" />
-            <xsl:apply-templates select="$birth/father" />
-            <xsl:apply-templates select="father" />
-            <xsl:apply-templates select="$birth/mather" />
-            <xsl:apply-templates select="mather" />
         </person>
-    </xsl:template>
-
-    <xsl:template match="person" mode="birth-verified" >
-        <xsl:variable name="id" select="@id" />
-        <xsl:variable name="birth" select="//birth[born[@href = $id]]" />
-        <xsl:apply-templates select="$birth" />
-        <xsl:apply-templates select="$birth/father" />
-        <xsl:apply-templates select="$birth/mather" />
     </xsl:template>
 
     <!--
