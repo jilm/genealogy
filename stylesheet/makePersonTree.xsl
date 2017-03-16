@@ -43,44 +43,25 @@
         order. Moreover referenced information is resolved.
 
     -->
-    <xsl:template match="person" priority="4">
+    <xsl:template match="person">
         <xsl:variable name="id" select="@id" />
         <person>
             <xsl:attribute name="id" select="$id" />
             <xsl:attribute name="sex" select="@sex" />
-            <xsl:apply-templates select="name" />
-            <xsl:next-match />
+		    <xsl:call-template name="person_content">
+                <xsl:with-param name="person" select="." />
+            </xsl:call-template>
         </person>
     </xsl:template>
 
     <!-- The birth is specified directly inside the person element -->
-    <xsl:template match="person[birth]">
-	    <birth>
-            <xsl:apply-templates select="birth/date" />
-            <xsl:apply-templates select="birth/place" />
-        </birth>
-        <xsl:apply-templates select="father" />
-        <xsl:apply-templates select="mather" />
-    </xsl:template>
-
-	<!-- The birth is specified outside the person element. -->
-	<xsl:template match="person[contains(./@id, //birth/born/@href)]">
-        <xsl:variable name="ref" select="@id" />
-        <xsl:variable name="birth" select="//birth/born[@href = $ref]" />
-        <birth>
-            <xsl:apply-templates select="$birth/date" />
-            <xsl:apply-templates select="$birth/place" />
-        </birth>
-        <xsl:apply-templates select="$birth/father" />
-        <xsl:apply-templates select="$birth/mather" />
-	</xsl:template>
-	
-    <xsl:template match="person" mode="content" >
-        <xsl:variable name="id" select="@id" />
-            <xsl:apply-templates select="wedding" />
-            <xsl:apply-templates select="death" />
-            <xsl:apply-templates select="father" />
-            <xsl:apply-templates select="mather" />
+    <xsl:template name="person_content">
+	    <xsl:param name="person" />
+	    <xsl:apply-templates select="$person/name" />
+	    <xsl:apply-templates select="$person/birth" />
+	    <xsl:apply-templates select="$person/death" />
+	    <xsl:apply-templates select="$person/father" />
+	    <xsl:apply-templates select="$person/mather" />
     </xsl:template>
 
     <!--
@@ -137,14 +118,18 @@
     <xsl:template match="father">
         <xsl:variable name="ref" select="@href" />
         <father>
-            <xsl:apply-templates select="//person[@id = $ref]" mode="content"/>
+            <xsl:call-template name="person_content">
+                <xsl:with-param name="person" select="//person[@id = $ref]" />
+            </xsl:call-template>
         </father>
     </xsl:template>
 
     <xsl:template match="mather">
         <xsl:variable name="ref" select="@href" />
         <mather>
-            <xsl:apply-templates select="//person[@id = $ref]" mode="content"/>
+            <xsl:call-template name="person_content">
+                <xsl:with-param name="person" select="//person[@id = $ref]" />
+            </xsl:call-template>
         </mather>
     </xsl:template>
 
