@@ -30,6 +30,7 @@
             <xsl:attribute name="id" select="$id" />
             <xsl:attribute name="sex" select="@sex" />
             <xsl:variable name="birth_verified" select="//birth[born[@href = $id]]" />
+            <xsl:variable name="birth" select="birth" />
             <xsl:apply-templates select="name" />
             <xsl:choose>
                 <xsl:when test="not(empty($birth_verified))">

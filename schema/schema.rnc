@@ -115,6 +115,7 @@ grammar {
     & element archiv { text } ?
     & element original-name { text } ?
     & Record * 
+    & Note *
   )
 
   # Unique identifier of the matrika.

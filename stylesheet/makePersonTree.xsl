@@ -60,8 +60,8 @@
 	    <xsl:apply-templates select="$person/name" />
 	    <xsl:apply-templates select="$person/birth" />
 	    <xsl:apply-templates select="$person/death" />
-	    <xsl:apply-templates select="$person/father" />
-	    <xsl:apply-templates select="$person/mather" />
+	    <xsl:apply-templates select="$person/birth/father" />
+	    <xsl:apply-templates select="$person/birth/mather" />
     </xsl:template>
 
     <!--
@@ -90,6 +90,7 @@
 
     <xsl:template match="birth">
         <birth>
+            <xsl:attribute name="verified" select="@verified" />
             <xsl:apply-templates select="date" />
             <xsl:apply-templates select="place" />
         </birth>

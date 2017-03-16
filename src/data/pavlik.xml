@@ -141,7 +141,7 @@
     </name>
     <birth><date>1837</date></birth>
     <father href="PAPOUSEKJAN" />
-    <mather href="BEROUNTEREZIE" />
+    <mather href="BEROUNTHERESIE" />
   </person>
 
   <person id="PAPOUSEKJAN" sex="male">
@@ -152,7 +152,7 @@
     <note>Domkář v Horním Újezdě</note>
   </person>
 
-  <person id="BEROUNTEREZIE" sex="female">
+  <person id="BEROUNTHERESIE" sex="female">
     <name>
       <first>Terezie?</first>
       <second>Beroun</second>
@@ -234,13 +234,13 @@
   </matrika>
 
   <matrika>
-    10603, Lukov
+    <signatura>10603</signatura>
     <birth>
-      scan 20,
-      Lukov 68
-      Antonia Wojtech
-      Otec: Jakub Wojtech
-      Rozalia ...
+      <page><scan>20</scan></page>
+      <place href="LUKOV" house-nr="68" />
+      <born href="VOJTECHANTONIE" />
+      <father href="VOJTECHJAKUB" />
+      <mather href="PAPOUSEKROSALIE" />
     </birth>
   </matrika>
 
@@ -262,8 +262,41 @@
     </birth>
   </matrika>
   
-  <wedding>
+  <matrika>
+    <signatura>10269</signatura>
+    <wedding>
+      <page><scan>10</scan></page>
+      <bridegroom href="PAPOUSEKJOHANN" />
+      <bride href="BEROUNTHERESIE" />
+      <note>
     10269, scan 10, 1815 Johann Sohn der Jakub Papoushek 24let, Theresia tochter Johann Beroun , Oujezd Nr. 47, 18 let
-  </wedding>
+      </note>
+    </wedding>
+  </matrika>
+
+  <person id="BEROUNJOHANN" sex="male">
+    <name>
+      <first>Johann</first>
+      <second>Beroun</second>
+    </name>
+  </person>
+
+  <person id="MARGARETA" sex="female">
+    <name>
+      <first>Margareta</first>
+    </name>
+  </person>
+
+  <matrika>
+    <signatura>10262</signatura>
+    <note>Horni Ujezd, scan: 2--16</note>
+    <birth>
+      <page><scan>15</scan></page>
+      <place>Horní Újezd 3</place>
+      <born href="BEROUNTHERESIE" />
+      <father href="BEROUNJOHANN" />
+      <mather href="MARGARETA" />
+    </birth>
+  </matrika>
 
 </list>
