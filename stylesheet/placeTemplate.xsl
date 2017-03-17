@@ -13,8 +13,8 @@
 
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
 
-    <xsl:template match="place[text()]" priority="5">
-        <place><xsl:apply-templates /></place>
+    <xsl:template match="place[text() and not(@href)]" priority="5">
+        <place ><xsl:apply-templates /></place>
     </xsl:template>
 
     <!-- 
@@ -25,9 +25,7 @@
     -->
     <xsl:template match="place" priority="4">
         <xsl:variable name="place">
-          <place>
             <xsl:next-match />
-          </place>
         </xsl:variable>
         <place>
             <xsl:apply-templates select="$place/region" />

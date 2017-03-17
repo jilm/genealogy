@@ -14,6 +14,10 @@
 
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
 
+    <xsl:template match="place[text() and not(parish)]" priority="5">
+        <xsl:apply-templates />
+    </xsl:template>
+
     <!-- 
 
          The highest level place template simply wraps content into the

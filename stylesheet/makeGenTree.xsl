@@ -74,7 +74,10 @@
 
   <xsl:template match="person | mather | father">
       <xsl:apply-templates select="name" />
+      <xsl:text> </xsl:text>
       <xsl:apply-templates select="birth" />
+      <xsl:text> </xsl:text>
+      <xsl:apply-templates select="death" />
   </xsl:template>
 
   <xsl:template match="name">

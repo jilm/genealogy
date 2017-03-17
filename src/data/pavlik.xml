@@ -14,6 +14,10 @@
     <parish>Lukov</parish>
   </place>
 
+  <place id="HUJEZD" href="TREBIC-DISTRICT">
+    <parish>Horní Újezd</parish>
+  </place>
+
   <person id="PAVLIKFRANTISEK" sex="male">
     <name>
       <first>František</first>
@@ -100,10 +104,6 @@
       <second>Vojtěchová</second>
       <married>Pavlíková</married>
     </name>
-    <birth cite="MN-LUKOV-10603" scan="14" page="24">
-      <date>5.10.1864</date>
-      <place href="LUKOV" house-nr="35" />
-    </birth>
     <death>
       <date>26.11.1954</date>
       <place>Jakubov</place>
@@ -174,6 +174,7 @@
       <first>Johann</first>
       <second>Papoušek</second>
     </name>
+    <note>Oujezd</note>
   </person>
 
   <person id="SOBOTKAFRANTISKA" sex="female">
@@ -242,8 +243,10 @@
 
   <matrika>
     <signatura>10603</signatura>
+    <title>Matrika narozených v obci Lukov, 1858--1871</title>
     <birth>
       <page><scan>20</scan></page>
+      <date>14.1.1868</date>
       <place href="LUKOV" house-nr="68" />
       <born href="VOJTECHANTONIE" />
       <father href="VOJTECHJAKUB" />
@@ -258,7 +261,7 @@
     <birth>
       <url>http://actapublica.eu/matriky/brno/prohlizec/6375/?strana=39</url>
       <date>4.9.1836</date>
-      <place>Horní Újezd 47</place>
+      <place href="HUJEZD" house-nr="47" />
       <born href="PAPOUSEKROSALIE" />
       <note>
       10263, scan 39, Horni ujezd 47, 1836
@@ -296,10 +299,13 @@
 
   <matrika>
     <signatura>10262</signatura>
+    <title>Matrika narozených v obci Horní Újezd, 1784--1797</title>
+    <volume>Ji 595; 1418</volume>
     <note>Horni Ujezd, scan: 2--16</note>
     <birth>
       <page><scan>15</scan></page>
-      <place>Horní Újezd 3</place>
+      <date>17.8.1796</date>
+      <place href="HUJEZD" house-nr="3" />
       <born href="BEROUNTHERESIE" />
       <father href="BEROUNJOHANN" />
       <mather href="MARGARETA" />

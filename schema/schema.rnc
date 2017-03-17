@@ -112,6 +112,8 @@ grammar {
 
   matrikaContent = ( 
     Signatura ?
+    & element title { text } ?
+    & element volume { text } ?
     & element archiv { text } ?
     & element original-name { text } ?
     & Record * 
