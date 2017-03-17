@@ -60,8 +60,8 @@
 	    <xsl:apply-templates select="$person/name" />
 	    <xsl:apply-templates select="$person/birth" />
 	    <xsl:apply-templates select="$person/death" />
-	    <xsl:apply-templates select="$person/birth/father" />
-	    <xsl:apply-templates select="$person/birth/mather" />
+	    <xsl:apply-templates select="$person/father" />
+	    <xsl:apply-templates select="$person/mather" />
     </xsl:template>
 
     <!--
@@ -111,6 +111,7 @@
 
     <xsl:template match="death">
         <death>
+            <xsl:attribute name="verified" select="@verified" />
             <xsl:apply-templates select="date" />
             <xsl:apply-templates select="place" />
         </death>
@@ -118,6 +119,11 @@
 
     <xsl:template match="father">
         <xsl:variable name="ref" select="@href" />
+        <xsl:variable name="father" select="//person[@id = $ref]" />
+        <xsl:if test="empty($father)">
+            <xsl:message terminate="yes" 
+                         select="concat('There is no person with id', $ref)" />
+        </xsl:if>
         <father>
             <xsl:call-template name="person_content">
                 <xsl:with-param name="person" select="//person[@id = $ref]" />

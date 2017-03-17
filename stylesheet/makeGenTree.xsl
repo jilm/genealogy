@@ -115,6 +115,16 @@
     <xsl:value-of select="concat(my:get-birth-symbol(.), '~', $date, ', ', $place)" />
   </xsl:template>
 
+  <xsl:template match="death[date and place]">
+    <xsl:variable name="date">
+      <xsl:apply-templates select="date" />
+    </xsl:variable>
+    <xsl:variable name="place">
+      <xsl:apply-templates select="place" />
+    </xsl:variable>
+    <xsl:value-of select="concat(my:get-death-symbol(.), '~', $date, ', ', $place)" />
+  </xsl:template>
+
   <xsl:template match="birth[date and not(place)]">
     <xsl:variable name="date">
       <xsl:apply-templates select="date" />
@@ -122,11 +132,25 @@
     <xsl:value-of select="concat(my:get-birth-symbol(.), '~', $date)" />
   </xsl:template>
 
+  <xsl:template match="death[date and not(place)]">
+    <xsl:variable name="date">
+      <xsl:apply-templates select="date" />
+    </xsl:variable>
+    <xsl:value-of select="concat(my:get-death-symbol(.), '~', $date)" />
+  </xsl:template>
+
   <xsl:template match="birth[not(date) and place]">
     <xsl:variable name="place">
       <xsl:apply-templates select="place" />
     </xsl:variable>
     <xsl:value-of select="concat(my:get-birth-symbol(.), '~', $place)" />
+  </xsl:template>
+
+  <xsl:template match="death[not(date) and place]">
+    <xsl:variable name="place">
+      <xsl:apply-templates select="place" />
+    </xsl:variable>
+    <xsl:value-of select="concat(my:get-death-symbol(.), '~', $place)" />
   </xsl:template>
 
   <xsl:template match="date">
@@ -160,6 +184,18 @@
       </xsl:when>
       <xsl:otherwise>
         <xsl:value-of select="$birth-symbol" />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
+
+  <xsl:function name="my:get-death-symbol">
+    <xsl:param name="death-element" />
+    <xsl:choose>
+      <xsl:when test="$death-element[@verified = 'true']">
+        <xsl:value-of select="$ver-death-symbol" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$death-symbol" />
       </xsl:otherwise>
     </xsl:choose>
   </xsl:function>

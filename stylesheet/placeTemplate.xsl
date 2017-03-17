@@ -13,6 +13,10 @@
 
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
 
+    <xsl:template match="place[text()]" priority="5">
+        <place><xsl:apply-templates /></place>
+    </xsl:template>
+
     <!-- 
 
          The highest level place template simply wraps content into the
@@ -20,8 +24,16 @@
 
     -->
     <xsl:template match="place" priority="4">
-        <place>
+        <xsl:variable name="place">
+          <place>
             <xsl:next-match />
+          </place>
+        </xsl:variable>
+        <place>
+            <xsl:apply-templates select="$place/region" />
+            <xsl:apply-templates select="$place/district" />
+            <xsl:apply-templates select="$place/parish" />
+            <xsl:apply-templates select="$place/house-nr" />
         </place>
     </xsl:template>
 
@@ -62,6 +74,10 @@
         <district>
             <xsl:apply-templates />
         </district>
+    </xsl:template>
+
+    <xsl:template match="house-nr">
+        <house-nr><xsl:apply-templates /></house-nr>
     </xsl:template>
 
 </xsl:stylesheet>

@@ -37,20 +37,20 @@
                     <birth verified="true">
                         <xsl:apply-templates select="$birth_verified/date" />
                         <xsl:apply-templates select="$birth_verified/place" />
-                        <xsl:apply-templates select="$birth_verified/father" />
-                        <xsl:apply-templates select="$birth_verified/mather" />
                     </birth>
+                    <xsl:apply-templates select="$birth_verified/father" />
+                    <xsl:apply-templates select="$birth_verified/mather" />
                 </xsl:when>
                 <xsl:when test="not(empty($birth))" >
                     <birth verified="false">
                         <xsl:apply-templates select="$birth/date" />
                         <xsl:apply-templates select="$birth/place" />
-                        <xsl:apply-templates select="father" />
-                        <xsl:apply-templates select="mather" />
                     </birth>
+                    <xsl:apply-templates select="father" />
+                    <xsl:apply-templates select="mather" />
                 </xsl:when>
             </xsl:choose>
-            <xsl:apply-templates select="wedding" />
+            <!--<xsl:apply-templates select="wedding" />-->
             <xsl:apply-templates select="death" />
         </person>
     </xsl:template>
@@ -108,7 +108,7 @@
     </xsl:template>
 
     <xsl:template match="death">
-        <death>
+        <death verified="false" >
             <xsl:apply-templates select="date" />
             <xsl:apply-templates select="place" />
         </death>

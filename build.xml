@@ -24,6 +24,11 @@
 
   <target name="person-tree" depends="person-list">
 
+    <jing rngfile="${schema.dir}/personList.rnc"
+          compactsyntax="true" >
+      <fileset dir="${build.dir}" includes="personList.xml" />
+    </jing>
+
     <xslt style="${xslt.dir}/makePersonTree.xsl"
           in="${build.dir}/personList.xml"
 	  out="${build.dir}/personTree.xml" />
@@ -32,13 +37,18 @@
 
   <target name="graph" depends="person-tree">
 
+    <jing rngfile="${schema.dir}/personTree.rnc"
+          compactsyntax="true" >
+      <fileset dir="${build.dir}" includes="personTree.xml" />
+    </jing>
+
     <xslt style="${xslt.dir}/makeGenTree.xsl"
           in="${build.dir}/personTree.xml"
 	  out="${build.dir}/personTree.tex" />
 
     <exec executable="xelatex"
           dir="${build.dir}">
-      <arg file="${build.dir}/personTree.tex" />
+      <arg file="${build.dir}/*.tex" />
     </exec>
 
   </target>

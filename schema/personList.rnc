@@ -28,10 +28,9 @@ grammar {
       , attribute sex { "male" | "female" }
       , Name
       , Birth ?
-      , Death ?
-      , Wedding *
       , Father ?
       , Mather ?
+      , Death ?
   )
 
   # The name of the person.
@@ -55,9 +54,11 @@ grammar {
   Death = element death { eventContent }
 
   eventContent = (
-    ( Date , Place )
-    | Date
-    | Place
+    attribute verified { 'true' | 'false' }, (
+      ( Date , Place )
+      | Date
+      | Place
+    )
   )
 
   # Reference is just a href attribute which contains a value of id attribute
@@ -70,13 +71,20 @@ grammar {
 
   dateContent = ( text )
 
-  placeContent = ( text )
+  placeContent = ( 
+    text | (
+      element region { text } ?
+      , element district { text } ?
+      , element parish { text } ?
+      , element house-nr { text } ?
+    )
+  )
 
   # a reference to father
-  Father = element father { PeopleReference }
+  Father = element father { Reference }
   
   # A reference to mather
-  Mather = element mather { PeopleReference }
+  Mather = element mather { Reference }
 
   ID = ( attribute id { text } )
 

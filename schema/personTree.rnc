@@ -7,7 +7,9 @@ namespace xi = "http://www.w3.org/2001/XInclude"
 
 grammar {
 
-  start = Person
+  start = List
+
+  List = element list { Person * }
 
   # A person definition
   Person = element person { personContent }
@@ -25,7 +27,14 @@ grammar {
       , Name
       , Birth ?
       , Death ?
-      , Wedding *
+      , Father ?
+      , Mather ?
+  )
+
+  parentContent = (
+      Name
+      , Birth ?
+      , Death ?
       , Father ?
       , Mather ?
   )
@@ -51,9 +60,11 @@ grammar {
   Death = element death { eventContent }
 
   eventContent = (
-    ( Date , Place )
-    | Date
-    | Place
+    attribute verified { 'true' | 'false' }, (
+      ( Date , Place )
+      | Date
+      | Place
+    )
   )
 
   # Reference is just a href attribute which contains a value of id attribute
@@ -69,10 +80,10 @@ grammar {
   placeContent = ( text )
 
   # a reference to father
-  Father = element father { personContent }
+  Father = element father { parentContent }
   
   # A reference to mather
-  Mather = element mather { personContent }
+  Mather = element mather { parentContent }
 
   ID = ( attribute id { text } )
 

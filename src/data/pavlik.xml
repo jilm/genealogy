@@ -169,6 +169,13 @@
     <mather href="SOBOTKAFRANTISKA" />
   </person>
 
+  <person id="PAPOUSEKJOHANN" sex="male">
+    <name>
+      <first>Johann</first>
+      <second>Papoušek</second>
+    </name>
+  </person>
+
   <person id="SOBOTKAFRANTISKA" sex="female">
     <name>
       <first>Františka</first>
