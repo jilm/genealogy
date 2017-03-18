@@ -35,6 +35,18 @@
 
   </target>
 
+  <target name="family-tree" depends="person-list">
+
+    <xslt style="${xslt.dir}/makeFamilyTree.xsl"
+          in="${build.dir}/personList.xml"
+	  out="${build.dir}/familyTree.xml" />
+
+    <xslt style="${xslt.dir}/familyTree2GenTree.xsl"
+          in="${build.dir}/familyTree.xml"
+	  out="${build.dir}/familyTree.tex" />
+
+  </target>
+
   <target name="graph" depends="person-tree">
 
     <jing rngfile="${schema.dir}/personTree.rnc"

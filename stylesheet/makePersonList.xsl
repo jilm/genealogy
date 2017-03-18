@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--
+
+    Substitute birth and death event directly into the person elements.
+    Result XML document should contain only person and wedding elements.
+
+-->
 <xsl:stylesheet version="2.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -15,6 +21,7 @@
     <xsl:template match="/">
         <list> 
             <xsl:apply-templates select="//person" />
+            <xsl:apply-templates select="//wedding" />
         </list>
     </xsl:template>
 
@@ -29,7 +36,8 @@
         <person>
             <xsl:attribute name="id" select="$id" />
             <xsl:attribute name="sex" select="@sex" />
-            <xsl:variable name="birth_verified" select="//birth[born[@href = $id]]" />
+            <xsl:variable name="birth_verified"
+                          select="//birth[born[@href = $id]]" />
             <xsl:variable name="birth" select="birth" />
             <xsl:apply-templates select="name" />
             <xsl:choose>
@@ -104,7 +112,21 @@
         <wedding>
             <xsl:apply-templates select="date" />
             <xsl:apply-templates select="place" />
+            <xsl:apply-templates select="bride" />
+            <xsl:apply-templates select="bridegroom" />
         </wedding>
+    </xsl:template>
+
+    <xsl:template match="bride" >
+      <bride>
+        <xsl:attribute name="href" select="@href" />
+      </bride>
+    </xsl:template>
+
+    <xsl:template match="bridegroom" >
+      <bridegroom>
+        <xsl:attribute name="href" select="@href" />
+      </bridegroom>
     </xsl:template>
 
     <xsl:template match="death">
