@@ -11,7 +11,7 @@ grammar {
   start = element list { listContent* }
 
   # and inside the list there may be any number of persons defined.
-  listContent = ( Person* )
+  listContent = ( Person* & Wedding* )
 
   # A person definition
   Person = element person { personContent }
@@ -33,6 +33,13 @@ grammar {
       , Death ?
   )
 
+  weddingContent = (
+    Date ?
+    , Place ?
+    , element bridegroom { Reference } ?
+    , element bride { Reference } ?
+  )
+
   # The name of the person.
   Name = element name { nameContent }
 
@@ -48,7 +55,12 @@ grammar {
   Birth = element birth { eventContent }
 
   # Wedding information, only for woman
-  Wedding = element wedding { eventContent }
+  Wedding = element wedding { 
+    Date ?
+    , Place ?
+    , element bride { Reference } ?
+    , element bridegroom { Reference } ?
+  }
 
   # The death information
   Death = element death { eventContent }
