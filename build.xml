@@ -17,8 +17,13 @@
     </jing>
 
     <xslt style="${xslt.dir}/makePersonList.xsl"
-          in="${src.dir}/pavlik.xml"
-	  out="${build.dir}/personList.xml" />
+          in="src/data.xml"
+	  out="${build.dir}/personList.xml" >
+
+        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
+
+    </xslt>
 
   </target>
 

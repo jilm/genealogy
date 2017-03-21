@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<list xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="data/pavlik.xml" />
+
+  <xi:include href="data/lukes.xml" />
+
+  <person id="JILM">
+    <name>
+      <first>Jiří</first>
+      <second>Lidinský</second>
+    </name>
+    <father href="LIDINSKYJIRI" />
+    <mather href="VLAHALUDMILA" />
+  </person> 
+
+  <person id="LIDINSKYJIRI">
+    <name>
+      <first>Jiří</first>
+      <second>Lidinský</second>
+    </name>
+   <father href="LIDINSKYJOSEF" />
+    <mather href="LUKESSIDONIE" />
+  </person>
+
+
+  <person id="LIDINSKYJOSEF">
+    <name>
+      <first>Josef</first>
+      <second>Lidinský</second>
+    </name>
+  </person>
+
+
+  <person id="VLAHALUDMILA">
+    <name>
+      <first>Ludmila</first>
+      <second>Vlahová</second>
+    </name>
+  </person>
+
+</list>
