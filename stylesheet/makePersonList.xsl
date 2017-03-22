@@ -57,6 +57,10 @@
                     <xsl:apply-templates select="father" />
                     <xsl:apply-templates select="mather" />
                 </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates select="father" />
+                    <xsl:apply-templates select="mather" />
+                </xsl:otherwise>
             </xsl:choose>
             <!--<xsl:apply-templates select="wedding" />-->
             <xsl:apply-templates select="death" />

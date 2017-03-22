@@ -6,7 +6,7 @@
 
   <xi:include href="data/lukes.xml" />
 
-  <person id="JILM">
+  <person id="JILM" sex="male">
     <name>
       <first>Jiří</first>
       <second>Lidinský</second>
@@ -15,7 +15,7 @@
     <mather href="VLAHALUDMILA" />
   </person> 
 
-  <person id="LIDINSKYJIRI">
+  <person id="LIDINSKYJIRI" sex="male">
     <name>
       <first>Jiří</first>
       <second>Lidinský</second>
@@ -25,7 +25,7 @@
   </person>
 
 
-  <person id="LIDINSKYJOSEF">
+  <person id="LIDINSKYJOSEF" sex="male">
     <name>
       <first>Josef</first>
       <second>Lidinský</second>
@@ -33,11 +33,20 @@
   </person>
 
 
-  <person id="VLAHALUDMILA">
+  <person id="VLAHALUDMILA" sex="female">
     <name>
       <first>Ludmila</first>
       <second>Vlahová</second>
     </name>
+    <mather href="OKRINAVLASTA" />
+  </person>
+
+  <person id="OKRINAVLASTA" sex="female">
+    <name>
+      <first>Vlasta</first>
+      <second>Ok5inov</second>
+    </name>
+    <mather href="PAVLIKFRANTISKA" />
   </person>
 
 </list>
