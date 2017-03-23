@@ -278,6 +278,20 @@
   </matrika>
   
   <matrika>
+    <signatura>10268</signatura>
+    <wedding>
+      <page><scan>79</scan></page>
+      <bridegroom href="BEROUNJOHANN" />
+      <bride href="MARGARETA" />
+      <place>Horní Újezd</place>
+      <date>28. Octobri 1781</date>
+      <note>
+        Beroun Johannes, (N3) Margareta Ružka (N18)
+      </note>
+    </wedding>
+  </matrika>
+  
+  <matrika>
     <signatura>10269</signatura>
     <wedding>
       <page><scan>10</scan></page>
