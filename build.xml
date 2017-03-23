@@ -25,6 +25,10 @@
 
     </xslt>
 
+    <xslt style="${xslt.dir}/formTextList.xsl"
+          in="${build.dir}/personList.xml"
+	  out="${build.dir}/personList.txt" />
+
   </target>
 
   <target name="person-tree" depends="person-list">

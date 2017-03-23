@@ -267,15 +267,22 @@
       <url>http://actapublica.eu/matriky/brno/prohlizec/6372/?strana=75</url>
       <date>29. July 1761</date>
       <place href="HUJEZD" />
-      <born href="MARGARETA" />
+      <born href="RUZICKAMARGARETA" />
       <page><scan>75</scan></page>
       <note>
         Mathias Růžička Margareta Time?
       </note>
-      <father href="" />
-      <mather href="" />
+      <father href="RUZICKAMATHIAS" />
+      <mather href="MARGARETA" />
     </birth>
   </matrika>
+
+  <person id="RUZICKAMATHIAS" sex="male">
+    <name>
+      <first>Mathias</first>
+      <second>Růžička</second>
+    </name>
+  </person>
   
   
   <matrika>
@@ -297,11 +304,18 @@
   </matrika>
   
   <matrika>
+
     <signatura>10268</signatura>
+    <archiv>MZABrno</archiv>
+    <title>Matrika oddaných v obci Horní Újezd.</title>
+    <author></author>
+    <volume></volume>
+    <year>1682--1784</year>
+
     <wedding>
       <page><scan>79</scan></page>
       <bridegroom href="BEROUNJOHANN" />
-      <bride href="MARGARETA" />
+      <bride href="RUZICKAMARGARETA" />
       <place>Horní Újezd</place>
       <date>28. Octobri 1781</date>
       <note>
@@ -329,6 +343,13 @@
     </name>
   </person>
 
+  <person id="RUZICKAMARGARETA" sex="female">
+    <name>
+      <first>Margareta</first>
+      <second>Růžička</second>
+    </name>
+  </person>
+
   <person id="MARGARETA" sex="female">
     <name>
       <first>Margareta</first>
@@ -346,7 +367,7 @@
       <place href="HUJEZD" house-nr="3" />
       <born href="BEROUNTHERESIE" />
       <father href="BEROUNJOHANN" />
-      <mather href="MARGARETA" />
+      <mather href="RUZICKAMARGARETA" />
     </birth>
   </matrika>
 
