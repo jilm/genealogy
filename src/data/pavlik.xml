@@ -260,6 +260,25 @@
   </matrika>
 
   <matrika>
+    <signatura>10260</signatura>
+    <archiv>MZABrno</archiv>
+    
+    <birth>
+      <url>http://actapublica.eu/matriky/brno/prohlizec/6372/?strana=75</url>
+      <date>29. July 1761</date>
+      <place href="HUJEZD" />
+      <born href="MARGARETA" />
+      <page><scan>75</scan></page>
+      <note>
+        Mathias Růžička Margareta Time?
+      </note>
+      <father href="" />
+      <mather href="" />
+    </birth>
+  </matrika>
+  
+  
+  <matrika>
     <signatura>10263</signatura>
     <archiv>MZABrno</archiv>
     
