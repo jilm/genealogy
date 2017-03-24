@@ -27,7 +27,10 @@
       <date>1861</date>
       <place href="LUKOV" />
     </birth>
-    <note>Nádeník v Moravských Budějovicích, dělník v Heřmanicích (na dráze)? šeledín v Lukově, obr. zemský 18. prapor</note>
+    <note>
+      Nádeník v Moravských Budějovicích, dělník v Heřmanicích (na dráze)?
+      čeledín v Lukově, obr. zemský 18. prapor.
+    </note>
     <father href="PAVLIKANTONIN" />
     <mather href="KREJCIKATERINA" />
   </person>
@@ -54,7 +57,8 @@
       <second>Pavlíková</second>
       <married>Lusková</married>
     </name>
-    <birth><date>6.11.1906</date>
+    <birth>
+      <date>6.11.1906</date>
       <place>Moravské Budějovice</place>
     </birth>
     <death><date>13.2.1988</date></death>
@@ -192,7 +196,7 @@
   </person>
 
 
-  <matrika>
+  <matrika id="MZA-10608">
 
     <signatura>10608</signatura>
     <archiv>MZABrno</archiv>
@@ -205,14 +209,20 @@
       <page><scan>20</scan><page>32</page></page>
       <date>19.6.1860</date>
       <place href="LUKOV" />
-      <note>Lukov 15; Jakob Wojtech Schunidr??? ??? in Lukau, sohn der katolishn ??? chs nach ??? Filip Wojtech ??? in Lukau ??? und Petronia geb. Vyhnalek ???; 30let; Rosalia Papouschek, Dienstmagd (sluzebna) tochter der ? + Johan Papouschek, ??? in Obr??? ??? in Lukau, Nr. 12, ??? 23 let. </note>
+      <note>
+        Lukov 15; Jakob Wojtech Schunidr??? ??? in Lukau, 
+        sohn der katolishn ??? chs nach ??? Filip Wojtech ??? in Lukau ???
+        und Petronia geb. Vyhnalek ???; 30let; Rosalia Papouschek,
+        Dienstmagd (sluzebna) tochter der ? + Johan Papouschek,
+        ??? in Obr??? ??? in Lukau, Nr. 12, ??? 23 let.
+      </note>
       <bridegroom href="VOJTECHJAKUB"/>
       <bride href="PAPOUSEKROSALIE"/>
     </wedding>
     
   </matrika>
 
-  <matrika>
+  <matrika id="MZA-10602">
     <signatura>10602</signatura>
     <archiv>MZABrno</archiv>
 
@@ -227,7 +237,7 @@
 
   </matrika>
   
-  <matrika>
+  <matrika id="MZA-10682">
     <signatura>10682</signatura>
     <archiv>MZABrno</archiv>
     
@@ -246,7 +256,7 @@
     
   </matrika>
 
-  <matrika>
+  <matrika id="MZA-10603">
     <signatura>10603</signatura>
     <title>Matrika narozených v obci Lukov, 1858--1871</title>
     <birth>
@@ -259,7 +269,7 @@
     </birth>
   </matrika>
 
-  <matrika>
+  <matrika id="MZA-10260">
     <signatura>10260</signatura>
     <archiv>MZABrno</archiv>
     
@@ -285,7 +295,7 @@
   </person>
   
   
-  <matrika>
+  <matrika id="MZA-10263">
     <signatura>10263</signatura>
     <archiv>MZABrno</archiv>
     
@@ -303,7 +313,7 @@
     </birth>
   </matrika>
   
-  <matrika>
+  <matrika id="MZA-10268">
 
     <signatura>10268</signatura>
     <archiv>MZABrno</archiv>
@@ -324,7 +334,7 @@
     </wedding>
   </matrika>
   
-  <matrika>
+  <matrika id="MZA-10269">
     <signatura>10269</signatura>
     <wedding>
       <page><scan>10</scan></page>
@@ -356,11 +366,15 @@
     </name>
   </person>
 
-  <matrika>
+  <matrika id="MZA-10262">
+
     <signatura>10262</signatura>
-    <title>Matrika narozených v obci Horní Újezd, 1784--1797</title>
+    <title>Matrika narozených v obci Horní Újezd.</title>
     <volume>Ji 595; 1418</volume>
     <note>Horni Ujezd, scan: 2--16</note>
+    <year>1784--1797</year>
+    <author>Římskokatolická církev</author>
+
     <birth>
       <page><scan>15</scan></page>
       <date>17.8.1796</date>
@@ -369,6 +383,7 @@
       <father href="BEROUNJOHANN" />
       <mather href="RUZICKAMARGARETA" />
     </birth>
+
   </matrika>
 
 </list>

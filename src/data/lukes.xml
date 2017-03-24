@@ -2,7 +2,7 @@
 
   <person id="LUKESSIDONIE" sex="female">
     <name>
-      <first>Sidonie (Zdeňka)</first>
+      <first>Sidonie (Zde�?ka)</first>
       <second>Lukešová</second>
       <married>Lidinská</married>
     </name>
@@ -189,7 +189,7 @@
   <person id="BUNAKAGNES" sex="female">
     <name>
       <first>Agnes</first>
-      <second>Buňáková</second>
+      <second>Bu�?áková</second>
       <married>Lukešová</married>
     </name>
     <birth>
@@ -204,14 +204,14 @@
   <person sex="male" id="BUNAKANTON">
      <name>
       <first>Anton</first>
-      <second>Buňák</second>
+      <second>Bu�?ák</second>
     </name>
   </person>
 
   <person id="DOLEZALMAE" sex="female">
     <name>
       <second>Doležal</second>
-      <married>Buňáková</married>
+      <married>Bu�?áková</married>
     </name>
   </person>
 

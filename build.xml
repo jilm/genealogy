@@ -80,4 +80,10 @@
     </delete>
   </target>
 
+  <target name="fix">
+    <fixcrlf srcdir="${src.dir}" includes="*.xml" />
+    <fixcrlf srcdir="${xslt.dir}" includes="*.xsl" />
+    <fixcrlf srcdir="${schema.dir}" includes="*.rnc" />
+  </target>
+
 </project>
