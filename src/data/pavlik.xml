@@ -201,7 +201,7 @@
     <signatura>10608</signatura>
     <archiv>MZABrno</archiv>
     <title>Matrika oddaných v obci Lukov.</title>
-    <author></author>
+    <author>Římskokatolická církev</author>
     <volume></volume>
     <year></year>
 
@@ -225,6 +225,8 @@
   <matrika id="MZA-10602">
     <signatura>10602</signatura>
     <archiv>MZABrno</archiv>
+    <title>Matrika narozených v obci Lukov.</title>
+    <author>Římskokatolická církev</author>
 
     <birth>
       <page><scan>8</scan><page>13</page></page>
@@ -240,6 +242,8 @@
   <matrika id="MZA-10682">
     <signatura>10682</signatura>
     <archiv>MZABrno</archiv>
+    <title>Matrika oddaných v obci Moravské Budějovice.</title>
+    <author>Římskokatolická církev</author>
     
     <wedding>
       <page><scan>142</scan><page>280</page></page>
@@ -259,6 +263,8 @@
   <matrika id="MZA-10603">
     <signatura>10603</signatura>
     <title>Matrika narozených v obci Lukov, 1858--1871</title>
+    <author>Římskokatolická církev</author>
+
     <birth>
       <page><scan>20</scan></page>
       <date>14.1.1868</date>
@@ -272,6 +278,8 @@
   <matrika id="MZA-10260">
     <signatura>10260</signatura>
     <archiv>MZABrno</archiv>
+    <title>Matrika narozených v obci Horní Újezd.</title>
+    <author>Římskokatolická církev</author>
     
     <birth>
       <url>http://actapublica.eu/matriky/brno/prohlizec/6372/?strana=75</url>
@@ -298,6 +306,8 @@
   <matrika id="MZA-10263">
     <signatura>10263</signatura>
     <archiv>MZABrno</archiv>
+    <title>Matrika narozených v obci Horní Újezd.</title>
+    <author>Římskokatolická církev</author>
     
     <birth>
       <url>http://actapublica.eu/matriky/brno/prohlizec/6375/?strana=39</url>
@@ -318,7 +328,7 @@
     <signatura>10268</signatura>
     <archiv>MZABrno</archiv>
     <title>Matrika oddaných v obci Horní Újezd.</title>
-    <author></author>
+    <author>Římskokatolická církev</author>
     <volume></volume>
     <year>1682--1784</year>
 
@@ -336,6 +346,8 @@
   
   <matrika id="MZA-10269">
     <signatura>10269</signatura>
+    <title>Matrika oddaných v obci ?.</title>
+    <author>Římskokatolická církev</author>
     <wedding>
       <page><scan>10</scan></page>
       <bridegroom href="PAPOUSEKJOHANN" />

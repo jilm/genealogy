@@ -6,6 +6,8 @@
 
   <xi:include href="data/lukes.xml" />
 
+  <xi:include href="data/okrina.xml" />
+
   <person id="JILM" sex="male">
     <name>
       <first>Jiří</first>
@@ -47,6 +49,7 @@
       <second>Ok5inov</second>
     </name>
     <mather href="PAVLIKFRANTISKA" />
+    <father href="OKRINAJAROSLAV" />
   </person>
 
 </list>

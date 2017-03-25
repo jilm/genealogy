@@ -28,7 +28,8 @@
     @BOOK{<xsl:value-of select="@id" />,
       author = "<xsl:apply-templates select="author" />",
       title = "<xsl:apply-templates select="title" />",
-      year = "<xsl:apply-templates select="year" />"
+      year = "<xsl:apply-templates select="year" />",
+      volume = "<xsl:apply-templates select="volume" />"
     }
   </xsl:template>
 
