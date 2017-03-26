@@ -23,23 +23,64 @@
       <first>František</first>
       <second>Pavlík</second>
     </name>
-    <birth>
-      <date>1861</date>
-      <place href="LUKOV" />
-    </birth>
     <note>
       Nádeník v Moravských Budějovicích, dělník v Heřmanicích (na dráze)?
       čeledín v Lukově, obr. zemský 18. prapor.
     </note>
-    <father href="PAVLIKANTONIN" />
-    <mather href="KREJCIKATERINA" />
   </person>
+
+  <place id="NIMPSOV" href="TREBIC-DISTRICT">
+    <parish>Nimpšov</parish>
+  </place>
+
+  <matrika id="MZA-11078">
+    <signatura>11078</signatura>
+    <title>Matrika narozených</title>
+
+    <birth>
+      <page><scan>22</scan></page>
+      <place href="NIMPSOV" house-nr="26" />
+      <date>1832</date>
+      <born href="PAVLIKANTONIN" />
+      <father href="PAVLIKMATHIAS" />
+      <mather href="NESVARAMARIEANNA" />
+    </birth>
+  </matrika>
+
+  <matrika id="MZA-11079">
+
+    <signatura>11079</signatura>
+    <title>Matrika narozených v obci Dědice, Hornice, Kojatice, Michálka, Nimpšov, Spetice, Velký Újezd.</title>
+    <author>Římskokatolická církev, Velký Újezd</author>
+    <volume>Ji~509; 2103</volume>
+    <year>1861--1885</year>
+
+    <birth>
+      <date>1. september 1862</date>
+      <place href="NIMPSOV" house-nr="26" />
+      <page><scan>16</scan><page>45</page></page>
+      <born href="PAVLIKFRANTISEK" />
+      <father href="PAVLIKANTONIN" />
+      <mather href="KREJCIKATERINA" />
+      <note>
+      </note>
+    </birth>
+  </matrika>
 
   <person id="KREJCIKATERINA" sex="female">
     <name>
       <first>Kateřina</first>
       <second>Krejčí</second>
       <married>Pavlíková</married>
+    </name>
+    <birth><date>1833</date></birth>
+    <father href="KREJCIGEORG" />
+  </person>
+
+  <person id="KREJCIGEORG" sex="male">
+    <name>
+      <first>Georg</first>
+      <second>Krejčí</second>
     </name>
   </person>
 
@@ -50,6 +91,51 @@
     </name>
     <note>Zedník v Nimpšově</note>
   </person>
+
+  <person id="PAVLIKMATHIAS" sex="male">
+    <name>
+      <first>Mathias</first>
+      <second>Pavlík</second>
+    </name>
+    <note>Zedník v Nimpšově</note>
+      <note>
+        Podle indexu narozených, 11096 sken 38 se jmenoval Matouš Pavlíček
+      </note>
+  </person>
+
+  <person id="NESVARAMARIEANNA" sex="female">
+    <name>
+      <first>Marie Anna</first>
+      <second>Nešvara</second>
+    </name>
+    <birth><date>1799</date></birth>
+  </person>
+  
+  <matrika id="MZA-11086">
+    <signatura>11086</signatura>
+    <archiv>MZABrno</archiv>
+    <title>Matrika oddaných v obci ?.</title>
+    <author>Římskokatolická církev</author>
+    <volume></volume>
+    <year></year>
+
+    <wedding>
+      <date>1825</date>
+      <place href="NIMPSOV" house-nr="26"/>
+      <page><scan>332</scan></page>
+      <bride href="NESVARAMARIEANNA" />
+      <bridegroom href="PAVLIKMATHIAS" />
+    </wedding>
+
+    <wedding>
+      <date>1862</date>
+      <place href="NIMPSOV"/>
+      <page><scan>347</scan></page>
+      <bride href="KREJCIKATERINA" />
+      <bridegroom href="PAVLIKANTONIN" />
+    </wedding>
+    
+  </matrika>
 
   <person id="PAVLIKLUDMILA" sex="female">
     <name>
@@ -112,14 +198,36 @@
       <date>26.11.1954</date>
       <place>Jakubov</place>
     </death>
-    <wedding cite="MO-LUKOV-10608" scan="36" page="67">
-      <date>18.10.1887</date>
-      <place href="LUKOV" />
-    </wedding>
     <note>služka v Lukově</note>
     <father href="VOJTECHJAKUB" />
     <mather href="PAPOUSEKROSALIE" />
   </person>
+
+  <matrika id="MZA-10608">
+
+    <signatura>10608</signatura>
+    <title>Matrika oddaných v obci Lukov.</title>
+    <year>1831--1931</year>
+
+    <wedding>
+      <page><scan>36</scan><page>67</page></page>
+      <date>18.10.1887</date>
+      <place href="LUKOV" />
+      <bride href="VOJTECHANTONIE" />
+      <bridegroom href="PAVLIKFRANTISEK" />
+      <note>
+        18. října 1887
+        Lukov 24
+        František Pavlík, čeledín v Lukově, obr. zemský 18. prapor, manželský
+        syn žijících katolíků: Antonína Pavlíka, domkáře v Nimpšově a
+        Kateřiny, rozené Krejčí (25 let)
+        Lukov 61
+        Antonia Vojtěch, služka v Lukově, manželská dcera katolických rodičů:
+        Jakuba Vojtěcha, domkáře v Lukově a Rosalie rozené Papoušek (19 let)
+      </note>
+    </wedding>
+
+  </matrika>
 
   <person id="VOJTECHJAKUB" sex="male" >
     <name>
