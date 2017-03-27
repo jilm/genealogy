@@ -1,0 +1,543 @@
+<list>
+
+  <person id="OKRINAJAROSLAV" sex="male">
+    <name>
+      <first>Jaroslav</first>
+      <second>Okřina</second>
+    </name>
+    <birth>
+      <date>1.4.1904</date>
+      <place>Přešovice okres Třebíč</place>
+    </birth>
+    <death>
+      <date>21.4.1976</date>
+      <place>Brno</place>
+    </death>
+    <notes>
+      Jaroslav Okřina měl syny Milana (milánek) a Pavla. Milánek zdědil 20000kč, což bylo příčinou rodinné křivdy.
+      Byl osobní řidič nějakého ředitele, dokázal všechno sehnat. Bydlel v Brně. Byl dvakrát ženatý.
+    </notes>
+    <father href="OKRINAALOIS" />
+    <mather href="SKALAMARIE" />
+  </person>
+
+  <note>
+  1904 Okřina Jaroslav, Přešovice 1.
+18/8 1902 Okřina Karolína Přešovice 509
+22/11 1900 Okřina Vincenc Přešovice 504
+11/4 1899 Okřina Růžena Přešovice 499
+</note>
+
+  <person id="OKRINAVINCENC" sex="male">
+    <name>
+      <first>Vincenc</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-ROUCHOVANY-10848" page="504" scan="240">
+      <date>22.11.1900</date>
+      <place>Přešovice 24</place>
+    </birth>
+    <father href="OKRINAALOIS" />
+    <mather href="SKALAMARIE" />
+    <note>Vystoupil z církve římsko katolické přepis městské rady v Kroměříži
+      dto 19/7 1923 č. 14.388</note>
+  </person>
+
+  <person id="SKALAMARIE" sex="female" >
+    <name>
+      <first>Marie</first>
+      <second>Skálová</second>
+      <married>Okřinová</married>
+    </name>
+    <birth cite="MN-CHRUDIM-3733" page="192" scan="192" >
+      <date>21.12.1875</date>
+      <place>Stíčany</place>
+      <note>
+        Číslo domu: 29
+        Otec: Skála František, katolík, domkář a zedník ze Stíčan, č. d. 29;
+              manželský syn, zemřelého Jana Skály, domkáře ze Stíčan; č. d. 29
+              a manželky jeho Anny, rozené Ditrichovy ze Stíčan č. d. 30?,
+              oba hejtmanství chrudimského
+        Matka: Marie, katolička, maželská dcera Karla Vaigla, souseda z Chocně;
+               hejtmanství vysokomýtského; - a manželky jeho Marie, rozené 
+               Dandovy z Kostelce nad Orlicí; č. d. 10; hejtmanství
+               rychnovského
+        Bába:  Anna Skálová ze Stíčan č. d. 29 (nezkušená)
+        Kmotra: Anna Koblížková, vdova po zemřelém Václavovi Koblížkovi,
+                domkáři ze stíčan č. d. 160
+                František Tesař, polýr a domkář ve Vejvanovicích, č. d. 53
+      </note>
+    </birth>
+    <wedding cite="MO-VALEC-11061" page="203" scan="100">
+      <date>9.2.1897</date>
+      <place>Valeč</place>
+    </wedding>
+    <father href="SKALAFRANTISEK" />
+    <mather href="VAIGLMARIE" />
+    <note>Ke svatbě předložila křestní list Vejvanovice</note>
+  </person>
+
+  <person id="VAIGLMARIE" sex="female">
+    <name>
+      <first>Marie</first>
+      <second>Vaiglová</second>
+      <married>Skálová</married>
+    </name>
+    <birth>
+      <date>29.4.1852</date>
+      <place>Vejvanovice</place>
+    </birth>
+    <wedding cite="MO-CHRUDIM-3735" page="26">
+      <date>7.2.1871</date>
+      <place>Stíčany</place>
+    </wedding>
+    <father href="VAIGLKAREL" />
+    <mather href="DANDMARIE" />
+    <note>V roce 1897 stále žijící; otec pravděpodobně Vaigl Karel</note>
+  </person>
+
+  <person id="DANDMARIE" sex="female" >
+    <name>
+      <first>Marie</first>
+      <second>Dandovy</second>
+    </name>
+    <note>z Kostelce nad Orlicí č. d. 10 hejtmanství rychnovského</note>
+  </person>
+
+  <person id="VAIGLKAREL" sex="male" >
+    <name>
+      <first>Karel</first>
+      <second>Vaigl</second>
+    </name>
+    <note>Soused z Chocně, hejtmanství vysokomýtského</note>
+  </person>
+
+  <person id="SKALAFRANTISEK" sex="male">
+    <name>
+      <first>František</first>
+      <second>Skála</second>
+    </name>
+    <birth cite="MN-CHRUDIM-1051" scan="169">
+      <date>25.11.1843</date>
+      <place>Stíčany 29</place>
+    </birth>
+    <death cite="MZ-CHRUDIM-3736" scan="151">
+      <date>27.7.1879</date>
+      <place>Stíčany č. 29</place>
+    </death>
+    <father href="SKALAJAN" />
+    <mather href="DITRICHANNA" />
+    <note>Domkář ve Stíčanech, č.d. 29 okres Chrudim (Čechy)</note>
+    <note>V roce 1897 už pravděpodobně mrtev</note>
+  </person>
+
+  <person id="DITRICHANNA" sex="female" >
+    <name>
+      <first>Anna</first>
+      <second>Ditrich</second>
+    </name>
+    <birth>
+      <date>1805</date>
+      <place>Stíčany</place>
+    </birth>
+    <wedding cite="MO-CHRUDIM-1053" scan="79" page="85">
+      <date>24.1.1826</date>
+      <place>Stíčany č. 29</place>
+    </wedding>
+    <note>ze Stíčan c.d. 30 hejtmanstvi chrudimského</note>
+    <father href="DITRICHJOSEF" />
+    <mather href="MEJSKYANNA" />
+  </person>
+
+  <person id="DITRICHJOSEF" sex="male">
+    <name>
+      <first>Josef</first>
+      <second>Ditrich</second>
+    </name>
+    <note>Stíčany č. 31</note>
+  </person>
+
+  <person id="MEJSKYANNA" sex="female">
+    <name>
+      <first>Anna</first>
+      <second>Mejská</second>
+      <married>Ditrichová</married>
+    </name>
+    <note>Stíčany č. 29</note>
+  </person>
+
+  <person id="SKALAJAN" sex="male">
+    <name>
+      <first>Jan</first>
+      <second>Skála</second>
+    </name>
+    <birth>
+      <date>1797</date>
+      <place>Stíčany</place>
+    </birth>
+    <father href="SKALAJOSEF" />
+    <mather href="PETRICEKKATERINA" />
+    <note>Katolík, zedník, Domkář ze Stíčan c.d. 29</note>
+  </person>
+
+  <person id="PETRICEKKATERINA" sex="female">
+    <name>
+      <first>Kateřina</first>
+      <second>Petříčková</second>
+      <married>Skálová</married>
+    </name>
+    <note>Stíčany č. 25</note>
+  </person>
+
+  <person id="SKALAJOSEF" sex="male">
+    <name>
+      <first>Josef</first>
+      <second>Skála</second>
+    </name>
+    <note>Poklasný ve Stíčanech č. 15</note>
+  </person>
+
+  <person id="OKRINAALOIS" sex="male" >
+    <name>
+      <first>Aloys</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11056" page="311" scan="150">
+      <date>27.11.1873</date>
+      <place>Valeč 80</place>
+    </birth>
+    <note>Obuvník v Pavlicích</note>
+    <father href="OKRINAJAKUB" />
+    <mather href="JONASFRANTISKA" />
+  </person>
+
+  <person id="OKRINASILVESTR" sex="male" >
+    <name>
+      <first>Silvestr</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11056" page="335" scan="163">
+      <date>30.11.1878</date>
+      <place>Valeč</place>
+    </birth>
+    <death cite="MZ-VALEC-11065" page="205" scan="102">
+      <date>12.1.1894</date>
+      <place>Valeč 50</place>
+    </death>
+    <father href="OKRINAJAKUB" />
+    <mather href="JONASFRANTISKA" />
+  </person>
+
+  <person id="OKRINAFRANZML" sex="male">
+    <name>
+      <first>Franz</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11056" page="299" scan="144">
+      <date>7.9.1871</date>
+      <place>Valeč</place>
+    </birth>
+    <father href="OKRINAJAKUB" />
+    <mather href="JONASFRANTISKA" />
+  </person>
+
+  <person id="OKRINAMARIA" sex="female">
+    <name>
+      <first>Maria</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11056" page="296" scan="138">
+      <date>31.8.1869</date>
+      <place>Valeč</place>
+    </birth>
+    <death cite="MZ-VALEC-11065" page="193" scan="96">
+      <date>10.5.1885</date>
+      <place>Valeč 50</place>
+      <note>psotnik</note>
+    </death>
+    <father href="OKRINAJAKUB" />
+    <mather href="JONASFRANTISKA" />
+  </person>
+
+  <person id="JONASFRANTISKA" sex="female">
+    <name>
+      <first>Františka</first>
+      <second>Jonášová</second>
+      <married>Okřinová</married>
+    </name>
+    <birth cite="MN-VALEC-11055" scan="116" page="265">
+      <date>16.9.1836</date>
+      <place>Valeč</place>
+    </birth>
+    <wedding cite="MO-VALEC-11061" page="131" scan="62">
+      <date>6.9.1859</date>
+      <place>Valeč</place>
+    </wedding>
+    <note>Krejčí ve Valči</note>
+    <father href="JONASJAKUB" />
+    <mather href="MANFRANTISKA" />
+    <note>V roce 1897 pravděpodobně ještě žije</note>
+  </person>
+
+  <person id="JONASJAKUB" sex="male">
+    <name>
+      <first>Jakub</first>
+      <second>Jonáš</second>
+    </name>
+    <birth href="MZABRNO-11054-115-JONASJAKUB" />
+    <father href="JONASSIMON" />
+    <mather href="WALLA" />
+  </person>
+
+  <person id="MANFRANTISKA" sex="female">
+    <name>
+      <first>Františka</first>
+      <second>Manová</second>
+      <married>Jonášová</married>
+    </name>
+    <birth href="MZABRNO-11054-28-MANNFRANCISKA" />
+    <wedding href="MZABRNO-11060-60-JONASMANN" />
+    <father href="MANNJAKUB" />
+    <mather href="WODLANTONIA" />
+  </person>
+
+  <person id="OKRINAJAKUB" sex="male">
+    <name>
+      <first>Jakub</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11055" page="202" scan="85">
+      <date>20.7.1827</date>
+      <place>Valeč 54</place>
+    </birth>
+    <death cite="MZ-VALEC-11065" page="200" scan="100">
+      <date>6.12.1890</date>
+      <place>Valeč</place>
+      <note>plicní neduh</note>
+    </death>
+    <note>domkář a Obuvník ve Valči</note>
+    <father href="OKRINAVACLAV" />
+    <mather href="ONDRACEKANNA" />
+  </person>
+
+  <person id="OKRINAJOSEF" sex="male">
+    <name>
+      <first>Josef</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11055" page="195" scan="81">
+      <date>20.1.1825</date>
+      <place>Valeč 54</place>
+    </birth>
+    <death cite="MZ-VALEC-11065" page="177" scan="88">
+      <date>21.7.1876</date>
+      <place>Valeč 18</place>
+      <note>rak zaludku</note>
+    </death>
+    <note>nádeník</note>
+    <father href="OKRINAVACLAV" />
+    <mather href="ONDRACEKANNA" />
+  </person>
+
+  <person id="OKRINAFRANZ" sex="male">
+    <name>
+      <first>Franz</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11055" page="210" scan="89">
+      <date>17.12.1829</date>
+      <place>Valeč 54</place>
+    </birth>
+    <death cite="MZ-VALEC-11065" page="199" scan="99">
+      <date>9.3.1890</date>
+      <place>Valeč 93</place>
+      <note>mrtvice</note>
+    </death>
+    <father href="OKRINAVACLAV" />
+    <mather href="ONDRACEKANNA" />
+  </person>
+
+  <person id="OKRINAMARIANNA" sex="female">
+    <name>
+      <first>Marianna</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11055" page="231" scan="99">
+      <date>21.8.1832</date>
+      <place>Valeč 54</place>
+    </birth>
+    <father href="OKRINAVACLAV" />
+    <mather href="ONDRACEKANNA" />
+  </person>
+
+  <person id="OKRINAVACLAVML" sex="male">
+    <name>
+      <first>Václav</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11055" page="247" scan="107">
+      <date>26.8.1834</date>
+      <place>Valeč 54</place>
+    </birth>
+    <father href="OKRINAVACLAV" />
+    <mather href="ONDRACEKANNA" />
+  </person>
+
+  <person id="OKRINAFRANTISKA" sex="female">
+    <name>
+      <first>Františka</first>
+      <second>Okřinová</second>
+    </name>
+    <birth cite="MN-VALEC-11055" page="265" scan="116">
+      <date>22.9.1836</date>
+      <place>Valeč 54</place>
+    </birth>
+    <father href="OKRINAVACLAV" />
+    <mather href="ONDRACEKANNA" />
+  </person>
+
+  <person id="OKRINAFERDINAND" sex="male">
+    <name>
+      <first>Ferdinand</first>
+      <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11055" page="285" scan="126">
+      <date>16.7.1839</date>
+      <place>Valeč 54</place>
+    </birth>
+    <father href="OKRINAVACLAV" />
+    <mather href="ONDRACEKANNA" />
+  </person>
+
+  <person id="OKRINAVACLAV" sex="male" >
+    <name>
+     <first>Václav</first>
+     <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11054" page="60" scan="106">
+      <date>1802</date>
+      <place>Valeč 28</place>
+    </birth>
+    <note>čtvrtník ve Valči</note>
+    <father href="OKRINAJOHANN" />
+  </person>
+
+  <person id="OKRINAJAKUBST" sex="male" >
+    <name>
+     <first>Jakub</first>
+     <second>Okřina</second>
+    </name>
+    <birth cite="MN-VALEC-11054" page="47" scan="99">
+      <date>15.4.1797</date>
+      <place>Valeč 44</place>
+    </birth>
+    <father href="OKRINAJOHANN" />
+  </person>
+
+
+  <person id="OKRINAMARIAST" sex="female" >
+    <name>
+     <first>Maria</first>
+     <second>Okřinová</second>
+    </name>
+    <birth cite="MN-VALEC-11054" page="51" scan="101">
+      <date>21.3.1799</date>
+      <place>Valeč 44</place>
+    </birth>
+    <father href="OKRINAJOHANN" />
+  </person>
+
+  <person id="OKRINAJOHANN" sex="male">
+    <name>
+      <first>Johann</first>
+      <second>Okrina</second>
+    </name>
+    <birth>
+      <date>1770</date>
+    </birth>
+    <death cite="MZ-VALEC-11064" scan="45" page="166">
+      <date>1.7.1830</date>
+      <place>Valeč 54</place>
+    </death>
+  </person>
+
+  <person id="ONDRACEKANNA" sex="female" >
+    <name>
+      <first>Anna</first>
+      <second>Ondráčková</second>
+      <married>Okřinová</married>
+    </name>
+    <birth cite="MN-VALEC-11054" page="66" scan="109" >
+      <date>16.7.1804</date>
+      <place>Valeč 27</place>
+    </birth>
+    <wedding cite="MO-VALEC-11059" page="41" scan="49">
+      <date>29.6.1824</date>
+      <place>Valeč 54</place>
+    </wedding>
+    <father href="ONDRACEKJOSEF" />
+  </person>
+
+  <person id="ONDRACEKIVAN" sex="male" >
+    <name>
+      <first>Ivan</first>
+      <second>Ondráček</second>
+    </name>
+    <birth cite="MN-VALEC-11054" page="55" scan="103" >
+      <date>25.9.1800</date>
+      <place>Valeč 27</place>
+    </birth>
+    <father href="ONDRACEKJOSEF" />
+  </person>
+
+  <person id="ONDRACEKJOSEF" sex="male" >
+    <name>
+      <first>Josef</first>
+      <second>Ondráček</second>
+    </name>
+    <note>Podle KZ-VALEC-11065, sken 92, zemrel nejaky Josef Ondracek dne
+    13.6.1881 ve veku 76 let</note>
+  </person>
+
+<person id="MANNJAKUB" sex="male">
+
+  <name>
+    <first>Jukub</first>
+    <second>Mann</second>
+  </name>
+
+  <birth>
+    <place>Plešice 8</place>
+  </birth>
+  <father href="MANNMARTIN" />
+</person>
+
+<person id="MANNMARTIN" sex="male">
+  <name>
+    <first>Martin</first>
+    <second>Mann</second>
+  </name>
+  <birth>
+    <place>Willimowitz</place>
+  </birth>
+</person>
+
+<person id="WODLANTONIA" sex="female">
+  <name>
+    <first>Antonia</first>
+    <second>Wodl</second>
+    <married>Mann</married>
+  </name>
+  <birth href="MZABRNO-11053-95-WODLANTONIA" />
+  <father href="WODLANTONIUS" />
+</person>
+
+<person id="WODLANTONIUS" sex="male">
+  <name>
+    <first>Antonius</first>
+    <second>Wodl</second>
+  </name>
+</person>
+
+
+</list>

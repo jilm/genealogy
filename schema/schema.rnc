@@ -111,10 +111,13 @@ grammar {
   Matrika = element matrika { matrikaContent }
 
   matrikaContent = ( 
-    Signatura ?
+    attribute id { text }
+    & Signatura ?
     & element title { text } ?
     & element volume { text } ?
     & element archiv { text } ?
+    & element year { text } ?
+    & element author { text } ?
     & element original-name { text } ?
     & Record * 
     & Note *

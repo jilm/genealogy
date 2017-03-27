@@ -39,10 +39,19 @@
             <xsl:variable name="birth_verified"
                           select="//birth[born[@href = $id]]" />
             <xsl:variable name="birth" select="birth" />
+            <!-- person name -->
             <xsl:apply-templates select="name" />
+            <!-- birth details -->
             <xsl:choose>
                 <xsl:when test="not(empty($birth_verified))">
+                    <!-- get source -->
+                    <xsl:variable name="source"
+                         select="//matrika[contains(birth, $birth_verified)]" />
+                    <xsl:variable name="scan"
+                         select="$birth_verified/page/scan" />
                     <birth verified="true">
+                        <xsl:attribute name="cite" select="$source/@id" />
+                        <xsl:attribute name="scan" select="$scan" />
                         <xsl:apply-templates select="$birth_verified/date" />
                         <xsl:apply-templates select="$birth_verified/place" />
                     </birth>
@@ -57,6 +66,10 @@
                     <xsl:apply-templates select="father" />
                     <xsl:apply-templates select="mather" />
                 </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates select="father" />
+                    <xsl:apply-templates select="mather" />
+                </xsl:otherwise>
             </xsl:choose>
             <!--<xsl:apply-templates select="wedding" />-->
             <xsl:apply-templates select="death" />

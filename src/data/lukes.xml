@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <list>
 
   <person id="LUKESSIDONIE" sex="female">
@@ -31,7 +33,7 @@
       <date>4.4.1904</date>
       <place>Záluží okres Liberec</place>
     </birth>
-    <death>
+   <death>
       <date>27.5.1970</date>
       <place>Liberec</place>
     </death>
@@ -40,7 +42,8 @@
     <note>Praha - venkov - jih, město Trnová potvrzuje, že Ferdinand Lukeš povoláním horník, narozen 4.4.1904, ženatý, má v této obci právo domovské, jehož nabyl po svém otci. V Trnově dne 25.4.1947</note>
   </person>
 
-  <person id="LUKESJOSEF" sex="male" >
+
+ <person id="LUKESJOSEF" sex="male" >
     <name>
       <first>Josef</first>
       <second>Lukeš</second>
@@ -50,7 +53,8 @@
     <mather href="TANCLFRANTISKA" />
   </person>
 
-  <person id="TANCLFRANTISKA" sex="female" >
+
+ <person id="TANCLFRANTISKA" sex="female" >
     <name>
       <first>Františka</first>
       <second>Tanclová</second>
@@ -75,7 +79,7 @@
   </person>
 
   <person sex="male" id="VOTROUBEKJAN">
-    <name>
+   <name>
       <first>Jan</first>
       <second>Votroubek</second>
     </name>
@@ -108,112 +112,222 @@
     </name>
   </person>
 
+
+
   <person sex="female" id="BREZINAANNA">
+
     <name>
+
       <first>Anna</first>
+
       <second>Březinová</second>
+
       <married>Tanclová</married>
+
     </name>
+
     <note>z Rožnova</note>
+
   </person>
+
+
 
   <person id="LUKESFRANTISEK" sex="male">
+
     <name>
+
       <first>František</first>
+
       <second>Lukeš</second>
+
     </name>
+
     <birth>
+
       <date>4.4.1847</date>
+
       <place>Trnová 25</place>
+
     </birth>
+
     <father href="LUKESFRANTISEKII" />
+
     <mather href="LAHNJOSEFA" />
+
     <note>Mistr truhlářský</note>
+
   </person>
+
+
 
   <person sex="female" id="LAHNJOSEFA">
+
     <name>
+
       <first>Josefa</first>
+
       <second>Lánová</second>
+
       <married>Lukešová</married>
+
     </name>
+
     <birth><date>12.2.1812</date></birth>
+
     <wedding href="TRNOVA04:21" />
+
     <father href="LAHNFRANTISEK" />
+
     <mather href="SALLINGERJOSEFA" />
+
   </person>
+
+
 
   <person sex="male" id="LAHNFRANTISEK">
+
     <name>
+
       <first>František</first>
+
       <second>Láhn</second>
+
     </name>
+
   </person>
+
+
 
   <person sex="female" id="SALLINGERJOSEFA">
+
     <name>
+
       <first>Josefa</first>
+
       <second>Sallingerová</second>
+
       <married>Láhnová</married>
+
     </name>
+
   </person>
+
+
 
   <person id="LUKESFRANTISEKII" sex="male" >
+
     <name>
+
       <first>František</first>
+
       <second>Lukeš</second>
+
     </name>
+
     <birth href="TRNOVA02:32" />
+
     <father href="LUKESJOSEFII" />
+
     <mather href="POTUCEKANNA" />
+
     <note>Mistr obuvnický</note>
+
   </person>
+
+
 
   <person id="LUKESJOSEFII" sex="male" >
+
     <name>
+
       <first>Josef</first>
+
       <second>Lukeš</second>
+
     </name>
+
   </person>
 
+
+
   <person id="POTUCEKANNA" sex="female" >
+
     <name>
+
       <first>Anna</first>
+
       <second>Potůčková</second>
+
       <married>Lukešová</married>
+
     </name>
+
   </person>
+
+
+
+
 
 
 
   <person id="BUNAKAGNES" sex="female">
+
     <name>
+
       <first>Agnes</first>
+
       <second>Buňáková</second>
+
       <married>Lukešová</married>
+
     </name>
+
     <birth>
+
       <date>12.4.1879</date>
+
       <place>Brunšov</place>
+
     </birth>
+
     <father href="BUNAKANTON" />
+
     <mather href="DOLEZALMAE" />
+
     <note>Matrika narozenych neni k dnesnimu dni 30.12.2016 digitalizovana.</note>
+
   </person>
+
+
 
   <person sex="male" id="BUNAKANTON">
+
      <name>
+
       <first>Anton</first>
+
       <second>Buňák</second>
+
     </name>
+
   </person>
+
+
 
   <person id="DOLEZALMAE" sex="female">
+
     <name>
+
       <second>Doležal</second>
+
       <married>Buňáková</married>
+
     </name>
+
   </person>
 
+
+
   
+
 </list>

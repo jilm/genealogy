@@ -17,8 +17,17 @@
     </jing>
 
     <xslt style="${xslt.dir}/makePersonList.xsl"
-          in="${src.dir}/pavlik.xml"
-	  out="${build.dir}/personList.xml" />
+          in="src/data.xml"
+	  out="${build.dir}/personList.xml" >
+
+        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
+
+    </xslt>
+
+    <xslt style="${xslt.dir}/formTextList.xsl"
+          in="${build.dir}/personList.xml"
+	  out="${build.dir}/personList.txt" />
 
   </target>
 
@@ -45,6 +54,11 @@
           in="${build.dir}/familyTree.xml"
 	  out="${build.dir}/familyTree.tex" />
 
+    <exec executable="xelatex"
+          dir="${build.dir}">
+      <arg file="${build.dir}/JILM_tree.tex" />
+    </exec>
+
   </target>
 
   <target name="graph" depends="person-tree">
@@ -69,6 +83,47 @@
     <delete>
       <fileset dir="${build.dir}" includes="*" />
     </delete>
+  </target>
+
+  <target name="fix">
+    <fixcrlf srcdir="${src.dir}" includes="*.xml" />
+    <fixcrlf srcdir="${xslt.dir}" includes="*.xsl" />
+    <fixcrlf srcdir="${schema.dir}" includes="*.rnc" />
+  </target>
+
+  <target name="book" depends="person-list">
+    <xslt style="${xslt.dir}/makeBibliography.xsl"
+          in="src/data.xml"
+      	  out="${build.dir}/sources.bib" >
+
+        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
+
+    </xslt>
+    <xslt style="${xslt.dir}/formLatexList.xsl"
+          in="${build.dir}/personList.xml"
+      	  out="${build.dir}/personList.tex" >
+
+        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
+
+    </xslt>
+    <exec executable="pdflatex"
+          dir="${build.dir}">
+      <arg file="${build.dir}/personList.tex" />
+    </exec>
+    <exec executable="bibtex"
+          dir="${build.dir}">
+      <arg line="personList" />
+    </exec>
+    <exec executable="pdflatex"
+          dir="${build.dir}">
+      <arg file="${build.dir}/personList.tex" />
+    </exec>
+    <exec executable="pdflatex"
+          dir="${build.dir}">
+      <arg file="${build.dir}/personList.tex" />
+    </exec>
   </target>
 
 </project>
