@@ -3,9 +3,13 @@
 <xsl:stylesheet version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+  <xsl:import href="substituteValue.xsl" />
+  <xsl:import href="nameFormat.xsl" />
+  <xsl:import href="functions.xsl" />
+
   <xsl:output method="text" encoding="utf-8" />
 
-  <xsl:variable name="index" select="doc('../index.xml')//index" />
+  <xsl:variable name="index" select="doc('../build/index.xml')//index" />
 
   <xsl:template match="/html">
 \documentclass[a4paper,11pt]{book}
@@ -36,8 +40,9 @@
 \newcommand{\wwii}{\index{Druhá světová válka}}
 
 \input{index.tex}
-\input{footnotes.tex}
-\input{alias.tex}
+%\input{footnotes.tex}
+%\input{alias.tex}
+\mainmatter
     <xsl:apply-templates />
 \backmatter
 
@@ -69,6 +74,10 @@
     <xsl:variable name="ref" select="@href" />
     <xsl:apply-templates />
     <xsl:copy-of select="concat('\index{', $index[@id=$ref]/text(), '}')" />
+  </xsl:template>
+
+  <xsl:template match="footnote">
+    \footnote{<xsl:apply-templates />}
   </xsl:template>
 
 </xsl:stylesheet>

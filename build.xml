@@ -91,7 +91,16 @@
     <fixcrlf srcdir="${schema.dir}" includes="*.rnc" />
   </target>
 
+  <target name="index">
+  </target>
+
+  <!--
+
+    Make the whole book.
+
+  -->
   <target name="book" depends="person-list">
+
     <xslt style="${xslt.dir}/makeBibliography.xsl"
           in="src/data.xml"
       	  out="${build.dir}/sources.bib" >
@@ -100,6 +109,7 @@
             value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
 
     </xslt>
+
     <xslt style="${xslt.dir}/formLatexList.xsl"
           in="${build.dir}/personList.xml"
       	  out="${build.dir}/personList.tex" >
@@ -108,6 +118,7 @@
             value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
 
     </xslt>
+
     <exec executable="pdflatex"
           dir="${build.dir}">
       <arg file="${build.dir}/personList.tex" />
