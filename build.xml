@@ -31,6 +31,37 @@
 
   </target>
 
+  <target name="lists">
+
+    <xslt style="${xslt.dir}/makePersonList.xsl"
+          in="src/data.xml"
+	  out="${build.dir}/personList.xml" >
+
+        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
+
+    </xslt>
+
+    <xslt style="${xslt.dir}/makeBirthList.xsl"
+          in="src/data.xml"
+	  out="${build.dir}/birthList.xml" >
+
+        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
+
+    </xslt>
+
+    <xslt style="${xslt.dir}/makeWeddingList.xsl"
+          in="src/data.xml"
+	  out="${build.dir}/weddingList.xml" >
+
+        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
+
+    </xslt>
+  
+  </target>
+
   <target name="person-tree" depends="person-list">
 
     <jing rngfile="${schema.dir}/personList.rnc"
@@ -135,6 +166,15 @@
           dir="${build.dir}">
       <arg file="${build.dir}/personList.tex" />
     </exec>
+
+    <xslt style="${xslt.dir}/makeBook.xsl"
+          in="src/book/text.xml"
+      	  out="${build.dir}/book.tex" >
+
+        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
+
+    </xslt>
   </target>
 
 </project>

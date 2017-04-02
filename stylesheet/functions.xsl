@@ -10,7 +10,7 @@
                 xmlns:jilm="http://www.lidinsky.cz" >
 
     <xsl:variable name="personList" select="doc('../build/personList.xml')" />
-    <xsl:variable name="weddingList" select="doc('../build/weddinList.xml')" />
+    <xsl:variable name="weddingList" select="doc('../build/weddingList.xml')" />
 
     <xsl:function name="jilm:getPerson">
         <xsl:param name="ref" />
@@ -56,9 +56,9 @@
     <xsl:function name="jilm:analyze-date">
         <xsl:param name="date" />
         <xsl:variable name="tokenized" select="reverse(tokenize($date, '.'))" />
-        <xsl:variable name="year" select="$tokenized[0]" />
-        <xsl:variable name="month" select="$tokenized[1]" />
-        <xsl:variable name="day" select="$tokenized[2]" />
+        <xsl:variable name="year" select="$tokenized[1]" />
+        <xsl:variable name="month" select="$tokenized[2]" />
+        <xsl:variable name="day" select="$tokenized[3]" />
         <date>
             <xsl:if test="not(empty($year))">
                 <year><xsl:value-of select="$year" /></year>

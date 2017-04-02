@@ -9,8 +9,8 @@
                 xmlns:jilm="http://www.lidinsky.cz" >
 
     <xsl:template match="date">
-        <xsl:variable name="date" select="jilm:analyze-data(text())" />
-        <xsl:value-of select="$date/year" />
+        <xsl:variable name="date" select="jilm:analyze-date(text())" />
+        <xsl:value-of select="$date//year" />
     </xsl:template>
 
 </xsl:stylesheet>

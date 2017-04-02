@@ -24,6 +24,7 @@
     person.wedding
     person.wedding.place
     person.wedding.date
+    index
 
 -->
 <xsl:stylesheet version="2.0"
@@ -54,6 +55,18 @@
         <xsl:variable name="person" select="jilm:getPerson($ref)" />
         <!--<xsl:variable name="birth" select="jilm:getBirth($ref)" />-->
         <xsl:apply-templates select="$person/name" />
+    </xsl:template>
+
+    <xsl:template match="value[@key = 'index']" priority="2" >
+        <xsl:variable name="ref" select="@href" />
+        <xsl:variable name="person" select="jilm:getPerson($ref)" />
+        <xsl:value-of select="concat($person/name/second/text(), '!', $person/name/first/text())" />
+    </xsl:template>
+
+    <xsl:template match="value[@key = 'person.wedding.date']" priority="2" >
+        <xsl:variable name="ref" select="@href" />
+        <xsl:variable name="wedding" select="jilm:getWedding($ref)" />
+        <xsl:apply-templates select="$wedding/date" />
     </xsl:template>
 
 <!--
