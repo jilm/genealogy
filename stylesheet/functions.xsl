@@ -55,7 +55,8 @@
 
     <xsl:function name="jilm:analyze-date">
         <xsl:param name="date" />
-        <xsl:variable name="tokenized" select="reverse(tokenize($date, '.'))" />
+        <xsl:variable name="tokenized"
+                      select="reverse(tokenize($date, '\.'))" />
         <xsl:variable name="year" select="$tokenized[1]" />
         <xsl:variable name="month" select="$tokenized[2]" />
         <xsl:variable name="day" select="$tokenized[3]" />
