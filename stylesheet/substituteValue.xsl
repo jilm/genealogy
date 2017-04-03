@@ -54,7 +54,14 @@
         <xsl:variable name="ref" select="@href" />
         <xsl:variable name="person" select="jilm:getPerson($ref)" />
         <!--<xsl:variable name="birth" select="jilm:getBirth($ref)" />-->
-        <xsl:apply-templates select="$person/name" />
+        <xsl:variable name="name">
+            <xsl:apply-templates select="$person/name" />
+        </xsl:variable>
+        <xsl:variable name="birth" select="jilm:getBirth($ref)" />
+        <xsl:variable name="form-birth">
+            <xsl:apply-templates select="$birth" />
+        </xsl:variable>
+        <xsl:value-of select="concat($name, ', ', $form-birth)" />
     </xsl:template>
 
     <xsl:template match="value[@key = 'index']" priority="2" >
@@ -66,7 +73,7 @@
     <xsl:template match="value[@key = 'person.wedding.date']" priority="2" >
         <xsl:variable name="ref" select="@href" />
         <xsl:variable name="wedding" select="jilm:getWedding($ref)" />
-        <xsl:apply-templates select="$wedding/date" />
+        <xsl:apply-templates select="$wedding/date" mode="vmy" />
     </xsl:template>
 
 <!--

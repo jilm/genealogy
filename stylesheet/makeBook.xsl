@@ -5,8 +5,11 @@
 
   <xsl:import href="substituteValue.xsl" />
   <xsl:import href="nameFormat.xsl" />
+  <xsl:import href="latex.xsl" />
+  <xsl:import href="formLatexBirth.xsl" />
   <xsl:import href="functions.xsl" />
   <xsl:import href="formLatexDate.xsl" />
+  <xsl:import href="labels_CZ.xsl" />
 
   <xsl:strip-space elements="footnote person p" />
 

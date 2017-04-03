@@ -18,6 +18,6 @@
                   select="('leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec')" />
 
     <xsl:variable name="MONTH-LABELS-FULL-V"
-                  select="('ledenu', 'únoru', 'březenu', 'dubenu', 'květenu', 'červenu', 'červeneci', 'srpenu', 'září', 'říjenu', 'listopadu', 'prosineci')" />
+                  select="('lednu', 'únoru', 'březnu', 'dubnu', 'květnu', 'červnu', 'červenci', 'srpnu', 'září', 'říjnu', 'listopadu', 'prosinci')" />
 
 </xsl:stylesheet>

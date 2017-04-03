@@ -11,6 +11,7 @@
 
     <xsl:variable name="personList" select="doc('../build/personList.xml')" />
     <xsl:variable name="weddingList" select="doc('../build/weddingList.xml')" />
+    <xsl:variable name="birthList" select="doc('../build/birthList.xml')" />
 
     <xsl:function name="jilm:getPerson">
         <xsl:param name="ref" />
@@ -26,6 +27,13 @@
         <xsl:variable name="wedding"
                       select="$weddingList//wedding[bride/@href = $ref or bridegroom/@href = $ref]" />
         <xsl:sequence select="$wedding" />
+    </xsl:function>
+
+    <xsl:function name="jilm:getBirth">
+        <xsl:param name="ref" />
+        <xsl:variable name="birth"
+                      select="$birthList//birth[born/@href = $ref]" />
+        <xsl:sequence select="$birth" />
     </xsl:function>
 
     <xsl:function name="jilm:concat">
