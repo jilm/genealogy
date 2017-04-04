@@ -9,6 +9,7 @@
   <xsl:import href="formLatexBirth.xsl" />
   <xsl:import href="functions.xsl" />
   <xsl:import href="formLatexDate.xsl" />
+  <xsl:import href="formLatexPerson.xsl" />
   <xsl:import href="labels_CZ.xsl" />
 
   <xsl:strip-space elements="footnote person p" />
@@ -50,6 +51,12 @@
 %\input{alias.tex}
 \mainmatter
     <xsl:apply-templates />
+\appendix
+
+\chapter{Seznam osob}
+    <xsl:for-each select="$personList//person" >
+        <xsl:apply-templates />\\
+    </xsl:for-each>
 \backmatter
 
 \printindex
@@ -86,7 +93,7 @@
     \chapter{<xsl:apply-templates />}
   </xsl:template>
 
-  <xsl:template match="person">
+  <xsl:template match="person[@href]">
     <xsl:variable name="ref" select="@href" />
     <xsl:apply-templates />
     <xsl:value-of select="concat('\index{', $index//index-item[@id=$ref]/text(), '}')" />

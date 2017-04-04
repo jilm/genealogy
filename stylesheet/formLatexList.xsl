@@ -98,7 +98,7 @@
     <xsl:apply-templates select="father" />
     <xsl:value-of select="' '" />
     <xsl:apply-templates select="mather" />
-    \par
+    \\
   </xsl:template>
 
   <xsl:template match="text()" />
