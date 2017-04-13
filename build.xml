@@ -1,11 +1,20 @@
-<project>
+<project name="genealogy" default="book" xmlns:if="ant:if" >
+
+  <description>
+    # Builds genealogy information into the book
+  </description>
 
   <property name="schema.dir" value="schema" />
   <property name="xslt.dir" value="stylesheet" />
   <property name="build.dir" value="build" />
   <property name="src.dir" value="src/data" />
+  <property name="conf.filename" value="configuration.prop" />
 
+  <!-- Load project specific proprties from the conf. file. -->
+  <available property="conf.file" file="${conf.filename}" />
+  <loadproperties srcFile="${conf.filename}" if:set="conf.file" />
 
+  <!-- For xml validation, the relaxNG is used. -->
   <taskdef name="jing"
            classname="com.thaiopensource.relaxng.util.JingTask" />
 
@@ -122,12 +131,20 @@
     <fixcrlf srcdir="${schema.dir}" includes="*.rnc" />
   </target>
 
-  <target name="index">
-  </target>
 
   <!--
 
-    Make the whole book.
+    # Make the whole book.
+
+    The book is composed of the following:
+
+    1. text part of book
+    2. graph
+    3. list of persons
+    4. bibliography
+    5. index
+    6. map
+    7. time graph
 
   -->
   <target name="book" depends="person-list">
@@ -167,6 +184,15 @@
       <arg file="${build.dir}/personList.tex" />
     </exec>
 
+  </target>
+
+  <!--
+
+    Convert book text from xml to tex
+
+  -->
+  <target name="text" depends="index">
+
     <xslt style="${xslt.dir}/makeBook.xsl"
           in="src/book/text.xml"
       	  out="${build.dir}/book.tex" >
@@ -175,6 +201,27 @@
             value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
 
     </xslt>
+
+   </target>
+
+  <target name="index" depends="person-list">
+
+    <xslt style="${xslt.dir}/makeIndexSource.xsl"
+          in="${build.dir}/personList.xml"
+      	  out="${build.dir}/index.xml" >
+
+        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
+
+    </xslt>
+  <!--
+    <java classname="net.sf.saxon.Query">
+      <arg file="${build.dir}/personList.xml" prefix="-s:" />
+      <arg file="${xslt.dir}/makeIndex.xq" prefix="-q:" />
+      <arg file="${build.dir}/index.tex" prefix="-o:" />
+    </java>
+  -->
+
   </target>
 
 </project>
