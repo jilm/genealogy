@@ -3672,7 +3672,7 @@
       <district>Česká Lípa</district>
       <note>Brins</note>
    </place>
-   <place>
+   <place id="BRNO">
       <parish>Brno</parish>
       <note>Morava</note>
       <district>Brno-město</district>
@@ -14244,7 +14244,7 @@
       <district>Přerov</district>
       <note>Ober Aujest</note>
    </place>
-   <place>
+   <place id="HUJEZD">
       <parish>Horní Újezd</parish>
       <note>Morava</note>
       <district>Třebíč</district>
@@ -26514,7 +26514,7 @@
       <district>Strakonice</district>
       <note>Bruch</note>
    </place>
-   <place>
+   <place id="LOMEC">
       <parish>Lomec</parish>
       <note>Čechy</note>
       <district>České Budějovice</district>
@@ -27144,7 +27144,7 @@
       <district>Litoměřice</district>
       <note>Luka</note>
    </place>
-   <place>
+   <place id="LUKOV">
       <parish>Lukov</parish>
       <note>Morava</note>
       <district>Třebíč</district>
@@ -32359,7 +32359,7 @@
       <district>Mladá Boleslav</district>
       <note>Nimierschitz</note>
    </place>
-   <place>
+   <place id="NIMPSOV">
       <parish>Nimpšov</parish>
       <note>Morava</note>
       <district>Třebíč</district>
@@ -39235,7 +39235,7 @@
       <district>Rychnov nad Kněžnou</district>
       <note>Prestawilk</note>
    </place>
-   <place>
+   <place id="PRESOVICE">
       <parish>Přešovice</parish>
       <note>Morava</note>
       <district>Třebíč</district>

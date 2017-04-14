@@ -19,52 +19,7 @@
   <xsl:variable name="index" select="doc('../build/index.xml')" />
 
   <xsl:template match="/html">
-\documentclass[a4paper,11pt]{book}
-
-\usepackage[czech]{babel}
-
-\usepackage{xltxtra}
-\usepackage{makeidx}
-\usepackage[a4]{crop} 
-
-\title{Ohlédnutí po předcích}
-
-\author{}
-
-\date{2014}
-
-\makeindex
-
-\begin{document}
-
-\frontmatter
-
-\maketitle
-
-\tableofcontents
-
-%Terezie
-\newcommand{\wwii}{\index{Druhá světová válka}}
-
-%\input{index.tex}
-%\input{footnotes.tex}
-%\input{alias.tex}
-\mainmatter
     <xsl:apply-templates />
-\appendix
-
-\chapter{Seznam osob}
-    <xsl:for-each select="$personList//person" >
-        <xsl:apply-templates />\\
-    </xsl:for-each>
-\backmatter
-
-\printindex
-
-\bibliography{src/sources}{}
-\bibliographystyle{plain}
-
-\end{document}
   </xsl:template>
 
   <xsl:template match="body">

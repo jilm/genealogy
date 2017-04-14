@@ -835,7 +835,7 @@
       <second>Lowenda</second>
     </name>
     <birth>
-      <place>Lomec 9</place>
+      <place href="LOMEC" house-nr="9"></place>
     </birth>
   </person>
   
@@ -846,7 +846,7 @@
       <married>Pavlová</married>
     </name>
     <birth>
-      <place>Lomec 9</place>
+      <place href="LOMEC" house-nr="9"></place>
     </birth>
     <mather href="LOWENDAURSULA" />
   </person>
@@ -988,7 +988,7 @@
     </wedding>
     <birth>
       <date>8.5.1867</date>
-      <place>Lomec</place>
+      <place href="LOMEC"></place>
     </birth>
     <death>
       <date>27.6.1934</date>
@@ -1131,7 +1131,7 @@
       <second>Kříž</second>
     </name>
     <birth>
-      <place>Lomec 1</place>
+      <place href="LOMEC" house-nr="1"></place>
     </birth>
     <note>
       sedlák
@@ -1155,7 +1155,7 @@
       <second>Kříž</second>
     </name>
     <birth>
-      <place>Lomec 1</place>
+      <place href="LOMEC" house-nr="1"></place>
     </birth>
     <notes>
       sedlák
@@ -1208,7 +1208,7 @@
     </notes>
     <birth>
       <date>29.8.1842</date>
-      <place>Lomec 1</place>
+      <place href="LOMEC" house-nr="1"></place>
     </birth>
     <father href="KRIZJOSEF" />
     <mather href="FESSLMARIE" />
@@ -1401,20 +1401,6 @@
     </name>
   </person>
   
-
-  <person id="PAVLIKMATHILDA" sex="female">
-    <name>
-      <first>Mathilda</first>
-      <second>Pavlíková</second>
-    </name>
-    <birth cite="MN-MORAVSKEBUDEJOVICE-10664" scan="361" page="717">
-      <date>11.3.1902</date>
-      <place>Heřmanice</place>
-    </birth>
-    <wedding><date>4.10.1927</date></wedding>
-    <father href="PAVLIKFRANTISEK" />
-    <mather href="VOJTECHANTONIE" />
-  </person>
 
   <person id="LIDINSKYANNAML" sex="female">
     <name>

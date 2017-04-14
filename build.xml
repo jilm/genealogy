@@ -2,6 +2,9 @@
 
   <description>
     # Builds genealogy information into the book
+
+    
+
   </description>
 
   <property name="schema.dir" value="schema" />
@@ -73,10 +76,12 @@
 
   <target name="person-tree" depends="person-list">
 
+<!--
     <jing rngfile="${schema.dir}/personList.rnc"
           compactsyntax="true" >
       <fileset dir="${build.dir}" includes="personList.xml" />
     </jing>
+-->
 
     <xslt style="${xslt.dir}/makePersonTree.xsl"
           in="${build.dir}/personList.xml"
@@ -103,10 +108,12 @@
 
   <target name="graph" depends="person-tree">
 
+<!--
     <jing rngfile="${schema.dir}/personTree.rnc"
           compactsyntax="true" >
       <fileset dir="${build.dir}" includes="personTree.xml" />
     </jing>
+-->
 
     <xslt style="${xslt.dir}/makeGenTree.xsl"
           in="${build.dir}/personTree.xml"
@@ -147,7 +154,7 @@
     7. time graph
 
   -->
-  <target name="book" depends="person-list">
+  <target name="book" depends="text">
 
     <xslt style="${xslt.dir}/makeBibliography.xsl"
           in="src/data.xml"
@@ -206,6 +213,16 @@
 
   <target name="index" depends="person-list">
 
+    <description>
+      # Create a source for index of persons for the book
+
+      1. It takes a person list and generates a key index for each person.
+         The index key is of the form: [surname]![given name].
+      2. For each wedding record and the bride, it adds an key of the form:
+         [married name]![given name] see [birth name]![given name].
+      3. Add a birth year to duplicite keys.
+    </description>
+
     <xslt style="${xslt.dir}/makeIndexSource.xsl"
           in="${build.dir}/personList.xml"
       	  out="${build.dir}/index.xml" >
@@ -214,13 +231,6 @@
             value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
 
     </xslt>
-  <!--
-    <java classname="net.sf.saxon.Query">
-      <arg file="${build.dir}/personList.xml" prefix="-s:" />
-      <arg file="${xslt.dir}/makeIndex.xq" prefix="-q:" />
-      <arg file="${build.dir}/index.tex" prefix="-o:" />
-    </java>
-  -->
 
   </target>
 

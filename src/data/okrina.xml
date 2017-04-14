@@ -7,11 +7,11 @@
     </name>
     <birth>
       <date>1.4.1904</date>
-      <place>Přešovice okres Třebíč</place>
+      <place href="PRESOVICE"></place>
     </birth>
     <death>
       <date>21.4.1976</date>
-      <place>Brno</place>
+      <place href="BRNO"></place>
     </death>
     <notes>
       Jaroslav Okřina měl syny Milana (milánek) a Pavla. Milánek zdědil 20000kč, což bylo příčinou rodinné křivdy.
@@ -35,7 +35,7 @@
     </name>
     <birth cite="MN-ROUCHOVANY-10848" page="504" scan="240">
       <date>22.11.1900</date>
-      <place>Přešovice 24</place>
+      <place href="PRESOVICE" house-nr="24"></place>
     </birth>
     <father href="OKRINAALOIS" />
     <mather href="SKALAMARIE" />
@@ -287,6 +287,13 @@
     <birth href="MZABRNO-11054-115-JONASJAKUB" />
     <father href="JONASSIMON" />
     <mather href="WALLA" />
+  </person>
+
+  <person id="JONASSIMON" sex="male" >
+    <name>
+      <first>Šimon</first>
+      <second>Jonáš</second>
+    </name>
   </person>
 
   <person id="MANFRANTISKA" sex="female">

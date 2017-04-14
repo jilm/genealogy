@@ -28,25 +28,12 @@
     <xsl:variable name="root-persons" select="//person" />
     <xsl:for-each select="//person" >
       <xsl:result-document href="{./@id}_tree.tex" method="text" >
-    
-
-\documentclass[]{a0poster} 
-\usepackage[czech]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[all]{genealogytree}
-\pdfpagewidth 1783mm
-\pdfpageheight 420mm
- 
-    \begin{document} 
-    \section{Rodokmen} 
-
-        \begin{tikzpicture}\genealogytree[template=signpost, level size=3cm, box={width=2cm, height=3cm}]{
-            parent{
+\begin{tikzpicture}\genealogytree[template=signpost, level size=3cm, box={width=2cm, height=3cm}]{
+    parent{
     <xsl:apply-templates select="." />
-            }
-          } 
-        \end{tikzpicture}
-        \end{document}
+  }
+}
+\end{tikzpicture}
       </xsl:result-document>
     </xsl:for-each>
   </xsl:template>
@@ -208,7 +195,7 @@
     <xsl:variable name="tempC" select='replace($text, "Č", "\\v{C}")' />
     <xsl:variable name="tempD" select='replace($tempC, "Ď", "\\v{D}")' />
     <xsl:variable name="tempN" select='replace($tempD, "Ň", "\\v{N}")' />
-    <xsl:variable name="tempR" select='replace($tempN, "�?", "\\v{R}")' />
+    <xsl:variable name="tempR" select='replace($tempN, "Ř", "\\v{R}")' />
     <xsl:variable name="tempS" select='replace($tempR, "Š", "\\v{S}")' />
     <xsl:variable name="tempT" select='replace($tempS, "Ť", "\\v{T}")' />
     <xsl:variable name="tempZ" select='replace($tempT, "Ž", "\\v{Z}")' />
@@ -217,7 +204,7 @@
     <xsl:variable name="tempc" select='replace($tempz, "č", "\\v{c}")' />
     <xsl:variable name="tempd" select='replace($tempc, "ď", "\\v{d}")' />
     <xsl:variable name="tempe" select='replace($tempd, "ě", "\\v{e}")' />
-    <xsl:variable name="tempn" select='replace($tempe, "�?", "\\v{n}")' />
+    <xsl:variable name="tempn" select='replace($tempe, "ň", "\\v{n}")' />
     <xsl:variable name="tempr" select='replace($tempn, "ř", "\\v{r}")' />
     <xsl:variable name="temps" select='replace($tempr, "š", "\\v{s}")' />
     <xsl:variable name="tempt" select='replace($temps, "ť", "\\v{t}")' />
