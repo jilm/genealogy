@@ -14,7 +14,7 @@
 
 <xsl:stylesheet version="2.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:my="http://www.lidinsky.cz" >
+                xmlns:jilm="http://www.lidinsky.cz" >
 
     <!--
 
@@ -22,15 +22,15 @@
         included bibliography citations.
 
     -->
-    <xsl:template match="person[name]" mode="list" priority="3" >
+    <xsl:template match="person[name]" mode="list" priority="5" >
         <xsl:variable name="name">
             <xsl:apply-templates select="name" mode="reverse" />
         </xsl:variable>
         <xsl:variable name="birth">
-            <xsl:apply-templates select="birth" mode="cite" />
+            <xsl:apply-templates select="jilm:getBirth(@id)" mode="cite" />
         </xsl:variable>
         <xsl:variable name="death">
-            <xsl:apply-templates select="death" mode="cite" />
+            <xsl:apply-templates select="jilm:getDeath(@id)" mode="cite" />
         </xsl:variable>
         <xsl:value-of select="concat($name, ', ', $birth, ', ', $death)" />
     </xsl:template>

@@ -63,6 +63,15 @@
 
     </xslt>
 
+    <xslt style="${xslt.dir}/makeDeathList.xsl"
+          in="src/data.xml"
+	  out="${build.dir}/deathList.xml" >
+
+        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
+            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
+
+    </xslt>
+
     <xslt style="${xslt.dir}/makeWeddingList.xsl"
           in="src/data.xml"
 	  out="${build.dir}/weddingList.xml" >

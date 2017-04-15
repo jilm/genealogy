@@ -15,7 +15,11 @@
   <xsl:import href="placeFormat.xsl" />
   <xsl:import href="labels_CZ.xsl" />
   <xsl:import href="formLatexBirth.xsl" />
+  <xsl:import href="formLatexDeath.xsl" />
   <xsl:import href="formLatexPerson.xsl" />
+  <xsl:import href="formLatexCite.xsl" />
+  <xsl:import href="formLatexDate.xsl" />
+  <xsl:import href="functions.xsl" />
   
 
   <xsl:output method="text" encoding="utf-8" />
@@ -25,30 +29,17 @@
   <xsl:variable name="NL" select="concat($CR, $LF)" />
 
   <xsl:template match="/">
-    <xsl:apply-templates select="//person">
+    <xsl:apply-templates select="//person" mode="list">
       <xsl:sort select="@id" />
     </xsl:apply-templates>
   </xsl:template>
 
   <xsl:template match="person" priority="10" mode="#all">
-    <xsl:next-match/><xsl:text>\\</xsl:text>
+    <xsl:next-match /><xsl:text>\\</xsl:text>
   </xsl:template>
 
   <xsl:template match="name">
     <xsl:value-of select="concat(second, ' ', first)" />
-  </xsl:template>
-
-
-  <xsl:template match="death[date and place]">
-    <xsl:value-of select="concat($DEATH-SYMBOL, '~', date, ', ', place)" />
-  </xsl:template>
-
-  <xsl:template match="death[date and not(place)]">
-    <xsl:value-of select="concat($DEATH-SYMBOL, '~', date)" />
-  </xsl:template>
-
-  <xsl:template match="death[not(date) and place]">
-    <xsl:value-of select="concat($DEATH-SYMBOL, '~', place)" />
   </xsl:template>
 
   <xsl:template match="father[@href]">
