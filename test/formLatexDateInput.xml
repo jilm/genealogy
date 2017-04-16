@@ -1,0 +1,10 @@
+<list>
+  <test>
+    <input><date>12.5.1956</date></input>
+    <expected>12.5.1956</expected>
+  </test>
+  <test>
+    <input><date>1956</date></input>
+    <expected>1956</expected>
+  </test>
+</list>

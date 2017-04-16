@@ -12,15 +12,27 @@
     <xsl:import href="../stylesheet/formLatexDate.xsl" />
     <xsl:import href="../stylesheet/labels_CZ.xsl" />
 
+    <xsl:output indent="yes" />
+
     <xsl:variable name="date">
         <list><date>25.2.1869</date></list>
     </xsl:variable>
 
     <xsl:template match="/">
-        <xsl:apply-templates select="$date//date" />
-        <xsl:apply-templates select="$date//date" mode="year" />
-        <xsl:apply-templates select="$date//date" mode="long" />
-        <xsl:apply-templates select="$date//date" mode="vmy" />
+        <list>
+        <xsl:apply-templates select="//test" />
+        </list>
+    </xsl:template>
+
+    <xsl:template match="test">
+        <xsl:variable name="input" select="input/child::*[1]" />
+        <xsl:variable name="expected" select="expected" />
+        <xsl:variable name="result">
+            <xsl:apply-templates select="$input" />
+        </xsl:variable>
+        <input><xsl:sequence select="$input" /></input>
+        <xsl:sequence select="$expected" />
+        <result><xsl:sequence select="$result" /></result>
     </xsl:template>
 
 </xsl:stylesheet>

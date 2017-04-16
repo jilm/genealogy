@@ -24,7 +24,7 @@
     -->
     <xsl:template match="person[name]" mode="list" priority="5" >
         <xsl:variable name="name">
-            <xsl:apply-templates select="name" mode="reverse" />
+            <xsl:apply-templates select="name" mode="reversed" />
         </xsl:variable>
         <xsl:variable name="birth">
             <xsl:apply-templates select="jilm:getBirth(@id)" mode="cite" />
@@ -32,7 +32,7 @@
         <xsl:variable name="death">
             <xsl:apply-templates select="jilm:getDeath(@id)" mode="cite" />
         </xsl:variable>
-        <xsl:value-of select="concat($name, ', ', $birth, ', ', $death)" />
+        <xsl:value-of select="concat($name, ' ', $birth, ' ', $death)" />
     </xsl:template>
 
     <!--

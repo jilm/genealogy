@@ -20,6 +20,7 @@
   <xsl:import href="formLatexCite.xsl" />
   <xsl:import href="formLatexDate.xsl" />
   <xsl:import href="functions.xsl" />
+  <xsl:import href="nameFormat.xsl" />
   
 
   <xsl:output method="text" encoding="utf-8" />
@@ -29,17 +30,9 @@
   <xsl:variable name="NL" select="concat($CR, $LF)" />
 
   <xsl:template match="/">
-    <xsl:apply-templates select="//person" mode="list">
-      <xsl:sort select="@id" />
-    </xsl:apply-templates>
-  </xsl:template>
-
-  <xsl:template match="person" priority="10" mode="#all">
-    <xsl:next-match /><xsl:text>\\</xsl:text>
-  </xsl:template>
-
-  <xsl:template match="name">
-    <xsl:value-of select="concat(second, ' ', first)" />
+    <xsl:for-each select="//person" >
+      <xsl:apply-templates select="." mode="list" /><xsl:text>\\</xsl:text>
+    </xsl:for-each>
   </xsl:template>
 
   <xsl:template match="father[@href]">

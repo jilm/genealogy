@@ -5,9 +5,12 @@
 
 -->
 <xsl:stylesheet version="2.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:jilm="http://www.lidinsky.cz">
 
     <xsl:import href="placeTemplate.xsl" />
+    <xsl:import href="dateTemplate.xsl" />
+    <xsl:import href="functions.xsl" />
 
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
 
@@ -23,9 +26,7 @@
     </xsl:template>
 
     <xsl:template match="date">
-        <date>
-            <xsl:apply-templates />
-        </date>
+        <xsl:sequence select="jilm:analyze-date(text())" />
     </xsl:template>
 
     <xsl:template match="matrika/birth">

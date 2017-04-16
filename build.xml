@@ -11,6 +11,7 @@
   <property name="xslt.dir" value="stylesheet" />
   <property name="build.dir" value="build" />
   <property name="src.dir" value="src/data" />
+  <property name="test.dir" value="test" />
   <property name="conf.filename" value="configuration.prop" />
 
   <!-- Load project specific proprties from the conf. file. -->
@@ -165,6 +166,8 @@
   -->
   <target name="book" depends="text">
 
+    <echo message="${title}" />
+
     <xslt style="${xslt.dir}/makeBibliography.xsl"
           in="src/data.xml"
       	  out="${build.dir}/sources.bib" >
@@ -213,12 +216,21 @@
           in="src/book/text.xml"
       	  out="${build.dir}/book.tex" >
 
+        <param name="title" expression="${title}" />
+
         <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
             value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
 
     </xslt>
 
    </target>
+
+  <target name="test">
+    <xslt style="${test.dir}/analyzeDate.xsl"
+          in="src/book/text.xml"
+          out="${build.dir}/testResult.xml"/>
+  </target>
+
 
   <target name="index" depends="person-list">
 

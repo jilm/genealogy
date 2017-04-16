@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 
 <xsl:stylesheet version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -16,10 +16,59 @@
 
   <xsl:output method="text" encoding="utf-8" />
 
+  <xsl:param name="title" />
   <xsl:variable name="index" select="doc('../build/index.xml')" />
 
-  <xsl:template match="/html">
-    <xsl:apply-templates />
+  
+  <xsl:template match="/">
+
+\documentclass[a4paper,11pt]{book}
+
+\usepackage[czech]{babel}
+
+\usepackage{xltxtra}
+\usepackage{makeidx}
+\usepackage[all]{genealogytree}
+\usepackage[a4]{crop} 
+
+\title{<xsl:value-of select="/html/head/title/text()" />}
+\author{}
+\date{2014}
+
+\makeindex
+
+\begin{document}
+
+\frontmatter
+
+\maketitle
+
+\tableofcontents
+
+<xsl:apply-templates select="/html/body/chapter/*[../h1/text() = 'Úvod']" />
+
+\mainmatter
+
+<xsl:apply-templates select="/html/body/chapter/*[../h1/text() != 'Úvod']"/>
+
+\appendix
+
+\chapter{Seznam osob}
+
+%\input{personList}
+
+\chapter{Graph}
+
+%\input{graph}
+
+\backmatter
+
+\printindex
+
+\bibliography{src/sources}{}
+\bibliographystyle{plain}
+
+\end{document}
   </xsl:template>
 
   <xsl:template match="body">
@@ -36,7 +85,7 @@
       </xsl:variable>
       <xsl:variable name="temp" select="replace($para, '\s+\\footnote', '\\footnote')" />
       <xsl:variable name="temp2"
-           select="replace($temp, '\.{3}', '\\ldots')" />
+           select="replace($temp, '\.{3}', '\\ldots{}')" />
       <xsl:variable name="temp3"
            select="replace($temp2, '\s+\.', '.')" />
       <xsl:variable name="temp4"
@@ -56,6 +105,10 @@
 
   <xsl:template match="footnote">
     \footnote{<xsl:apply-templates />}
+  </xsl:template>
+
+  <xsl:template match="index">
+    <xsl:apply-templates />\index{<xsl:value-of select="@item" />}
   </xsl:template>
 
 </xsl:stylesheet>

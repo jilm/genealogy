@@ -14,7 +14,7 @@
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
 
     <xsl:template match="place[text() and not(@href)]" priority="5">
-        <place ><xsl:apply-templates /></place>
+        <place ><parish><xsl:apply-templates /></parish></place>
     </xsl:template>
 
     <!-- 

@@ -13,7 +13,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:template match="place[text() and not(parish)]" priority="5">
-        <xsl:apply-templates />
+        <xsl:value-of select="text()" />
     </xsl:template>
 
     <!-- 

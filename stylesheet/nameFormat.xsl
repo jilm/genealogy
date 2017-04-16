@@ -54,5 +54,12 @@
         <xsl:apply-templates />
     </xsl:template>
 
+    <xsl:template match="first">
+        <xsl:value-of select="text()" />
+    </xsl:template>
+
+    <xsl:template match="second">
+        <xsl:value-of select="text()" />
+    </xsl:template>
 
 </xsl:stylesheet>
