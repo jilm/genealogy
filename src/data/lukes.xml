@@ -21,7 +21,7 @@
       ve svazku 19, roč. 2011, strana 111, poř. č. 186
     </notes>
     <father href="LUKESFERDINAND" />
-    <mather href="KLEPALZDENKA" />
+    <!--<mather href="KLEPALZDENKA" />-->
   </person>
 
   <person id="LUKESFERDINAND" sex="male">

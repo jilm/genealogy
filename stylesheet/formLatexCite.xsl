@@ -14,11 +14,11 @@
   </xsl:template>
 
   <xsl:template match="page" >
-    str.: <xsl:value-of select="text()" />
+    <xsl:value-of select="concat('str.: ', text())" />
   </xsl:template>
 
   <xsl:template match="scan" >
-    sken: <xsl:value-of select="text()" />
+    <xsl:value-of select="concat('sken: ', text())" />
   </xsl:template>
 
 </xsl:stylesheet>

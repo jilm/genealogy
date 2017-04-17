@@ -45,15 +45,15 @@
             <xsl:apply-templates select="name" />
         </xsl:variable>
         <xsl:variable name="birth">
-            <xsl:apply-templates select="birth" mode="full" />
+            <xsl:apply-templates select="birth" mode="text" />
         </xsl:variable>
         <xsl:variable name="death">
-            <xsl:apply-templates select="death" mode="full" />
+            <xsl:apply-templates select="death" mode="text" />
         </xsl:variable>
         <xsl:value-of select="concat($name, ', ', $birth, ', ', $death)" />
     </xsl:template>
 
-    <xsl:template match="person[name and birth and death]" mode="#all" priority="3" >
+    <xsl:template match="person[name and birth and death]" mode="#default" priority="3" >
         <xsl:variable name="name">
             <xsl:apply-templates select="name" />
         </xsl:variable>
@@ -66,7 +66,7 @@
         <xsl:value-of select="concat($name, ', ', $birth, ', ', $death)" />
     </xsl:template>
 
-    <xsl:template match="person[name and birth]" mode="#all" priority="2" >
+    <xsl:template match="person[name and birth]" mode="#default" priority="2" >
         <xsl:variable name="name">
             <xsl:apply-templates select="name" />
         </xsl:variable>
@@ -78,6 +78,36 @@
 
     <xsl:template match="person[name]" mode="#all" priority="1" >
         <xsl:apply-templates select="name" />
+    </xsl:template>
+
+    <xsl:template match="person[@sex='male']" priority="2" mode="graph" >
+        g[male]{
+            <xsl:apply-templates select="name" />
+            <xsl:text> </xsl:text>
+            <xsl:apply-templates select="birth" />
+            <xsl:text> </xsl:text>
+            <xsl:apply-templates select="death" />
+        }
+        <xsl:apply-templates select="father" mode="graph" />
+        <xsl:apply-templates select="mather" mode="graph" />
+    </xsl:template>
+
+    <xsl:template match="person[@sex='female']" priority="2" mode="graph" >
+        g[female]{
+            <xsl:apply-templates select="name" />
+            <xsl:text> </xsl:text>
+            <xsl:apply-templates select="birth" />
+            <xsl:text> </xsl:text>
+            <xsl:apply-templates select="death" />
+        }
+        <xsl:apply-templates select="father" mode="graph" />
+        <xsl:apply-templates select="mather" mode="graph" />
+    </xsl:template>
+
+    <xsl:template match="father | mather" mode="graph">
+        parent{
+            <xsl:apply-templates select="jilm:getPerson(@href)" mode="graph" />
+        }
     </xsl:template>
 
 </xsl:stylesheet>

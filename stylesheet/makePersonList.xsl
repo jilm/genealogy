@@ -109,20 +109,6 @@
         </birth>
     </xsl:template>
 
-    <xsl:template match="date">
-        <date>
-            <xsl:apply-templates />
-        </date>
-    </xsl:template>
-    
-    <!--
-    <xsl:template match="place">
-        <place>
-            <xsl:apply-templates />
-        </place>
-    </xsl:template>
-    -->
-
     <xsl:template match="wedding">
         <wedding>
             <xsl:apply-templates select="date" />

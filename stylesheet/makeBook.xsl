@@ -7,10 +7,13 @@
   <xsl:import href="nameFormat.xsl" />
   <xsl:import href="latex.xsl" />
   <xsl:import href="formLatexBirth.xsl" />
+  <xsl:import href="formLatexDeath.xsl" />
   <xsl:import href="functions.xsl" />
   <xsl:import href="formLatexDate.xsl" />
   <xsl:import href="formLatexPerson.xsl" />
+  <xsl:import href="formLatexCite.xsl" />
   <xsl:import href="labels_CZ.xsl" />
+  <xsl:import href="placeFormat.xsl" />
 
   <xsl:strip-space elements="footnote person p" />
 
@@ -30,6 +33,7 @@
 \usepackage{makeidx}
 \usepackage[all]{genealogytree}
 \usepackage[a4]{crop} 
+\usepackage{color}
 
 \title{<xsl:value-of select="/html/head/title/text()" />}
 \author{}
@@ -53,19 +57,13 @@
 
 \appendix
 
-\chapter{Seznam osob}
-
-%\input{personList}
-
-\chapter{Graph}
-
-%\input{graph}
+<xsl:apply-templates select="/html/body/appendix/*"/>
 
 \backmatter
 
 \printindex
 
-\bibliography{src/sources}{}
+\bibliography{sources}{}
 \bibliographystyle{plain}
 
 \end{document}
@@ -83,7 +81,8 @@
       <xsl:variable name="para">
           <xsl:apply-templates />
       </xsl:variable>
-      <xsl:variable name="temp" select="replace($para, '\s+\\footnote', '\\footnote')" />
+      <xsl:variable name="temp"
+           select="replace($para, '\s+\\footnote', '\\footnote')" />
       <xsl:variable name="temp2"
            select="replace($temp, '\.{3}', '\\ldots{}')" />
       <xsl:variable name="temp3"

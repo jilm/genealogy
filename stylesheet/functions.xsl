@@ -13,12 +13,16 @@
     <xsl:variable name="weddingList" select="doc('../build/weddingList.xml')" />
     <xsl:variable name="birthList" select="doc('../build/birthList.xml')" />
     <xsl:variable name="deathList" select="doc('../build/deathList.xml')" />
+    <xsl:variable name="placeList" select="doc('../resources/places.xml')" />
 
     <xsl:function name="jilm:getPerson">
         <xsl:param name="ref" />
         <xsl:variable name="person" select="$personList//person[@id = $ref]" />
         <xsl:if test="empty($person)">
-            <xsl:message>A person with given id was not found.</xsl:message>
+            <xsl:message>
+                A person with given id was not found.
+                <xsl:value-of select="$ref" />
+            </xsl:message>
         </xsl:if>
         <xsl:sequence select="$person" />
     </xsl:function>
@@ -42,6 +46,13 @@
         <xsl:variable name="death"
                       select="$deathList//death[died/@href = $ref]" />
         <xsl:sequence select="$death" />
+    </xsl:function>
+
+    <xsl:function name="jilm:getPlace">
+        <xsl:param name="ref" />
+        <xsl:variable name="place"
+                      select="$placeList//place[@id = $ref]" />
+        <xsl:sequence select="$place" />
     </xsl:function>
 
     <xsl:function name="jilm:concat">

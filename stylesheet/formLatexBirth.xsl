@@ -14,21 +14,27 @@
 
 
     <xsl:template
-               match="birth[normalize-space(date) and normalize-space(place)]"
+               match="birth[date and place]"
                mode="text">
         <xsl:variable name="place">
             <xsl:apply-templates select="place" mode="middle" />
         </xsl:variable>
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
         <xsl:value-of
-                     select="concat($BIRTH-SYMBOL, ' ', date, ', ', $place)" />
+                    select="concat($BIRTH-SYMBOL, ' ', $date, ', ', $place)" />
     </xsl:template>
 
-    <xsl:template match="birth[normalize-space(date) and not(place)]"
+    <xsl:template match="birth[date and not(place)]"
                   mode="text">
-        <xsl:value-of select="concat($BIRTH-SYMBOL, ' ', date)" />
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+        <xsl:value-of select="concat($BIRTH-SYMBOL, ' ', $date)" />
     </xsl:template>
 
-    <xsl:template match="birth[not(date) and normalize-space(place)]"
+    <xsl:template match="birth[not(date) and place]"
                   mode="text">
         <xsl:variable name="place">
             <xsl:apply-templates select="place" mode="middle" />
@@ -45,7 +51,7 @@
             <xsl:apply-templates select="date" />
         </xsl:variable>
         <xsl:variable name="place">
-            <xsl:apply-templates select="place" />
+            <xsl:apply-templates select="place" mode="middle" />
         </xsl:variable>
         <xsl:value-of select="concat($BIRTH-SYMBOL, ' ', $date, ' ', $place)" />
         <xsl:apply-templates select="cite" />
@@ -61,7 +67,7 @@
 
     <xsl:template match="birth[not(date) and place]" mode="cite" priority="3">
         <xsl:variable name="place">
-            <xsl:apply-templates select="place" />
+            <xsl:apply-templates select="place" mode="middle" />
         </xsl:variable>
         <xsl:value-of select="concat($BIRTH-SYMBOL, ' ', $place)" />
         <xsl:apply-templates select="cite" />

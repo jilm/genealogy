@@ -8,6 +8,9 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:import href="placeTemplate.xsl" />
+    <xsl:import href="dateTemplate.xsl" />
+    <xsl:import href="functions.xsl" />
+
 
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
 
@@ -20,12 +23,6 @@
         <list> 
             <xsl:apply-templates select="//wedding" />
         </list>
-    </xsl:template>
-
-    <xsl:template match="date">
-        <date>
-            <xsl:apply-templates />
-        </date>
     </xsl:template>
 
     <xsl:template match="matrika/wedding">

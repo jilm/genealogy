@@ -9,7 +9,8 @@
 
 -->
 <xsl:stylesheet version="2.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:jilm="http://www.lidinsky.cz" >
 
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
 
@@ -17,44 +18,23 @@
         <place ><parish><xsl:apply-templates /></parish></place>
     </xsl:template>
 
-    <!-- 
-
-         The highest level place template simply wraps content into the
-         place element.
-
-    -->
-    <xsl:template match="place" priority="4">
-        <xsl:variable name="place">
-            <xsl:next-match />
-        </xsl:variable>
+    <xsl:template match="place[@href and not(@house-nr)]" >
+        <xsl:variable name="ref" select="@href" />
         <place>
-            <xsl:apply-templates select="$place/region" />
-            <xsl:apply-templates select="$place/district" />
-            <xsl:apply-templates select="$place/parish" />
-            <xsl:apply-templates select="$place/house-nr" />
+            <xsl:apply-templates select="jilm:getPlace($ref)/*" />
         </place>
     </xsl:template>
 
-    <!--
-
-         Transform house number attribute into the element, if there
-         is one.
-
-    -->
-    <xsl:template match="place[@house-nr]" priority="3" mode="#all" >
-        <house-nr><xsl:value-of select="@house-nr" /></house-nr>
-        <xsl:next-match />
-    </xsl:template>
-
-    <xsl:template match="place[@href]" priority="2" mode="#all">
+    <xsl:template match="place[@href and @house-nr]" >
         <xsl:variable name="ref" select="@href" />
-        <xsl:apply-templates select="//place[@id = $ref]" mode="collect" />
-        <xsl:next-match />
+        <xsl:variable name="house-nr" select="@house-nr" />
+        <place>
+            <house-nr><xsl:value-of select="$house-nr" /></house-nr>
+            <xsl:apply-templates select="jilm:getPlace($ref)/*" />
+        </place>
     </xsl:template>
 
-    <xsl:template match="place" priority="1" mode="#all">
-        <xsl:apply-templates />
-    </xsl:template>
+    <xsl:template match="place/note" />
 
     <xsl:template match="parish">
         <parish>

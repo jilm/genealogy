@@ -53,7 +53,7 @@
     <xsl:template match="value[@key = 'person']" priority="2" >
         <xsl:variable name="ref" select="@href" />
         <xsl:variable name="person" select="jilm:getPerson($ref)" />
-        <xsl:apply-templates select="$person" />
+        <xsl:apply-templates select="$person" mode="text" />
         <!--<xsl:variable name="birth" select="jilm:getBirth($ref)" />
         <xsl:variable name="name">
             <xsl:apply-templates select="$person/name" />
@@ -74,7 +74,27 @@
     <xsl:template match="value[@key = 'person.wedding.date']" priority="2" >
         <xsl:variable name="ref" select="@href" />
         <xsl:variable name="wedding" select="jilm:getWedding($ref)" />
-        <xsl:apply-templates select="$wedding/date" mode="vmy" />
+        {\color{red}<xsl:apply-templates select="$wedding/date" mode="vmy" />}
+    </xsl:template>
+
+    <xsl:template match="value[@key = 'person-list']">
+        <xsl:for-each select="$personList//person"  >
+            <xsl:sort select="./name/second" />
+            <xsl:apply-templates select="." mode="list" />\\
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template match="value[@key = 'graph']">
+        <xsl:variable name="ref" select="@href" />
+        <xsl:variable name="person" select="jilm:getPerson($ref)" />
+\eject \pdfpagewidth=1783mm \pdfpageheight=420mm
+\begin{tikzpicture}\genealogytree[template=signpost, level size=3cm, box={width=2cm, height=3cm}]{
+    parent{
+        <xsl:apply-templates select="$person" mode="graph" />
+    }
+  }
+\end{tikzpicture}
+\eject \pdfpagewidth=210mm \pdfpageheight=297mm
     </xsl:template>
 
 <!--

@@ -286,7 +286,7 @@
     </name>
     <birth href="MZABRNO-11054-115-JONASJAKUB" />
     <father href="JONASSIMON" />
-    <mather href="WALLA" />
+    <!--<mather href="WALLA" />-->
   </person>
 
   <person id="JONASSIMON" sex="male" >
