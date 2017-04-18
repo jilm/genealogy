@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<list>
+<matrika id="SOAPRAHA-TRNOVA03">
+    <title>Matrika narozených v obci Trnová 1839--1861</title>
+    <author>Trnová, Římskokatolická církev</author>
+    <year>1839--1861</year>
+    <volume>III.</volume>
+
+    <birth>
+        <page><scan>32</scan></page>
+        <born href="LUKESFRANTISEK" />
+        <date>4.4.1847</date>
+        <place href="TRNOW" house-nr="25" />
+        <father href="LUKESFRANTISEKII" />
+        <mather href="LAHNJOSEFA" />
+        <note>
+            Aprilis 4. 1847, narozen a pokřtěn. František.
+            Otec: František Lukeš, mistr obuvnitský z Trnové č. 25 
+            syn Josefa Lukeše ?nádeníka? z Trnové č. 6 
+            a matky Anny rozené Petrákové ???
+            Matka: Josefa, vlastní dcera Františka Láhna z Trnové č. 25 
+            a matky Josefy rozené Sellingerowi
+            Poznámka: 29. april 1872
+        </note>
+    </birth>
+
+<note>
+sken 20
+
+Martus 24. 1844, narozen, 25. pokřtěn
+František
+Otec: František Lukeš, mistr obuvnitský z Trnové z čísla domu 25, syn Josefa Lukeše, nádeníka z Trnové č. 6 a matky Anny rozené Petrákové
+Matka: Josefa, vlastní dcera františka Láhna mistra truhlářskýho v Trnové č. 25 a matky Josefy rozené Sallingerowe z ???
+Vide pag. 60 iterum Franciscus Lukeš
+
+sken 10
+
+1841, April 2 narozená, 2. pokřtěná
+Trnová 25
+Kateřina
+Otec: František Lukeš, mistr obuvnický z Trnové z čísla domu 25 poddán do Trnové, vlastní syn Josefa Lukeše ??? též z Trnové z čísla 6 a poddanýho též do Trnové ???
+Matka: Josefa Láhnová, wlastní dcera Františka Láhna, mistra truhlářskýho z Trnové č. 25 a matky Josefy rozené Sallingerovy
+26/6 68
+
+sken 2
+
+1839, Januarius, 12. narozen, 13 pokřtěn
+Trnová 25
+Josef
+Otec: František Lukeš, mistr obuvnický z Trnové č. 25, syn Josefa Lukeše...
+</note>
+
+    <birth>
+        <page><scan>60</scan><page>116</page></page>
+        <born href="TANCLFRANTISKA" />
+        <date>18.2.1856</date>
+        <place href="TRNOW" house-nr="13" />
+        <father href="TANCLJOSEF" />
+        <mather href="VOTROUBEKKATERINA" />
+
+        <note>
+            sken 60, str. 116
+            1856, 18. února, 20. pokřtěná
+            Trnová 13
+            Františka
+            Otec: Tancl Josef, ovčák z Trnové č. 13. statku Trnovského, 
+            okresního úřadu a soudu Zbraslavského, syn Václava Tancla, 
+            ovčáka z Trnové a matky Anny rozené Březinové z ???
+            Matka: Kateřina dcera Jana Votroubka, nádeníka z Trnové č. 13 
+            téhož statku a okresního úřadu a soudu Zbraslavského, 
+            kraje Pražského a matky Anny rozené Smejkalové z Trnové č. 9
+        </note>
+    </birth>
+
+<note>
+sken 71
+1859, 21., 23. únor
+Trnová 25
+Antonie
+Otec: Tancl Josef, domkář v Trnové č. 25, tohotéž bývalého statku okresního úřadu a soudu Zbraslavského, kraje Pražského, manželský syn 4 Vácclava Tancla mistžra ovčáckého v Trnově č. 13 a matky Anny rozné Březinovy z Vosova
+Matka: Votroubek Kateřina manželská dceera Jana Votroubka nádeníka v Rnově č. 9 tohotéž bývalého statku okresního úřadu a soudu Zbraslavského kraje Pražského a matky Anny rozené Smejkalovy z Trnova č. 9
+</note>
+
+</matrika>
+</list>

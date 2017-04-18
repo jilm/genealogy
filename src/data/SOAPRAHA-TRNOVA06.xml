@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<list>
+<matrika id="SOAPRAHA-TRNOVA06">
+
+    <title>Matrika zemřelých v obci Trnová</title>
+    <author>Trnová, Římskokatolická církev</author>
+    <volume>II.</volume>
+    <year>1785--1836</year>
+    <archiv>Státní oblastní archiv v Praze</archiv>
+
+    <death>
+        <page><scan>21</scan><page>19</page></page>
+        <date>19.9.1836</date>
+        <place href="TRNOW" house-nr="25" />
+        <died href="SALLINGERJOSEFA" />
+        <note>
+            September 1836 19. zemřela
+            Trnová 25
+            Josefka Láhnowá, manželka Františka Láhna, mistra truhlářskýho,
+            49 let
+        </note>
+    </death>
+
+</matrika>
+</list>

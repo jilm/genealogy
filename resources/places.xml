@@ -49465,11 +49465,11 @@
       <district>Mladá Boleslav</district>
       <note>Trnow</note>
    </place>
-   <place>
-      <parish/>
+   <place id="TRNOW">
+      <parish>Trnová</parish>
       <note/>
-      <district/>
-      <note>Ternow</note>
+      <district>Praha-západ</district>
+      <note>Trnow</note>
    </place>
    <place>
       <parish>Trnová</parish>

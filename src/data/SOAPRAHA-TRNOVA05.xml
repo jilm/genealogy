@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<list>
+<matrika id="SOAPRAHA-TRNOVA05">
+
+    <title>Matrika oddaných v obci Trnová</title>
+    <author>Trnová, Římskokatolická církev</author>
+    <year>1840--1881</year>
+
+    <wedding>
+        <page><scan>12</scan><page>10</page></page>
+        <place href="TRNOW" house-nr="13" />
+        <date>18.2.1849</date>
+        <bride href="VOTROUBEKKATERINA" />
+        <bridegroom href="TANCLJOSEF" />
+        <note>
+            1849, február 18.
+            Trnová 13
+            Ženich: Josef Tancl, syn Václava Tancla mistra ??? v Trnové, 
+            číslo domu 13; a matky Anny rozené Březinové (1822 11. září, 
+            Sudovice č. 25, fara Starý Kunín) 26 let
+            Nevěsta: Kateřina Wotroubkowá dcera Jana Wotroubka nádeníka 
+            z Trnové č. 12 a matky Anny rozené Smejkalové z Trnové č. 9, 22let
+       </note>
+    </wedding>
+
+    <wedding>
+       <page><scan>37</scan><page>35</page></page>
+       <place href="TRNOW" house-nr="25" />
+       <date>28.2.1876</date>
+       <bride href="TANCLFRANTISKA" />
+       <bridegroom href="LUKESFRANTISEK" />
+       <note>
+sken 37, str 35
+1876, 28. únor
+Trnová 25
+Ženich: Lukeš František, mistr truhlářský v Trnové č. 16, dříve statku Trnová, nyní soud. okr. Zbraslavského, podkraje smíchovského, v kraji pražském, manžeslký syn otce Františka Lukeše, mistra obuvnického v Trnové č. 16 a matky rozené Lánovy z té samé Trnové č. 25
+Ženichova druhá manželka zemřela 10. ledna 1876 v Trnové
+Oba snoubenci jsou narozeni v Trnové
+Ohlášeni byli: v neděli devítník 13. února 1876
+v neděli 1. po devítníku 20. února 1876
+v neděli 2. po devítníku 27. února 1876
+katolického vyznání, narozen 4. dubna 1847 (28let), vdovec
+Nevěsta: Tanclová Františka, manželská dcera Josefa Tancla, domkáře v Trnové č. 25, dříve statku Trnová, nyní soud. okr. Zbraslavského, podkraje smíchovského v kraji Pražském a jehož manželky Kateřiny rozené Votroubek z té samé Trnové č. 13
+Otec nezletilé nevěsty svoluje ku sňatku své dcery Františky, což stvrzuje svým podpisem u přítomnosti dvou spolupodepsaných svědků
+katolického vyznání, narozena 18. února 1856 (20roků), svobodná
+       </note>
+    </wedding>
+
+</matrika>
+</list>

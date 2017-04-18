@@ -48,7 +48,7 @@
                 <xsl:when test="not(empty($birth_verified))">
                     <!-- get source -->
                     <xsl:variable name="source"
-                         select="//matrika[contains(birth, $birth_verified)]" />
+                         select="$birth_verified/parent::matrika" />
                     <xsl:variable name="scan"
                          select="$birth_verified/page/scan" />
                     <birth verified="true">

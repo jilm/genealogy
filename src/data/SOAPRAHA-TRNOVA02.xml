@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<list>
+<matrika id="SOAPRAHA-TRNOVA03">
+
+    <title>Matrika narozených v obci Trnová 1784--1838</title>
+    <author>Trnová, Římskokatolická církev</author>
+    <volume>II.</volume>
+
+    <birth>
+        <page><scan>50</scan></page>
+        <born href="VOTROUBEKKATERINA" />
+        <date>17.4.1828</date>
+        <place href="TRNOW" house-nr="6" />
+        <father href="VOTROUBEKJAN" />
+        <mather href="SMEJKALANNA" />
+        <note>
+            sken 50
+            17,18. Dubna 1828
+            Trnová 6
+            Kateřina
+            Otec: Jan Votroubek nádeník z Trnové syn Jana Wotroubka z ??? a matky Anny rozené ???
+            Matka: Anna
+        </note>
+    </birth>
+
+</matrika>
+</list>

@@ -153,7 +153,7 @@ grammar {
     & Page ?         # a page where you can find the record
     & Date ?         # date of birth
     & Place ?        # a place of birth
-    & Born ?         # name of the person which was born
+    & Born           # name of the person which was born
     & Father ?       # a reference to mather
     & Mather ?       # a reference to father
     & Patrini *
@@ -166,6 +166,7 @@ grammar {
     & Page ?
     & Date ?
     & Place ?
+    & Died
     & Name ?
     & Note *
   )
@@ -183,6 +184,7 @@ grammar {
   }
   
   Born = element born { PeopleReference }
+  Died = element died { PeopleReference }
 
   commonRecordContent = (
     Url ?

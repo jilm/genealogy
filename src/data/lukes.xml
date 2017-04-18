@@ -60,10 +60,6 @@
       <second>Tanclová</second>
       <married>Lukešová</married>
     </name>
-    <birth href="TRNOVA03:116" />
-    <wedding href="TRNOVA05:01" />
-    <father href="TANCLJOSEF" />
-    <mather href="VOTROUBEKKATERINA" />
     <note>Domkář</note>
   </person>
 
@@ -73,8 +69,6 @@
       <second>Votroubková</second>
       <married>Tanclová</married>
     </name>
-    <father href="VOTROUBEKJAN" />
-    <mather href="SMEJKALANNA" />
     <note>Trnová</note>
   </person>
 
@@ -100,7 +94,7 @@
       <first>Josef</first>
       <second>Tancl</second>
     </name>
-    <note>Ovčák z Trnové č. 13</note>
+    <note>Ovčák</note>
     <father href="TANCLVACLAV" />
     <mather href="BREZINAANNA" />
   </person>
@@ -133,29 +127,11 @@
 
 
   <person id="LUKESFRANTISEK" sex="male">
-
     <name>
-
       <first>František</first>
-
       <second>Lukeš</second>
-
     </name>
-
-    <birth>
-
-      <date>4.4.1847</date>
-
-      <place>Trnová 25</place>
-
-    </birth>
-
-    <father href="LUKESFRANTISEKII" />
-
-    <mather href="LAHNJOSEFA" />
-
     <note>Mistr truhlářský</note>
-
   </person>
 
 
@@ -199,16 +175,15 @@
 
 
   <person sex="female" id="SALLINGERJOSEFA">
-
     <name>
-
       <first>Josefa</first>
-
       <second>Sallingerová</second>
-
       <married>Láhnová</married>
-
     </name>
+    <birth>
+        <place href="TRNOW" />
+        <date>1787</date>
+    </birth>
 
   </person>
 

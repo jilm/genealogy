@@ -8,6 +8,10 @@
 
   <xi:include href="data/okrina.xml" />
   <xi:include href="data/lidinsky.xml" />
+  <xi:include href="data/SOAPRAHA-TRNOVA02.xml" />
+  <xi:include href="data/SOAPRAHA-TRNOVA03.xml" />
+  <xi:include href="data/SOAPRAHA-TRNOVA05.xml" />
+  <xi:include href="data/SOAPRAHA-TRNOVA06.xml" />
 
   <person id="JILM" sex="male">
     <name>
