@@ -96,7 +96,7 @@
         g[female]{
             <xsl:apply-templates select="name" />
             <xsl:text> </xsl:text>
-            <xsl:apply-templates select="birth" />
+            <xsl:apply-templates select="birth" mode="graph" />
             <xsl:text> </xsl:text>
             <xsl:apply-templates select="death" />
         }

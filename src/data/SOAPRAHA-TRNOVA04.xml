@@ -1,0 +1,30 @@
+<list>
+
+<matrika id="SOAPRAHA-TRNOVA04" >
+    <title>Matrika oddaných v obci Trnová.</title>
+    <author>Trnová, Římskokatolická církev</author>
+    <year>1785--1836</year>
+    <volume>A</volume>
+    <archiv>Státní oblastní archiv v Praze</archiv>
+
+    <wedding>
+        <page><scan>25</scan></page>
+        <date>5.2.1836</date>
+        <place href="TRNOW" house-nr="6" />
+        <bride href="LAHNJOSEFA" />
+        <bridegroom href="LUKESFRANTISEKII" />
+
+        <note>
+Trnová 6
+Február 5. 1837
+Ženich: František Lukeš mistr obuvnický z Trnové z č. 6, syn Josefa Lukeše
+??? čeledína z Trnové 6 a matky Anny rozené Petrákové od ??? č. 3
+23 let, nar. 30 nov. 1814
+Nevěsta: Josefka dcera Františka Láhna mistra truhlářského ??? z Trnové č. 25
+a matky rozené Sallingrová z ???
+25 let, 12.2.1812
+        </note>
+    </wedding>
+</matrika>
+
+    </list>

@@ -190,23 +190,13 @@
 
 
   <person id="LUKESFRANTISEKII" sex="male" >
-
     <name>
-
       <first>František</first>
-
       <second>Lukeš</second>
-
     </name>
-
-    <birth href="TRNOVA02:32" />
-
     <father href="LUKESJOSEFII" />
-
-    <mather href="POTUCEKANNA" />
-
+    <mather href="PETRAKANNA" />
     <note>Mistr obuvnický</note>
-
   </person>
 
 
@@ -225,13 +215,13 @@
 
 
 
-  <person id="POTUCEKANNA" sex="female" >
+  <person id="PETRAKANNA" sex="female" >
 
     <name>
 
       <first>Anna</first>
 
-      <second>Potůčková</second>
+      <second>Petráková</second>
 
       <married>Lukešová</married>
 

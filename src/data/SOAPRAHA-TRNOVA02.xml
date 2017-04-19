@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <list>
-<matrika id="SOAPRAHA-TRNOVA03">
+<matrika id="SOAPRAHA-TRNOVA02">
+
+<note>
+    Narozeni index od 79
+    N: 90
+    H: 100
+    Oddani, index od 107, je ale povetsinou prazdny
+    L, M: 111
+    N: 112
+    S: 114
+    O, P : 113
+</note>
+
 
     <title>Matrika narozených v obci Trnová 1784--1838</title>
     <author>Trnová, Římskokatolická církev</author>
@@ -22,6 +34,24 @@
             Otec: Jan Votroubek nádeník z Trnové syn Jana Wotroubka z ??? a matky Anny rozené ???
             Matka: Anna
         </note>
+    </birth>
+
+    <birth>
+        <page><scan>35</scan></page>
+        <born href="LUKESFRANTISEKII" />
+        <date>30.11.1814</date>
+        <place href="TRNOW" house-nr="6" />
+        <father href="LUKESJOSEFII" />
+        <mather href="PETRAKANNA" />
+
+        <note>
+            30. november 1814
+            Trnová 6
+            Franciscus Lukesch
+            Otec: Josef Lukeš
+            Mathka: Anna dcera Jana Petrák z 
+        </note>
+
     </birth>
 
 </matrika>
