@@ -81,4 +81,45 @@
         <xsl:text>, </xsl:text><xsl:next-match />
     </xsl:template>
 
+    <!--
+        Graph mode
+    -->
+
+  <xsl:template match="death[date and place]" mode="graph">
+    <xsl:variable name="date">
+      <xsl:apply-templates select="date" />
+    </xsl:variable>
+    <xsl:variable name="place">
+      <xsl:apply-templates select="place" />
+    </xsl:variable>
+    <xsl:value-of select="concat(jilm:get-death-symbol(.), '~', $date, ', ', $place)" />
+  </xsl:template>
+
+  <xsl:template match="death[date and not(place)]" mode="graph">
+    <xsl:variable name="date">
+      <xsl:apply-templates select="date" />
+    </xsl:variable>
+    <xsl:value-of select="concat(jilm:get-death-symbol(.), '~', $date)" />
+  </xsl:template>
+
+  <xsl:template match="death[not(date) and place]" mode="graph">
+    <xsl:variable name="place">
+      <xsl:apply-templates select="place" />
+    </xsl:variable>
+    <xsl:value-of select="concat(jilm:get-death-symbol(.), '~', $place)" />
+  </xsl:template>
+
+  <xsl:function name="jilm:get-death-symbol">
+    <xsl:param name="death-element" />
+    <xsl:choose>
+      <xsl:when test="$death-element[@verified = 'true']">
+        <xsl:value-of select="$ver-death-symbol" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="$death-symbol" />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:function>
+
+
 </xsl:stylesheet>

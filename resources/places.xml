@@ -36985,7 +36985,7 @@
       <district>Jindřichův Hradec</district>
       <note>Plasche</note>
    </place>
-   <place>
+   <place id="PLESCHITZ">
       <parish>Plešice</parish>
       <note>Morava</note>
       <district>Třebíč</district>
@@ -51481,7 +51481,7 @@
       <district>Karlovy Vary</district>
       <note>Waltsch</note>
    </place>
-   <place>
+   <place id="WALTSCH">
       <parish>Valeč</parish>
       <note>Morava</note>
       <district>Třebíč</district>

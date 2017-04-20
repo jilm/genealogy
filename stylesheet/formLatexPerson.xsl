@@ -84,9 +84,9 @@
         g[male]{
             <xsl:apply-templates select="name" />
             <xsl:text> </xsl:text>
-            <xsl:apply-templates select="birth" />
+            <xsl:apply-templates select="birth" mode="graph" />
             <xsl:text> </xsl:text>
-            <xsl:apply-templates select="death" />
+            <xsl:apply-templates select="death" mode="graph" />
         }
         <xsl:apply-templates select="father" mode="graph" />
         <xsl:apply-templates select="mather" mode="graph" />
@@ -98,7 +98,7 @@
             <xsl:text> </xsl:text>
             <xsl:apply-templates select="birth" mode="graph" />
             <xsl:text> </xsl:text>
-            <xsl:apply-templates select="death" />
+            <xsl:apply-templates select="death" mode="graph" />
         }
         <xsl:apply-templates select="father" mode="graph" />
         <xsl:apply-templates select="mather" mode="graph" />

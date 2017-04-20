@@ -296,6 +296,12 @@
     </name>
   </person>
 
+  <person id="WALLA" sex="female" >
+    <name>
+      <second>Walla</second>
+    </name>
+  </person>
+
   <person id="MANFRANTISKA" sex="female">
     <name>
       <first>Františka</first>
@@ -304,8 +310,6 @@
     </name>
     <birth href="MZABRNO-11054-28-MANNFRANCISKA" />
     <wedding href="MZABRNO-11060-60-JONASMANN" />
-    <father href="MANNJAKUB" />
-    <mather href="WODLANTONIA" />
   </person>
 
   <person id="OKRINAJAKUB" sex="male">

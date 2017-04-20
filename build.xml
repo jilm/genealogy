@@ -186,19 +186,23 @@
 
     </xslt>
 
-    <exec executable="pdflatex"
+    <exec executable="xelatex"
           dir="${build.dir}">
-      <arg file="${build.dir}/personList.tex" />
+      <arg file="${build.dir}/book.tex" />
     </exec>
     <exec executable="bibtex"
           dir="${build.dir}">
-      <arg line="personList" />
+      <arg line="book" />
     </exec>
-    <exec executable="pdflatex"
+    <exec executable="makeindex"
+          dir="${build.dir}">
+      <arg line="book" />
+    </exec>
+    <exec executable="xelatex"
           dir="${build.dir}">
       <arg file="${build.dir}/personList.tex" />
     </exec>
-    <exec executable="pdflatex"
+    <exec executable="xelatex"
           dir="${build.dir}">
       <arg file="${build.dir}/personList.tex" />
     </exec>
@@ -232,7 +236,7 @@
   </target>
 
 
-  <target name="index" depends="person-list">
+  <target name="index" depends="lists">
 
     <description>
       # Create a source for index of persons for the book

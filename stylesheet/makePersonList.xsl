@@ -41,6 +41,9 @@
             <xsl:variable name="birth_verified"
                           select="//birth[born[@href = $id]]" />
             <xsl:variable name="birth" select="birth" />
+            <xsl:variable name="death_verified"
+                          select="//death[died[@href = $id]]" />
+            <xsl:variable name="death" select="death" />
             <!-- person name -->
             <xsl:apply-templates select="name" />
             <!-- birth details -->
@@ -74,7 +77,30 @@
                 </xsl:otherwise>
             </xsl:choose>
             <!--<xsl:apply-templates select="wedding" />-->
-            <xsl:apply-templates select="death" />
+            <!-- death details -->
+            <xsl:choose>
+                <xsl:when test="not(empty($death_verified))">
+                    <!-- get source -->
+                    <xsl:variable name="source"
+                         select="$death_verified/parent::matrika" />
+                    <xsl:variable name="scan"
+                         select="$death_verified/page/scan" />
+                    <death verified="true">
+                        <xsl:attribute name="cite" select="$source/@id" />
+                        <xsl:attribute name="scan" select="$scan" />
+                        <xsl:apply-templates select="$death_verified/date" />
+                        <xsl:apply-templates select="$death_verified/place" />
+                    </death>
+                    <xsl:apply-templates select="$death_verified/father" />
+                    <xsl:apply-templates select="$death_verified/mather" />
+                </xsl:when>
+                <xsl:when test="not(empty($death))" >
+                    <death verified="false">
+                        <xsl:apply-templates select="$death/date" />
+                        <xsl:apply-templates select="$death/place" />
+                    </death>
+                </xsl:when>
+            </xsl:choose>
         </person>
     </xsl:template>
 

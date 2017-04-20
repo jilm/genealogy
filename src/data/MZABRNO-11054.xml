@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<list>
+<matrika id="MZABRNO-11054">
+ 
+    <title>Matrika narozených v obci Chroustov, Dolní Vilémovice, Plešice, Třebenice, Valeč</title>
+    <author>Valeč, římskokatolická církev</author>
+    <volume>Ji 732; 1507</volume>
+    <archiv>Moravský zemský archiv Brno</archiv>
+    <year>1784--1824</year>
+ 
+    <birth>
+ 
+        <page><scan>115</scan></page>
+        <date>13.6.1809</date>
+        <place href="WALTSCH" house-nr="50" />
+        <born href="JONASJAKUB" />
+        <father href="JONASSIMON" />
+        <mather href="WALLA" />
+ 
+        <note>
+        13 jula 
+        Valeč 50
+        Jakob
+        Otec: Šimon Jonáš
+        matka: ??? geboren Walla
+        </note>
+ 
+    </birth>
+ 
+ 
+    <birth>
+ 
+        <page><scan>28</scan></page>
+        <date>28.1.1816</date>
+        <place href="PLESCHITZ" house-nr="8" />
+        <born href="MANNFRANTISKA" />
+        <father href="MANNJAKUB" />
+        <mather href="WODLANTONIA" />
+ 
+        <note>
+ 
+28. Januaris 1816
+Plešice 8
+Františka
+Otec: Jakub Mann
+Matka: Anna geboren Wodl (Bodl)
+ 
+        </note>
+ 
+ 
+</birth>
+ 
+</matrika>
+</list>
