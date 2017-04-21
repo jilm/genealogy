@@ -4086,7 +4086,7 @@
       <district>Žďár nad Sázavou</district>
       <note>Birkicht</note>
    </place>
-   <place>
+   <place id="BRIES">
       <parish>Březí u Týna nad Vltavou</parish>
       <note>Čechy</note>
       <district>České Budějovice</district>

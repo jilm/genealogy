@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<list><matrika id="SOATREBON-4133">
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <rdf:Description rdf:about="http://digi.ceskearchivy.cz/4133">
+ <dc:title xml:lang="cs">Matriční kniha Chrášťany č.9, N 1860-1869</dc:title>
+ <dc:title xml:lang="en">Parish register Chrášťany No.9, B 1860-1869</dc:title>
+ <dc:creator xml:lang="cs">Farní úřad Chrášťany</dc:creator>
+ <dc:creator xml:lang="en">Parish office Chrášťany</dc:creator>
+ <dc:subject xml:lang="cs">Sbírka matrik SOA v Třeboni</dc:subject>
+ <dc:subject xml:lang="cs">matriční knihy</dc:subject>
+ <dc:subject xml:lang="cs">matriky</dc:subject>
+ <dc:subject xml:lang="cs">digitalizovaný obsah</dc:subject>
+ <dc:subject xml:lang="en">parish registers</dc:subject>
+ <dc:subject xml:lang="en">digitized content</dc:subject>
+ <dc:description xml:lang="cs">Matriční kniha č.9 Chrášťany.</dc:description>
+ <dc:description xml:lang="cs">Datace: NAROZENÍ: 1860/1869, ODDANÍ: -, ZEMŘELÍ: -.</dc:description>
+ <dc:description xml:lang="cs">Zápisy pro obce: Březí, Doubrava, Doubravka, Dražíč, Hosty, Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov,Březí, Doubrava, Doubravka, Dražíč, Hosty, Chrášťanská Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov.</dc:description>
+ <dc:description xml:lang="cs">Stran: 332</dc:description>
+ <dc:description xml:lang="en">Parish register 9 Chrášťany.</dc:description>
+ <dc:description xml:lang="en">Time extent: BIRTH: 1860/1869, MARRIAGE: -, DEATH: -.</dc:description>
+  <dc:description xml:lang="en">Records of: Březí, Doubrava, Doubravka, Dražíč, Hosty, Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov,Březí, Doubrava, Doubravka, Dražíč, Hosty, Chrášťanská Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov.</dc:description>
+ <dc:description xml:lang="en">Pages: 332</dc:description>
+ <dc:publisher xml:lang="cs">Farní úřad Chrášťany</dc:publisher>
+ <dc:publisher xml:lang="en">Parish office Chrášťany</dc:publisher>
+ <dc:date>1860/1869</dc:date>
+  <dc:type xml:lang="cs">matriční kniha</dc:type>
+ <dc:type xml:lang="en">parish register</dc:type>
+ <dc:identifier>http://digi.ceskearchivy.cz/4133</dc:identifier>
+ <dc:source>ČR - Státní oblastní archiv v Třeboni / State regional archives Třeboň</dc:source>
+ <dc:language>cze</dc:language>
+ <dc:coverage>Temporal: 1860/1869</dc:coverage>
+ <dc:coverage>Spatial: Březí</dc:coverage>
+ <dc:coverage>Spatial: Doubrava</dc:coverage>
+ <dc:coverage>Spatial: Doubravka</dc:coverage>
+ <dc:coverage>Spatial: Dražíč</dc:coverage>
+ <dc:coverage>Spatial: Hosty</dc:coverage>
+ <dc:coverage>Spatial: Hůrka</dc:coverage>
+ <dc:coverage>Spatial: Chrášťany</dc:coverage>
+ <dc:coverage>Spatial: Karlov-Nepomuk</dc:coverage>
+ <dc:coverage>Spatial: Koloměřice</dc:coverage>
+ <dc:coverage>Spatial: Lipovsko</dc:coverage>
+ <dc:coverage>Spatial: Nemějice</dc:coverage>
+ <dc:coverage>Spatial: Pašovice</dc:coverage>
+ <dc:coverage>Spatial: Písecká Smoleč</dc:coverage>
+ <dc:coverage>Spatial: Slabčice</dc:coverage>
+ <dc:coverage>Spatial: Vranov,Březí</dc:coverage>
+ <dc:coverage>Spatial: Doubrava</dc:coverage>
+ <dc:coverage>Spatial: Doubravka</dc:coverage>
+ <dc:coverage>Spatial: Dražíč</dc:coverage>
+  <dc:coverage>Spatial: Hosty</dc:coverage>
+ <dc:coverage>Spatial: Chrášťanská Hůrka</dc:coverage>
+ <dc:coverage>Spatial: Chrášťany</dc:coverage>
+ <dc:coverage>Spatial: Karlov-Nepomuk</dc:coverage>
+ <dc:coverage>Spatial: Koloměřice</dc:coverage>
+ <dc:coverage>Spatial: Lipovsko</dc:coverage>
+ <dc:coverage>Spatial: Nemějice</dc:coverage>
+ <dc:coverage>Spatial: Pašovice</dc:coverage>
+ <dc:coverage>Spatial: Písecká Smoleč</dc:coverage>
+ <dc:coverage>Spatial: Slabčice</dc:coverage>
+ <dc:coverage>Spatial: Vranov</dc:coverage>
+ <dc:coverage></dc:coverage>
+ </rdf:Description>
+</rdf:RDF>
+
+ <birth>
+
+        <page><scan>84</scan><page>83</page></page>
+        <url>https://digi.ceskearchivy.cz/DA?doctree=1nrie&amp;menu=3&amp;id=4133&amp;page=84</url>
+        <date>6.9.1862</date>
+        <place href="BRIES" house-nr="23" />
+        <born href="LIDINSKYJAN" />
+        <mather href="LIDINSKYANNA" />
+
+ <note>
+6. září 1862
+Jan
+Březí č. 23, okres Písek
+matka: Anna, dcera Antonína Lidinskýho, podruha v Březí č. 23 a matky Marie, dcery Josefa Koláře, domkáře v Březí č. 11
+ </note>
+
+ </birth>
+
+</matrika></list>
