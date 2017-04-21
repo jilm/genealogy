@@ -8,6 +8,7 @@
   <xsl:import href="latex.xsl" />
   <xsl:import href="formLatexBirth.xsl" />
   <xsl:import href="formLatexDeath.xsl" />
+  <xsl:import href="formLatexWedding.xsl" />
   <xsl:import href="functions.xsl" />
   <xsl:import href="formLatexDate.xsl" />
   <xsl:import href="formLatexPerson.xsl" />

@@ -105,8 +105,11 @@
     </xsl:template>
 
     <xsl:template match="father | mather" mode="graph">
-        parent{
-            <xsl:apply-templates select="jilm:getPerson(@href)" mode="graph" />
+        <xsl:variable name="ref" select="@href" />
+        <xsl:variable name="person" select="jilm:getPerson($ref)" />
+        <xsl:variable name="wedding" select="jilm:getWedding($person/mather/@href)" />
+        parent[family label={<xsl:apply-templates select="$wedding" mode="graph" />}]{
+            <xsl:apply-templates select="$person" mode="graph" />
         }
     </xsl:template>
 

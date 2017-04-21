@@ -103,9 +103,6 @@
     <notes>
       podruh
     </notes>
-    <birth>
-      <place>Březí 23</place>
-    </birth>
   </person>
   
   <person id="KOLARMARIE" sex="female">
@@ -133,12 +130,6 @@
       <first>Anna Marie</first>
       <second>Lidinská</second>
     </name>
-    <birth cite="MN-CHRASTANY-7-1828-1846" scan="238" page="238">
-      <date>13.8.1840</date>
-      <place>Březí 11</place>
-    </birth>
-    <father href="LIDINSKYANTONIN" />
-    <mather href="KOLARMARIE" />
   </person>
   
   <person id="LIDINSKYJAN" sex="male">
@@ -146,14 +137,9 @@
       <first>Jan</first>
       <second>Lidinský</second>
     </name>
-    <birth cite="MN-CHRASTANY-9-1860-1869" scan="84" page="83">
-      <date>6.9.1862</date>
-      <place>Březí u Týna nad Vltavou</place>
-    </birth>
     <notes>
       nádeník, kočí, Komářice
     </notes>
-    <mather href="LIDINSKYANNA" />
   </person>
   
   <person id="LIDINSKYTOMAS" sex="male">

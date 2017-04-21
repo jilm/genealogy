@@ -88,7 +88,7 @@
         <xsl:variable name="ref" select="@href" />
         <xsl:variable name="person" select="jilm:getPerson($ref)" />
 \eject \pdfpagewidth=1783mm \pdfpageheight=420mm
-\begin{tikzpicture}\genealogytree[template=signpost, level size=3cm, box={width=2cm, height=3cm}]{
+\begin{tikzpicture}\genealogytree[template=signpost, level size=3cm, box={width=2cm, height=3cm}, label options={fill=white,node font=\footnotesize,inner sep=0.5mm,draw=green!30!black}]{
     parent{
         <xsl:apply-templates select="$person" mode="graph" />
     }

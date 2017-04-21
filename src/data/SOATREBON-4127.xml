@@ -1,0 +1,85 @@
+<list>
+<matrika id="SOATREBON-4127">
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="http://digi.ceskearchivy.cz/4127">
+   <dc:title xml:lang="cs">Matriční kniha Chrášťany č.3, N 1771-1823</dc:title>
+   <dc:title xml:lang="en">Parish register Chrášťany No.3, B 1771-1823</dc:title>
+   <dc:creator xml:lang="cs">Farní úřad Chrášťany</dc:creator>
+   <dc:creator xml:lang="en">Parish office Chrášťany</dc:creator>
+   <dc:subject xml:lang="cs">Sbírka matrik SOA v Třeboni</dc:subject>
+   <dc:subject xml:lang="cs">matriční knihy</dc:subject>
+   <dc:subject xml:lang="cs">matriky</dc:subject>
+   <dc:subject xml:lang="cs">digitalizovaný obsah</dc:subject>
+   <dc:subject xml:lang="en">parish registers</dc:subject>
+   <dc:subject xml:lang="en">digitized content</dc:subject>
+   <dc:description xml:lang="cs">Matriční kniha č.3 Chrášťany.</dc:description>
+   <dc:description xml:lang="cs">Datace: NAROZENÍ: 1771/1823, ODDANÍ: -, ZEMŘELÍ: -.</dc:description>
+   <dc:description xml:lang="cs">Zápisy pro obce: Březí, Doubrava, Doubravka, Dražíč, Hosty, Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov,Březí, Doubrava, Doubravka, Dražíč, Hosty, Chrášťanská Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov.</dc:description>
+   <dc:description xml:lang="cs">Stran: 346</dc:description>
+   <dc:description xml:lang="en">Parish register 3 Chrášťany.</dc:description>
+   <dc:description xml:lang="en">Time extent: BIRTH: 1771/1823, MARRIAGE: -, DEATH: -.</dc:description>
+   <dc:description xml:lang="en">Records of: Březí, Doubrava, Doubravka, Dražíč, Hosty, Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov,Březí, Doubrava, Doubravka, Dražíč, Hosty, Chrášťanská Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov.</dc:description>
+   <dc:description xml:lang="en">Pages: 346</dc:description>
+   <dc:publisher xml:lang="cs">Farní úřad Chrášťany</dc:publisher>
+   <dc:publisher xml:lang="en">Parish office Chrášťany</dc:publisher>
+   <dc:date>1771/1823</dc:date>
+   <dc:type xml:lang="cs">matriční kniha</dc:type>
+   <dc:type xml:lang="en">parish register</dc:type>
+   <dc:identifier>http://digi.ceskearchivy.cz/4127</dc:identifier>
+   <dc:source>ČR - Státní oblastní archiv v Třeboni / State regional archives Třeboň</dc:source>
+   <dc:language>lat</dc:language>
+   <dc:coverage>Temporal: 1771/1823</dc:coverage>
+   <dc:coverage>Spatial: Březí</dc:coverage>
+   <dc:coverage>Spatial: Doubrava</dc:coverage>
+   <dc:coverage>Spatial: Doubravka</dc:coverage>
+   <dc:coverage>Spatial: Dražíč</dc:coverage>
+   <dc:coverage>Spatial: Hosty</dc:coverage>
+   <dc:coverage>Spatial: Hůrka</dc:coverage>
+   <dc:coverage>Spatial: Chrášťany</dc:coverage>
+   <dc:coverage>Spatial: Karlov-Nepomuk</dc:coverage>
+   <dc:coverage>Spatial: Koloměřice</dc:coverage>
+   <dc:coverage>Spatial: Lipovsko</dc:coverage>
+   <dc:coverage>Spatial: Nemějice</dc:coverage>
+   <dc:coverage>Spatial: Pašovice</dc:coverage>
+   <dc:coverage>Spatial: Písecká Smoleč</dc:coverage>
+   <dc:coverage>Spatial: Slabčice</dc:coverage>
+   <dc:coverage>Spatial: Vranov,Březí</dc:coverage>
+   <dc:coverage>Spatial: Doubrava</dc:coverage>
+   <dc:coverage>Spatial: Doubravka</dc:coverage>
+   <dc:coverage>Spatial: Dražíč</dc:coverage>
+   <dc:coverage>Spatial: Hosty</dc:coverage>
+   <dc:coverage>Spatial: Chrášťanská Hůrka</dc:coverage>
+   <dc:coverage>Spatial: Chrášťany</dc:coverage>
+   <dc:coverage>Spatial: Karlov-Nepomuk</dc:coverage>
+   <dc:coverage>Spatial: Koloměřice</dc:coverage>
+   <dc:coverage>Spatial: Lipovsko</dc:coverage>
+   <dc:coverage>Spatial: Nemějice</dc:coverage>
+   <dc:coverage>Spatial: Pašovice</dc:coverage>
+   <dc:coverage>Spatial: Písecká Smoleč</dc:coverage>
+   <dc:coverage>Spatial: Slabčice</dc:coverage>
+   <dc:coverage>Spatial: Vranov</dc:coverage>
+   <dc:coverage></dc:coverage>
+  </rdf:Description>
+</rdf:RDF>
+
+    <birth>
+        <page><scan>243</scan></page>
+        <date>30.4.1812</date>
+        <place href="LIPOVSKO" house-nr="10" />
+        <born href="LIDINSKYANTONIN" />
+        <note>
+30.aprilis 1812
+Lidinsky Antonius
+Mathis Lidinsky et Elisabetha Klauschek
+Lipomko 10
+Otec: mathias Ledensky
+Matka: Elizabetha 
+        </note>
+    </birth>
+
+
+</matrika>
+</list>
