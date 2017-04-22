@@ -4,23 +4,22 @@
 
 <!--
 
-  Takes a list of persons and generate genealogy genealogytree graph
+  Takes a list of persons and generate text form
+
 
 -->
 
 
 
 <xsl:stylesheet version="2.0"
-  
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  
                 xmlns:my="http://www.lidinsky.cz" >
 
-  
+    <xsl:import href="formTextDate.xsl" />
+    <xsl:import href="formTextPlace.xsl" />
+    <xsl:import href="labels_CZ.xsl" />
 
   <xsl:output method="text" encoding="CP852" />
-
-  
 
   <xsl:variable name="CR" select="codepoints-to-string((13))" />
   <xsl:variable name="LF" select="codepoints-to-string((10))" />
@@ -36,29 +35,53 @@
     <xsl:value-of select="concat(second, ' ', first)" />
   </xsl:template>
 
-  <xsl:template match="birth[normalize-space(date) and normalize-space(place)]">
-    <xsl:value-of select="concat($NL, '  * ', date, ', ', place)" />
+    <xsl:template match="birth[date and place]">
+        <xsl:variable name="place">
+            <xsl:apply-templates select="place" />
+        </xsl:variable>
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+        <xsl:value-of select="concat(' * ', $date, ', ', $place)" />
+    </xsl:template>
+
+  <xsl:template match="birth[date and not(place)]">
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+    <xsl:value-of select="concat(' * ', $date)" />
   </xsl:template>
 
-  <xsl:template match="birth[normalize-space(date) and not(place)]">
-    <xsl:value-of select="concat($NL, '  * ', date)" />
-  </xsl:template>
+    <xsl:template match="birth[not(date) and normalize-space(place)]">
+        <xsl:variable name="place">
+            <xsl:apply-templates select="place" />
+        </xsl:variable>
+        <xsl:value-of select="concat(' * ', $place)" />
+    </xsl:template>
 
-  <xsl:template match="birth[not(date) and normalize-space(place)]">
-    <xsl:value-of select="concat($NL, '  * ', place)" />
-  </xsl:template>
+    <xsl:template match="death[date and place]">
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+        <xsl:variable name="place">
+            <xsl:apply-templates select="place" />
+        </xsl:variable>
+        <xsl:value-of select="concat(' + ', $date, ', ', $place)" />
+    </xsl:template>
 
-  <xsl:template match="death[date and place]">
-    <xsl:value-of select="concat($NL, '  + ', date, ', ', place)" />
-  </xsl:template>
+    <xsl:template match="death[date and not(place)]">
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+        <xsl:value-of select="concat(' + ', $date)" />
+    </xsl:template>
 
-  <xsl:template match="death[date and not(place)]">
-    <xsl:value-of select="concat($NL, '  + ', date)" />
-  </xsl:template>
-
-  <xsl:template match="death[not(date) and place]">
-    <xsl:value-of select="concat($NL, '  + ', place)" />
-  </xsl:template>
+    <xsl:template match="death[not(date) and place]">
+        <xsl:variable name="place">
+            <xsl:apply-templates select="place" />
+        </xsl:variable>
+        <xsl:value-of select="concat(' + ', $place)" />
+    </xsl:template>
 
   <xsl:template match="father[@href]">
     <xsl:variable name="id" select="@href" />
@@ -76,17 +99,19 @@
     <xsl:value-of select="concat($NL, '  Matka: ', $father-name)" />
   </xsl:template>
 
-  <xsl:template match="person">
-    <xsl:variable name="pname">
-      <xsl:apply-templates select="name" />
-    </xsl:variable>
-    <xsl:value-of select="$pname" />
-    <xsl:apply-templates select="birth" />
-    <xsl:apply-templates select="death" />
-    <xsl:apply-templates select="father" />
-    <xsl:apply-templates select="mather" />
-    <xsl:value-of select="codepoints-to-string((13, 10))" />
-  </xsl:template>
+    <xsl:template match="person">
+        <xsl:variable name="name">
+            <xsl:apply-templates select="name" />
+        </xsl:variable>
+        <xsl:variable name="birth">
+            <xsl:apply-templates select="birth" />
+        </xsl:variable>
+        <xsl:variable name="death">
+            <xsl:apply-templates select="death" />
+        </xsl:variable>
+        <xsl:value-of select="string-join(($name, $birth, $death), ' ')" />
+        <xsl:value-of select="codepoints-to-string((13, 10))" />
+    </xsl:template>
 
   <xsl:template match="text()" />
 
