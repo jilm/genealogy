@@ -51491,6 +51491,10 @@
       <note>Morava</note>
       <district>Třebíč</district>
       <note>Waltsch</note>
+      <coordinates>
+          <lon>16.0356869</lon>
+          <lat>49.1443033</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Valov</parish>

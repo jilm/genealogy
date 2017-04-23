@@ -1,12 +1,13 @@
-<list>
-<matrika id="SOATREBON-4127">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<list><matrika id="SOATREBON-4138">
 
 <rdf:RDF
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <rdf:Description rdf:about="http://digi.ceskearchivy.cz/4127">
-   <dc:title xml:lang="cs">Matriční kniha Chrášťany č.3, N 1771-1823</dc:title>
-   <dc:title xml:lang="en">Parish register Chrášťany No.3, B 1771-1823</dc:title>
+  <rdf:Description rdf:about="http://digi.ceskearchivy.cz/4138">
+   <dc:title xml:lang="cs">Matriční kniha Chrášťany č.14, O 1796-1842</dc:title>
+   <dc:title xml:lang="en">Parish register Chrášťany No.14,  1796-1842</dc:title>
    <dc:creator xml:lang="cs">Farní úřad Chrášťany</dc:creator>
    <dc:creator xml:lang="en">Parish office Chrášťany</dc:creator>
    <dc:subject xml:lang="cs">Sbírka matrik SOA v Třeboni</dc:subject>
@@ -15,23 +16,23 @@
    <dc:subject xml:lang="cs">digitalizovaný obsah</dc:subject>
    <dc:subject xml:lang="en">parish registers</dc:subject>
    <dc:subject xml:lang="en">digitized content</dc:subject>
-   <dc:description xml:lang="cs">Matriční kniha č.3 Chrášťany.</dc:description>
-   <dc:description xml:lang="cs">Datace: NAROZENÍ: 1771/1823, ODDANÍ: -, ZEMŘELÍ: -.</dc:description>
+   <dc:description xml:lang="cs">Matriční kniha č.14 Chrášťany.</dc:description>
+   <dc:description xml:lang="cs">Datace: NAROZENÍ: -, ODDANÍ: 1796/1842, ZEMŘELÍ: -.</dc:description>
    <dc:description xml:lang="cs">Zápisy pro obce: Březí, Doubrava, Doubravka, Dražíč, Hosty, Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov,Březí, Doubrava, Doubravka, Dražíč, Hosty, Chrášťanská Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov.</dc:description>
-   <dc:description xml:lang="cs">Stran: 346</dc:description>
-   <dc:description xml:lang="en">Parish register 3 Chrášťany.</dc:description>
-   <dc:description xml:lang="en">Time extent: BIRTH: 1771/1823, MARRIAGE: -, DEATH: -.</dc:description>
+   <dc:description xml:lang="cs">Stran: 167</dc:description>
+   <dc:description xml:lang="en">Parish register 14 Chrášťany.</dc:description>
+   <dc:description xml:lang="en">Time extent: BIRTH: -, MARRIAGE: 1796/1842, DEATH: -.</dc:description>
    <dc:description xml:lang="en">Records of: Březí, Doubrava, Doubravka, Dražíč, Hosty, Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov,Březí, Doubrava, Doubravka, Dražíč, Hosty, Chrášťanská Hůrka, Chrášťany, Karlov-Nepomuk, Koloměřice, Lipovsko, Nemějice, Pašovice, Písecká Smoleč, Slabčice, Vranov.</dc:description>
-   <dc:description xml:lang="en">Pages: 346</dc:description>
+   <dc:description xml:lang="en">Pages: 167</dc:description>
    <dc:publisher xml:lang="cs">Farní úřad Chrášťany</dc:publisher>
    <dc:publisher xml:lang="en">Parish office Chrášťany</dc:publisher>
-   <dc:date>1771/1823</dc:date>
+   <dc:date>1796/1842</dc:date>
    <dc:type xml:lang="cs">matriční kniha</dc:type>
    <dc:type xml:lang="en">parish register</dc:type>
-   <dc:identifier>http://digi.ceskearchivy.cz/4127</dc:identifier>
+   <dc:identifier>http://digi.ceskearchivy.cz/4138</dc:identifier>
    <dc:source>ČR - Státní oblastní archiv v Třeboni / State regional archives Třeboň</dc:source>
-   <dc:language>lat</dc:language>
-   <dc:coverage>Temporal: 1771/1823</dc:coverage>
+   <dc:language>cze</dc:language>
+   <dc:coverage>Temporal: 1796/1842</dc:coverage>
    <dc:coverage>Spatial: Březí</dc:coverage>
    <dc:coverage>Spatial: Doubrava</dc:coverage>
    <dc:coverage>Spatial: Doubravka</dc:coverage>
@@ -65,23 +66,18 @@
   </rdf:Description>
 </rdf:RDF>
 
-    <birth>
-        <page><scan>243</scan></page>
-        <date>30.4.1812</date>
-        <place href="LIPOVSKO" house-nr="10" />
-        <born href="LIDINSKYANTONIN" />
-        <father href="LIDINSKYMATEJ" />
-        <mather href="KLOUCEKALZBETA" />
-        <note>
-30.aprilis 1812
-Lidinsky Antonius
-Mathis Lidinsky et Elisabetha Klauschek
-Lipomko 10
-Otec: mathias Ledensky
-Matka: Elizabetha 
-        </note>
-    </birth>
+    <wedding>
 
+        <page><scan>100</scan><page>99</page></page>
+        <date>13.2.1838</date>
+        <place>Lipovsko 10</place>
+        <bridegroom href="LIDINSKYANTONIN" />
+        <bride href="KOLARMARIE" />
+        Anton Lidinský syn Matěje Lidinskýho domkáře na Lipovským a matky Alžběty rozené Klouček z ???
+        26 let
+        Anna Maria, dcera Josefa Koláře a matky EVY ???
+        23 let
 
-</matrika>
-</list>
+    </wedding>
+
+</matrika></list>

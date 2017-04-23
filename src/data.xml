@@ -6,6 +6,7 @@
 
   <xi:include href="data/lukes.xml" />
 
+  <xi:include href="data/persons.xml" />
   <xi:include href="data/okrina.xml" />
   <xi:include href="data/lidinsky.xml" />
   <xi:include href="data/SOAPRAHA-TRNOVA02.xml" />
@@ -19,6 +20,7 @@
   <xi:include href="data/SOATREBON-4127.xml" />
   <xi:include href="data/SOATREBON-4131.xml" />
   <xi:include href="data/SOATREBON-4133.xml" />
+  <xi:include href="data/SOATREBON-4138.xml" />
 
   <person id="JILM" sex="male">
     <name>

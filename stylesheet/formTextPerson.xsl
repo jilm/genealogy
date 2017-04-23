@@ -22,7 +22,7 @@
         <xsl:variable name="birth">
             <xsl:apply-templates select="jilm:getBirth(@id)" mode="cite" />
         </xsl:variable>
-        <xsl:variable name="death">
+        <xsl:variable name="death"> 
             <xsl:apply-templates select="jilm:getDeath(@id)" mode="cite" />
         </xsl:variable>
         <xsl:value-of select="concat($name, ' ', $birth, ' ', $death)" />
