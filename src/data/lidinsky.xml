@@ -225,7 +225,7 @@
     <notes>
       cihlář
     </notes>
-      <place>Roudné</place>
+      <place href="RUDEN" />
     <father href="DUBFRANTISEK" />
     <mather href="ZAWESKYMARIE" />
   </person>
@@ -284,7 +284,7 @@
     <notes>
       obuvník
     </notes>
-      <place>Roudné 23</place>
+      <place href="RUDEN" house-nr="23"/>
   </person>
   
   <person id="SCHAFFENHUBEREVA" sex="female">
@@ -810,7 +810,7 @@
       sedlák
     </notes>
     <birth>
-      <date>strážkovice 55</date>
+      <place href="STRAZKOVICE" house-nr="55" />
     </birth>
     <father href="PAVELMATEJ" />
     <mather href="MACZATEREZIE" />
@@ -848,7 +848,7 @@
     </notes>
     <birth>
       <date>8.10.1815</date>
-      <place>Strážkovice 1</place>
+      <place href="STRAZKOVICE" house-nr="1" />
     </birth>
     <father href="PAVELANTONIN" />
     <mather href="LOWENDAKATERINA" />
@@ -887,7 +887,7 @@
       sedlák
     </notes>
     <birth>
-      <place>Strážkovice 11</place>
+      <place href="STRAZKOVICE" house-nr="11" />
     </birth>
     <father href="ZEMANMATEJ" />
     <mather href="STANEKEVA" />
@@ -936,12 +936,6 @@
       <second>Zemanová</second>
       <married>Pavlová</married>
     </name>
-    <birth>
-      <place>Strážkovice 11</place>
-      <date>14.5.1829</date>
-    </birth>
-    <father href="ZEMANANTONIN" />
-    <mather href="HROZNYMARIE" />
   </person>
   
   <person id="PAVELMARTIN" sex="male">
@@ -955,7 +949,7 @@
     </notes>
     <birth>
       <date>5.10.1862</date>
-      <place>Strážkovice 1</place>
+      <place href="STRAZKOVICE" house-nr="1" />
     </birth>
     <death>
       <date>11.4.1926</date>

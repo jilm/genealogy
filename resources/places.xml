@@ -3677,6 +3677,10 @@
       <note>Morava</note>
       <district>Brno-město</district>
       <note>Brünn</note>
+      <coordinates>
+          <lon>16.6078411</lon>
+          <lat>49.2002211</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Brňov</parish>
@@ -4091,11 +4095,19 @@
       <note>Čechy</note>
       <district>České Budějovice</district>
       <note>Bries</note>
+      <coordinates>
+          <lon>14.3865594</lon>
+          <lat>49.1812486</lat>
+      </coordinates>
    </place>
    <place id="LIPOVSKO">
       <parish>Lipovsko</parish>
       <note>Čechy</note>
       <district>České Budějovice</district>
+      <coordinates>
+          <lon>14.32933</lon>
+          <lat>49.29914</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Březín</parish>
@@ -14254,6 +14266,10 @@
       <note>Morava</note>
       <district>Třebíč</district>
       <note>Ober Aujest</note>
+      <coordinates>
+          <lon>15.8421536</lon>
+          <lat>49.1427919</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Horní Ves</parish>
@@ -19805,11 +19821,15 @@
       <district>Kroměříž</district>
       <note>Karolinendorf</note>
    </place>
-   <place>
+   <place id="KARVINA">
       <parish>Karviná</parish>
       <note>Slezsko</note>
       <district>Karviná</district>
       <note>Karwin</note>
+      <coordinates>
+          <lon>18.5416897</lon>
+          <lat>49.8540031</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Kasanice</parish>
@@ -25313,11 +25333,15 @@
       <district>Jablonec nad Nisou</district>
       <note>Libetin</note>
    </place>
-   <place>
+   <place id="LIBEREC">
       <parish>Liberec</parish>
       <note>Čechy</note>
       <district>Liberec</district>
       <note>Reichenberg</note>
+      <coordinates>
+          <lon>15.0584492</lon>
+          <lat>50.7699972</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Liberk</parish>
@@ -26524,6 +26548,10 @@
       <note>Čechy</note>
       <district>České Budějovice</district>
       <note>Lometz</note>
+      <coordinates>
+          <lon>14.1864053</lon>
+          <lat>49.0962064</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Lomec</parish>
@@ -27154,6 +27182,10 @@
       <note>Morava</note>
       <district>Třebíč</district>
       <note>Lukau</note>
+      <coordinates>
+          <lon>15.8242336</lon>
+          <lat>49.0734997</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Lukov</parish>
@@ -30557,6 +30589,10 @@
       <note>Morava</note>
       <district>Třebíč</district>
       <note>Mährisch Budwitz</note>
+      <coordinates>
+          <lon>15.8086436</lon>
+          <lat>49.0520892</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Moravské Knínice</parish>
@@ -32369,7 +32405,11 @@
       <note>Morava</note>
       <district>Třebíč</district>
       <note>Nimpschdorf</note>
-   </place>
+      <coordinates>
+          <lon>15.7472361</lon>
+          <lat>49.0226236</lat>
+      </coordinates>
+  </place>
    <place>
       <parish>Nišovice</parish>
       <note>Čechy</note>
@@ -34008,11 +34048,15 @@
       <district>Třebíč</district>
       <note>Wodonetz</note>
    </place>
-   <place>
+   <place id="OHARE">
       <parish>Ohaře</parish>
       <note>Čechy</note>
       <district>Kolín</district>
       <note>Woharsch</note>
+      <coordinates>
+          <lon>15.2950139</lon>
+          <lat>50.0977814</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Ohařice</parish>
@@ -36995,6 +37039,10 @@
       <note>Morava</note>
       <district>Třebíč</district>
       <note>Pleschitz</note>
+      <coordinates>
+          <lon>16.0368233</lon>
+          <lat>49.1644503</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Plešiny</parish>
@@ -39245,6 +39293,10 @@
       <note>Morava</note>
       <district>Třebíč</district>
       <note>Preschowitz</note>
+      <coordinates>
+          <lon>16.0613425</lon>
+          <lat>49.0501044</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Přeštice</parish>
@@ -41328,11 +41380,15 @@
       <district>Tábor</district>
       <note>Rouden</note>
    </place>
-   <place>
+   <place id="RUDEN">
       <parish>Roudné</parish>
       <note>Čechy</note>
       <district>České Budějovice</district>
       <note>Ruden</note>
+      <coordinates>
+          <lon>14.4874394</lon>
+          <lat>48.9348800</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Roudné</parish>
@@ -46152,11 +46208,15 @@
       <district>Mladá Boleslav</district>
       <note>Straschischt</note>
    </place>
-   <place>
+   <place id="STRAZKOVICE">
       <parish>Strážkovice</parish>
       <note>Čechy</note>
       <district>České Budějovice</district>
       <note>Straschkowitz</note>
+       <coordinates>
+          <lon>14.5693875</lon>
+          <lat>48.8995786</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Strážkovice</parish>
@@ -49475,7 +49535,11 @@
       <note/>
       <district>Praha-západ</district>
       <note>Trnow</note>
-   </place>
+       <coordinates>
+          <lon>14.3577167</lon>
+          <lat>49.9154369</lat>
+      </coordinates>
+  </place>
    <place>
       <parish>Trnová</parish>
       <note>Čechy</note>

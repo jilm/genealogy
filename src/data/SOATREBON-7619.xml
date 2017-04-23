@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<matrika id="SOATREBON-7619">
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="http://digi.ceskearchivy.cz/7619">
+   <dc:title xml:lang="cs">Matriční kniha Střížov č.5, N 1784-1851</dc:title>
+   <dc:title xml:lang="en">Parish register Střížov No.5, B 1784-1851</dc:title>
+   <dc:creator xml:lang="cs">Farní úřad Střížov</dc:creator>
+   <dc:creator xml:lang="en">Parish office Střížov</dc:creator>
+   <dc:subject xml:lang="cs">Sbírka matrik SOA v Třeboni</dc:subject>
+   <dc:subject xml:lang="cs">matriční knihy</dc:subject>
+   <dc:subject xml:lang="cs">matriky</dc:subject>
+   <dc:subject xml:lang="cs">digitalizovaný obsah</dc:subject>
+   <dc:subject xml:lang="en">parish registers</dc:subject>
+   <dc:subject xml:lang="en">digitized content</dc:subject>
+   <dc:description xml:lang="cs">Matriční kniha č.5 Střížov.</dc:description>
+   <dc:description xml:lang="cs">Datace: NAROZENÍ: 1784/1851, ODDANÍ: -, ZEMŘELÍ: -.</dc:description>
+   <dc:description xml:lang="cs">Zápisy pro obce: Stradov, Strážkovice, Střížov,Stradov, Strážkovice, Střížov.</dc:description>
+   <dc:description xml:lang="cs">Stran: 195</dc:description>
+   <dc:description xml:lang="en">Parish register 5 Střížov.</dc:description>
+   <dc:description xml:lang="en">Time extent: BIRTH: 1784/1851, MARRIAGE: -, DEATH: -.</dc:description>
+   <dc:description xml:lang="en">Records of: Stradov, Strážkovice, Střížov,Stradov, Strážkovice, Střížov.</dc:description>
+   <dc:description xml:lang="en">Pages: 195</dc:description>
+   <dc:publisher xml:lang="cs">Farní úřad Střížov</dc:publisher>
+   <dc:publisher xml:lang="en">Parish office Střížov</dc:publisher>
+   <dc:date>1784/1851</dc:date>
+   <dc:type xml:lang="cs">matriční kniha</dc:type>
+   <dc:type xml:lang="en">parish register</dc:type>
+   <dc:identifier>http://digi.ceskearchivy.cz/7619</dc:identifier>
+   <dc:source>ČR - Státní oblastní archiv v Třeboni / State regional archives Třeboň</dc:source>
+   <dc:language>cze</dc:language>
+   <dc:language>ger</dc:language>
+   <dc:coverage>Temporal: 1784/1851</dc:coverage>
+   <dc:coverage>Spatial: Stradov</dc:coverage>
+   <dc:coverage>Spatial: Strážkovice</dc:coverage>
+   <dc:coverage>Spatial: Střížov,Stradov</dc:coverage>
+   <dc:coverage>Spatial: Strážkovice</dc:coverage>
+   <dc:coverage>Spatial: Střížov</dc:coverage>
+   <dc:coverage></dc:coverage>
+  </rdf:Description>
+</rdf:RDF>
+
+<birth>
+<page><scan>141</scan></page>
+<date>14.5.1829</date>
+<place href="STRAZKOVICE" house-nr="11" />
+<born href="ZEMANMARIE" />
+<father href="ZEMANANTONIN" />
+<mather href="HROZNYMARIE" />
+<note>
+sken 141
+14.5.1829
+Str8zkovice č. 11
+Maria Zemann
+ümřela 1. prosince 1899, MM V. 363
+Otec: Anton sohn Mathias Zemann ??? nr. 24 ??? nr. 10
+Matka: maria tochter ???
+</note>
+</birth>
+
+<note>
+sken 149
+otec: Anton sohn Matthias Zemann ??? in Driesendorf (Střížov) nr. 24 ??? muter Todnia (todeň) 10
+matka: Maria tochter Simon Hrozny ??? in Rankau (Rankov) nr. 20 und mutter Rosina geboren ??? Rankau nr. 20
+</note>
+
+
+
+</matrika>

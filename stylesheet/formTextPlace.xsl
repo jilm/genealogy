@@ -60,4 +60,6 @@
         <xsl:value-of select="." />
     </xsl:template>
 
+    <xsl:template match="coordinates" />
+
 </xsl:stylesheet>

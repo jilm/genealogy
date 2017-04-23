@@ -58,4 +58,18 @@
         <house-nr><xsl:apply-templates /></house-nr>
     </xsl:template>
 
+    <xsl:template match="coordinates">
+        <coordinates>
+            <xsl:apply-templates />
+        </coordinates>
+    </xsl:template>
+
+    <xsl:template match="lon">
+        <lon><xsl:apply-templates /></lon>
+    </xsl:template>
+
+    <xsl:template match="lat">
+        <lat><xsl:apply-templates /></lat>
+    </xsl:template>
+
 </xsl:stylesheet>

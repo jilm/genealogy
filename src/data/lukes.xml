@@ -14,14 +14,14 @@
     </birth>
     <death>
       <date>30.3.2011</date>
-      <place>Karviná</place>
+      <place href="KARVINA" />
     </death>
     <notes>
       v knize úmrtí matričního úřadu Karviná,
       ve svazku 19, roč. 2011, strana 111, poř. č. 186
     </notes>
     <father href="LUKESFERDINAND" />
-    <!--<mather href="KLEPALZDENKA" />-->
+    <mather href="KLEPALZDENKA" />
   </person>
 
   <person id="LUKESFERDINAND" sex="male">
@@ -35,7 +35,7 @@
     </birth>
    <death>
       <date>27.5.1970</date>
-      <place>Liberec</place>
+      <place href="LIBEREC" />
     </death>
     <father href="LUKESJOSEF" />
     <mather href="BUNAKAGNES" />

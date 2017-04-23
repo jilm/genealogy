@@ -1,0 +1,206 @@
+<list>
+ 
+  <person id="KLEPALZDENKA" sex="female" >
+    <name>
+      <first>Zdeňka</first>
+      <second>Klepalová</second>
+      <married>Lukešová</married>
+    </name>
+    <birth>
+      <date>31.12.1905</date>
+      <place>Duchcov</place>
+    </birth>
+    <father href="KLEPALJAN" />
+    <mather href="BERGJUSTINA" />
+  </person>
+
+  <person id="KLEPALJAN" sex="male">
+    <name>
+      <first>Jan</first>
+      <second>Klepal</second>
+    </name>
+    <birth>
+      <date>29.5.1877</date>
+      <place href="OHARE" house-nr="28" />
+    </birth>
+    <note>zemřel 30.12.1953 v Kundraticích čp. 221, hornický důchodce, vdovec, zemřel na nečnnost srdeční, zapsáno v knize úmrti v Kundraticích ve svazku 1. roč. 1953 na straně 13 pod číslem řadovým 8.</note>
+    <father href="KLEPALJOSEF" />
+    <mather href="KROPACEKANNA" />
+    <notes>zapsáno v matrice Nr. Exh. 188, Křestní knihy sv. IV str. 43
+    matrika Ohaře 21 N 1867-1900, str. 43</notes>
+  </person>
+
+  <person id="KLEPALJOSEF" sex="male">
+    <name>
+      <first>Josef</first>
+      <second>Klepal</second>
+    </name>
+    <birth>
+      <date>10.9.1836</date>
+      <place href="OHARE" house-nr="56" />
+    </birth>
+    <notes>podruh, Ohaře c. 28</notes>
+    <father href="KLEPALJIRI" />
+    <mather href="RUZEKKATERINA" />
+    <note>
+    v matrice Ohaře 08 nalezeno na straně č. 60, sken číslo 62
+  Matrika oddaných Ohaře 22, sken č. 33
+  5. května 1872, Ohaře N. 53? Klepal Josef vysloužilý vojín a tesař z Ohař N. 53, syn Jiřího Klepala, chalupníka z Ohař N. 58? a matky Kateřiny rozené Ružek z Ohař N. 10.
+  Kropáček Anna, dcera Antonína Kropáčka chalupníka z ??? N. 10 a matky Barbory rozené Charouzové z Opatovic N. 16.</note>
+  </person>
+
+  <person id="KLEPALJIRI" sex="male">
+    <name>
+      <first>Jiří</first>
+      <second>Klepal</second>
+    </name>
+    <note>chalupník, Ohaře č. 56</note>
+  </person>
+
+  <person id="RUZEKKATERINA" sex="female">
+    <name>
+      <first>Kateřina</first>
+      <second>Růžková</second>
+      <married></married>
+    </name>
+    <note>Kateřina Růžková? z Ohař, č. 10?</note>
+  </person>
+  
+
+  <person id="KROPACEKANNA" sex="female">
+    <name>
+      <first>Anna</first>
+      <second>Kropáčková</second>
+      <married>Klepalová</married>
+    </name>
+    <father href="KROPACEKANTONIN" />
+    <mather href="CHAROUZBARBORA" />
+    <note>Anna Kropáčková
+  dcera Antonína Kropáčka, chalupníka z Ohař č. 28 a matky Barbory rodem Charouzovy z Opatovic č. 8</note>
+  </person>
+  
+
+  <person id="KROPACEKANTONIN" sex="male">
+    <name>
+      <first>Antonín</first>
+      <second>Kropáček</second>
+    </name>
+    <birth><date>1806???</date></birth>
+    <death><date>1.3.1883</date>
+      <place href="OHARE" house-nr="92" />
+      <note>Ohaře 26, sken 176, Kropáček Antonín, výminkář z Ohař č. 28, bytem v čísle 92, rodem z Niskovic, okres Kutná Hora. 77let</note>
+    </death>
+    <note>Chalupník z Ohař č. 28</note>
+  </person>
+
+  <person id="CHAROUZBARBORA" sex="female">
+    <name>
+      <first>Barbora</first>
+      <second>Charouzová</second>
+      <married>Kropáčková</married>
+    </name>
+    <birth>
+      <date>18.2.1815</date>
+      <place>Opatovice</place>
+    </birth>
+    <death>
+      <date>14.9.1898</date>
+      <place href="OHARE" house-nr="92" />
+      <note>  href="MZ-OHARE-26-230"
+      Ohaře 26, kniha úmrtí, 1841-1916, sken c 230, pořadové č. 14:
+      Kropáčková Barbora, rozená Charouzová z Opatovi, hejtmanství Kolín
+      vdova po Antonínu Kropáčkovi, domkáři v ??? č. 28, věk 83let, 6 měsíců
+      a 26dní, místo pohřbu: Ohaře, příčina smrti: Sešlost věkem.</note>
+    </death>
+    <note>Barbora Charouzová z Opatovic č. 8</note>
+  </person>
+  
+  <person id="BERGJUSTINA" sex="female">
+    <name>
+      <first>Justína</first>
+      <second>Berg</second>
+      <married></married>
+    </name>
+    <birth>
+      <date>26.9.1879</date>
+      <place>Kamenec okres Rokycany</place>
+    </birth>
+    <father href="BERGJAN" />
+    <mather href="KARABARBORA" />
+    <note>
+  Justína Berg
+  Narozená 26. září 1879 v obci Kamenec okres Rokycany
+  Otec: Jan Berg, havíř v Kamnci č. 38, syn Martina Berga, pastýře ve Lhotce č. 11 a matky Anny rozené Šrédlovy z Kladrub č. 13
+  Matka: Barbora, dcera Vojtěcha Káry, havíře v Kamenci č. 38 a matky Barbory, roz. Šmídovy z Vejvanova
+  Nr. Exh. 546, Křestní knihy sv. Z str. 386
+  </note>
+  </person>
+
+  <person id="KARABARBORA" sex="female">
+    <name>
+      <first>Barbora</first>
+      <second>Kárová</second>
+      <married>Bergová</married>
+    </name>
+    <father href="KARAVOJTECH" />
+    <mather href="SMIDBARBORA" />
+  </person>
+
+  <person id="SMIDBARBORA" sex="female">
+    <name>
+      <first>Barbora</first>
+      <second>Šmídová</second>
+      <married>Kárová</married>
+    </name>
+    <note>Vejvanov</note>
+  </person>
+
+  <person id="KARAVOJTECH" sex="male">
+    <name>
+      <first>Vojtěch</first>
+      <second>Kára</second>
+    </name>
+    <note>havíř v Kamenci c. 38</note>
+  </person>
+
+  <person id="BERGJAN" sex="male" >
+    <name>
+      <first>Jan</first>
+      <second>Berg</second>
+    </name>
+    <notes>havíř v Kamenci c. 38</notes>
+    <father href="BERGMARTIN" />
+    <mather href="SREDLANNA" />
+  </person>
+
+  <person id="BERGMARTIN" sex="male">
+    <name>
+      <first>Martin</first>
+      <second>Berg</second>
+    </name>
+    <note>pastýř ve Lhotce c 11</note>
+  </person>
+
+  <person id="SREDLANNA" sex="female">
+    <name>
+      <first>Anna</first>
+      <second>Šrédlová</second>
+      <married>Bergová</married>
+    </name>
+    <note>Kladruby c 13</note>
+  </person>
+
+
+  <person id="LUSKFERDINAND" sex="male">
+    <name>
+      <first>Ferdinand</first>
+      <second>Lusk</second>
+    </name>
+    <birth>
+      <place>Blížkovice</place>
+    </birth>
+    <note>dělník v Krnčicích</note>
+  </person>
+
+
+</list>

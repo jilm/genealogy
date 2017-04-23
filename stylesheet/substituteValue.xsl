@@ -78,10 +78,12 @@
     </xsl:template>
 
     <xsl:template match="value[@key = 'person-list']">
+        \begin{enumerate}
         <xsl:for-each select="$personList//person"  >
             <xsl:sort select="./name/second" />
-            <xsl:apply-templates select="." mode="list" />\\
+            \item{} <xsl:apply-templates select="." mode="list" />
         </xsl:for-each>
+        \end{enumerate}
     </xsl:template>
 
     <xsl:template match="value[@key = 'graph']">

@@ -9,6 +9,7 @@
   <xi:include href="data/persons.xml" />
   <xi:include href="data/okrina.xml" />
   <xi:include href="data/lidinsky.xml" />
+  <xi:include href="data/klepal.xml" />
   <xi:include href="data/SOAPRAHA-TRNOVA02.xml" />
   <xi:include href="data/SOAPRAHA-TRNOVA03.xml" />
   <xi:include href="data/SOAPRAHA-TRNOVA04.xml" />
@@ -21,12 +22,17 @@
   <xi:include href="data/SOATREBON-4131.xml" />
   <xi:include href="data/SOATREBON-4133.xml" />
   <xi:include href="data/SOATREBON-4138.xml" />
+  <xi:include href="data/SOATREBON-7619.xml" />
+  <xi:include href="data/SOATREBON-12148.xml" />
 
   <person id="JILM" sex="male">
     <name>
       <first>Jiří</first>
       <second>Lidinský</second>
     </name>
+    <birth>
+       <place href="KARVINA" />
+    </birth>
     <father href="LIDINSKYJIRI" />
     <mather href="VLAHALUDMILA" />
   </person> 
