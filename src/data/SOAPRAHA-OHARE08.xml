@@ -1,0 +1,17 @@
+<matrika id="SOAPRAHA-OHARE08">
+
+  <title>Matrika narozených v obci Ohaře.</title>
+  <archiv>Státní oblastní archiv v Praze</archiv>
+  <author>Ohaře, Římskokatolická církev</author>
+  <year>1820--1843</year>
+  <volume>B II.</volume>
+
+  <birth>
+    <page><scan>62</scan><page>60</page></page>
+    <date>29.5.1877</date>
+    <place href="OHARE" house-nr="28" />
+    <father href="KLEPALJOSEF" />
+    <mather href="KROPACEKANNA" />
+  </birth>
+
+</matrika>

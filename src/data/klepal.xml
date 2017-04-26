@@ -19,15 +19,6 @@
       <first>Jan</first>
       <second>Klepal</second>
     </name>
-    <birth>
-      <date>29.5.1877</date>
-      <place href="OHARE" house-nr="28" />
-    </birth>
-    <note>zemřel 30.12.1953 v Kundraticích čp. 221, hornický důchodce, vdovec, zemřel na nečnnost srdeční, zapsáno v knize úmrti v Kundraticích ve svazku 1. roč. 1953 na straně 13 pod číslem řadovým 8.</note>
-    <father href="KLEPALJOSEF" />
-    <mather href="KROPACEKANNA" />
-    <notes>zapsáno v matrice Nr. Exh. 188, Křestní knihy sv. IV str. 43
-    matrika Ohaře 21 N 1867-1900, str. 43</notes>
   </person>
 
   <person id="KLEPALJOSEF" sex="male">
@@ -73,6 +64,11 @@
       <second>Kropáčková</second>
       <married>Klepalová</married>
     </name>
+    <birth>
+      <date>5.11.1842</date>
+      <place href="POLEPY" house-nr="10" />
+      <note>Nalezeno v indexu Nebovidy 10 sken 47</note>
+    </birth>
     <father href="KROPACEKANTONIN" />
     <mather href="CHAROUZBARBORA" />
     <note>Anna Kropáčková
