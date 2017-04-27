@@ -1,0 +1,13 @@
+<list>
+
+<test label="3.10.1825">
+<date><year>1825</year><month>10</month><day>3</day></date>
+</test>
+<test label="10.1825">
+<date><year>1825</year><month>10</month></date>
+</test>
+<test label="1825">
+<date><year>1825</year></date>
+</test>
+
+</list>
