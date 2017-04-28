@@ -19,18 +19,19 @@
   
 
   <xsl:import href="../stylesheet/formLatexDate.xsl" />
+  <xsl:import href="../stylesheet/formLatexCite.xsl" />
+  <xsl:import href="../stylesheet/placeFormat.xsl" />
+  <xsl:import href="../stylesheet/latex.xsl" />
+  <xsl:import href="../stylesheet/formLatexBirth.xsl" />
   <xsl:import href="../stylesheet/labels_CZ.xsl" />
 
   <xsl:output method="html" encoding="utf-8" />
-
-  
-
 
   <xsl:template match="/">
     <html>
       <head><meta charset="utf-8" /></head>
       <body><table>
-      <th><td>default</td><td>long</td><td>text</td><td>vmy</td></th>
+      <th><td>default</td><td>text</td><td>cite</td><td>graph</td></th>
       <xsl:apply-templates select="//test" />
     </table></body></html>
   </xsl:template>
@@ -39,16 +40,16 @@
         <tr>
           <td><em><xsl:value-of select="@label" /></em></td>
           <td>
-            <xsl:apply-templates select="date"/>
+            <xsl:apply-templates select="birth"/>
           </td>
           <td>
-            <xsl:apply-templates select="date" mode="long" />
+            <xsl:apply-templates select="birth" mode="text" />
           </td>
           <td>
-            <xsl:apply-templates select="date" mode="text"/>
+            <xsl:apply-templates select="birth" mode="cite"/>
           </td>
           <td>
-            <xsl:apply-templates select="date" mode="vmy"/>
+            <xsl:apply-templates select="birth" mode="graph"/>
           </td>
         </tr>
   </xsl:template>
