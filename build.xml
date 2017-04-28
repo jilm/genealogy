@@ -1,4 +1,21 @@
-<project name="genealogy" default="book" xmlns:if="ant:if" >
+<project name="genealogy" default="book" xmlns:if="ant:if" xmlns:unless="ant:unless" >
+
+    <target name="configure" >
+
+        <available property="jing"
+            classname="com.thaiopensource.relaxng.util.JingTask" />
+        <echo if:set="jing">Jing .... OK</echo>
+        <echo unless:set="jing">Jing .... failed</echo>
+
+        <xslt style="configure.xsl"
+              in="config.xml"
+	      out="build/build.xml" >
+            <param name="validate" expression="jing" />
+        </xslt>
+
+        <ant dir="build" target="validate-data" />
+
+    </target>
 
   <description>
     # Builds genealogy information into the book

@@ -24,14 +24,6 @@
 <xsl:stylesheet version="2.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xd="http://www.pnp-software.com/XSLTdoc" >
-  
-    <xd:doc type="stylesheet">
-    
-        Generates the latex source for the book. Following files are
-        necessary, before this stylesheet may be used:
-        personList.xml, birthList.xml, deathList.xml, weddingList.xml. 
-    
-    </xd:doc>
 
     <xsl:import href="substituteValue.xsl" />
     <xsl:import href="nameFormat.xsl" />
@@ -44,6 +36,14 @@
     <xsl:import href="formLatexCite.xsl" />
     <xsl:import href="labels_CZ.xsl" />
     <xsl:import href="placeFormat.xsl" />
+  
+    <xd:doc type="stylesheet">
+    
+        Generates the latex source for the book. Following files are
+        necessary, before this stylesheet may be used:
+        personList.xml, birthList.xml, deathList.xml, weddingList.xml. 
+    
+    </xd:doc>
 
     <xsl:output method="text" encoding="utf-8" />
 
