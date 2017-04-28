@@ -86,13 +86,7 @@
       <first>Kateřina</first>
       <second>Marková</second>
     </name>
-    <birth>
-      <date>25.11.1857</date>
-      <place>Doubrava 63 (Týn nad Vltavou)</place>
-    </birth>
     <wedding><date>11.1.19??</date></wedding>
-    <father href="MAREKVACLAV" />
-    <mather href="SIMEKMARIE" />
   </person>
   
   <person id="LIDINSKYANTONIN" sex="male">

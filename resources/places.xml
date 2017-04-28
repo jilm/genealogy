@@ -9983,11 +9983,15 @@
       <district>Děčín</district>
       <note>Daubitz</note>
    </place>
-   <place>
+   <place id="DOUBRAVA">
       <parish>Doubrava</parish>
       <note>Čechy</note>
       <district>České Budějovice</district>
       <note>Groß Doubrawa</note>
+      <coordinates>
+          <lon>14.3504753</lon>
+          <lat>49.2712622</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Doubrava</parish>
