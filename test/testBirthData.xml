@@ -1,0 +1,41 @@
+<list>
+
+<test label="empty">
+<birth>
+</birth>
+</test>
+
+<test label="date only">
+<birth>
+<date><year>1825</year><month>4</month><day>2</day></date>
+</birth>
+</test>
+
+<test label="place only">
+<birth>
+<place><parish>Trebic</parish><district>Trebic</district><house-nr>10</house-nr></place>
+</birth>
+</test>
+
+<test label="full">
+<birth>
+<date><year>1825</year><month>4</month><day>2</day></date>
+<place><parish>Trebic</parish><district>Trebic</district><house-nr>10</house-nr></place>
+</birth>
+</test>
+
+<test label="verified">
+<birth verified="true" >
+<date><year>1825</year><month>4</month><day>2</day></date>
+<place><parish>Trebic</parish><district>Trebic</district><house-nr>10</house-nr></place>
+</birth>
+</test>
+
+<test label="cite">
+<birth verified="true" cite="xyz">
+<date><year>1825</year><month>4</month><day>2</day></date>
+<place><parish>Trebic</parish><district>Trebic</district><house-nr>10</house-nr></place>
+</birth>
+</test>
+
+</list>

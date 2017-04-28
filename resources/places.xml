@@ -37978,11 +37978,15 @@
       <district>Klatovy</district>
       <note>Klein Pollin</note>
    </place>
-   <place>
+   <place id="POLEPY">
       <parish>Polepy</parish>
       <note>Čechy</note>
       <district>Kolín</district>
       <note>Polep</note>
+      <coordinates>
+          <lon>15.2059806</lon>
+          <lat>50.0046700</lat>
+      </coordinates>
    </place>
    <place>
       <parish>Polepy</parish>

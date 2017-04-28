@@ -15,6 +15,7 @@
   <xi:include href="data/SOAPRAHA-TRNOVA04.xml" />
   <xi:include href="data/SOAPRAHA-TRNOVA05.xml" />
   <xi:include href="data/SOAPRAHA-TRNOVA06.xml" />
+  <xi:include href="data/SOAPRAHA-OHARE21.xml" />
   <xi:include href="data/MZABRNO-11054.xml" />
   <xi:include href="data/MZABRNO-11059.xml" />
   <xi:include href="data/MZABRNO-11060.xml" />

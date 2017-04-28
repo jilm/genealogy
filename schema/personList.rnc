@@ -11,7 +11,7 @@ grammar {
   start = element list { listContent* }
 
   # and inside the list there may be any number of persons defined.
-  listContent = ( Person* & Wedding* )
+  listContent = ( Person* )
 
   # A person definition
   Person = element person { personContent }
@@ -19,12 +19,10 @@ grammar {
   # A person must have a unique identifier (unique across the persons),
   # an attribute which says if it is a male or a female, a name definition.
   # This is the minimal person content. Moreover there may be information
-  # about birth, death and wedding. And of course, each person may have
-  # exactly one mather and one father. I know that the wedding is poorly
-  # defined. Moreover, the wedding shoud be specified only for a woman.
-  # It is just a room for future improvements.
+  # about birth and death. And of course, each person may have
+  # exactly one mather and one father.
   personContent = (
-      attribute id { text }
+      ID
       , attribute sex { "male" | "female" }
       , Name
       , Birth ?
@@ -33,14 +31,7 @@ grammar {
       , Death ?
   )
 
-  weddingContent = (
-    Date ?
-    , Place ?
-    , element bridegroom { Reference } ?
-    , element bride { Reference } ?
-  )
-
-  # The name of the person.
+    # The name of the person.
   Name = element name { nameContent }
 
   # The first and the second part of the person name. The second name should
@@ -54,17 +45,11 @@ grammar {
   # Information about the person birth.
   Birth = element birth { eventContent }
 
-  # Wedding information, only for woman
-  Wedding = element wedding { 
-    Date ?
-    , Place ?
-    , element bride { Reference } ?
-    , element bridegroom { Reference } ?
-  }
-
   # The death information
   Death = element death { eventContent }
 
+  # If there are information about a source, where one may verify given
+  # information, than the verified, shoud be true, otherwise false.
   eventContent = (
     attribute verified { 'true' | 'false' }, (
       ( Date , Place )
@@ -81,7 +66,11 @@ grammar {
 
   Place = element place { placeContent }
 
-  dateContent = ( text )
+  dateContent = ( 
+    element year { xs:integer } 
+    , element month { xs:integer } ?
+    , element day { xs:integer } ?
+  )
 
   placeContent = ( 
     text | (
@@ -89,6 +78,10 @@ grammar {
       , element district { text } ?
       , element parish { text } ?
       , element house-nr { text } ?
+      , element coordinates ? {
+        element lon { xs:double }
+        , element lat ( xs:double }
+      }
     )
   )
 
