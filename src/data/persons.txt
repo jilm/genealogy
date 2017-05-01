@@ -1,3 +1,8 @@
 $LIDINSKYMATEJ Matěj Lidinský * Lipovsko 10 # Otec Antonína Lidinskýho
 $KLOUCEKALZBETA Alžběta Kloučková # Matka Antonína Lidinskýho, příjmením si nejsem jist
 $EVA Eva ??? # Matka Marie Kolářové
+$KLEPALVACLAV Václav Klepal
+$NOVOTNYKATERINA Kateřina Novotná
+$RUZEKJAN Jan Růžek
+$POLAKKATERINA Kateřina Poláková
+$POLAKMATEJ Matěj Polák

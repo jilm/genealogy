@@ -16,6 +16,8 @@
 
     <xsl:variable name="text"
                   select="unparsed-text-lines('../src/data/persons.txt')" />
+    <xsl:variable name="names"
+                  select="doc('../build/names.xml')" />
 
     <xsl:template match="/">
         <list>
@@ -46,8 +48,11 @@
             <xsl:when test="empty($tokens)" />
             <!-- person -->
             <xsl:when test="starts-with($tokens[1], '$')">
+                <xsl:variable name="given-name" select="$tokens[2]" />
+                <xsl:variable name="sex" select="$names//name[./text() eq $given-name]/@sex" />
                 <person>
                     <xsl:attribute name="id" select="substring-after($tokens[1], '$')" />
+                    <xsl:attribute name="sex" select="$sex" />
                     <name>
                         <first><xsl:value-of select="$tokens[2]" /></first>
                         <second><xsl:value-of select="$tokens[3]" /></second>

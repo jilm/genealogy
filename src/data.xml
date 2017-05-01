@@ -6,7 +6,7 @@
 
   <xi:include href="data/lukes.xml" />
 
-  <xi:include href="data/persons.xml" />
+<!--  <xi:include href="data/persons.xml" />-->
   <xi:include href="data/okrina.xml" />
   <xi:include href="data/lidinsky.xml" />
   <xi:include href="data/klepal.xml" />
