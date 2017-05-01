@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <list><matrika id="MZABRNO-11059">
- 
-    <title>Matrika oddaných v obci Chroustov, Dolní Vilémovice, Plešice, Třebenice, Valeč</title>
-    <author>Valeč, římskokatolická církev</author>
-    <volume>Ji 735; 1510</volume>
-    <archiv>Moravský zemský archiv Brno</archiv>
-    <year>1784--1824</year>
-
-    <wedding>
- 
-        <page><scan>13</scan></page>
-        <date>2.6.1811</date>
-        <place href="PLESCHITZ" house-nr="8" />
-        <bride href="WODLANTONIA" />
-        <bridegroom href="MANNJAKUB" />
- 
+<title>Matrika oddaných v obci Chroustov, Dolní Vilémovice, Plešice, Třebenice, Valeč</title>
+<author>Valeč, římskokatolická církev</author>
+<volume>Ji 735; 1510</volume>
+<archiv>Moravský zemský archiv Brno</archiv>
+<year>1784--1824</year>
+<wedding>
+<page><scan>13</scan></page>
+<date>2.6.1811</date>
+<place href="PLESCHITZ" house-nr="8" />
+<bride href="WODLANTONIA" />
+<bridegroom href="MANNJAKUB" />
 <note>
 2. July 1811
 Plešice 8
@@ -23,5 +18,4 @@ Plešice 8
 Nevěsta: Anna Tochter Paul Bodl, Plešice 6., 21let
 </note>
 </wedding>
- 
 </matrika></list>

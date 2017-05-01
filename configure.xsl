@@ -39,7 +39,7 @@
     
     </xd:doc>
     <xsl:template match="/">
-        <project>
+        <project basedir=".." >
 
             <xsl:choose>
                 <xsl:when test="$validate = 'jing'">
@@ -52,14 +52,26 @@
                      available. -->
             <target name="validate-data">
                 <xsl:if test="$validate = 'jing'">
-                    <jing rngfile="../schema/schema.rnc"
-                        compactsyntax="true" >
-                        <fileset dir="../src/data" includes="*.xml" />
-                    </jing>
+                    <xsl:apply-templates select="//data" mode="jing" />
                 </xsl:if>
             </target>
 
+            <target name="data">
+                <fileset id="data.files" dir="src/data" includes="*" />
+                <property name="data" refid="data.files" />
+                <echo>${data}</echo>
+            </target>
+
         </project>
+    </xsl:template>
+
+    <xsl:template match="data[@dir and @pattern]" mode="jing" >
+        <jing rngfile="../schema/schema.rnc" compactsyntax="true" >
+            <fileset dir="../src/data" includes="*.xml" >
+                <xsl:attribute name="dir" select="@dir" />
+                <xsl:attribute name="includes" select="@pattern" />
+            </fileset>
+        </jing>
     </xsl:template>
 
 </xsl:stylesheet>

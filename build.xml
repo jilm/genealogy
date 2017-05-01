@@ -1,67 +1,38 @@
-<project name="genealogy" default="book" xmlns:if="ant:if" xmlns:unless="ant:unless" >
+<project name="genealogy" default="book"
+    xmlns:if="ant:if" 
+    xmlns:unless="ant:unless" >
 
-    <target name="configure" >
+    <!-- Load project properties -->
+    <property name="conf.filename" value="configuration.prop" />
+    <available property="conf.file" file="${conf.filename}" />
+    <loadproperties srcFile="${conf.filename}" if:set="conf.file" />
+    <echo message="Project configuration loaded." if:set="conf.file" />
+    <echo message="Project configuration not fount." unless:set="conf.file" />
+    <property name="data.dir" location="src/data" unless:set="data-dir" />
+    <property name="data.dir" location="${data-dir}" if:set="data-dir" />
+    <echo>Data directory: ${data.dir}</echo>
 
-        <available property="jing"
+    <!-- Check depency -->
+    <available property="jing"
             classname="com.thaiopensource.relaxng.util.JingTask" />
-        <echo if:set="jing">Jing .... OK</echo>
-        <echo unless:set="jing">Jing .... failed</echo>
+    <echo message="Jing ....................... OK"
+        if:set="jing" />
+    <echo message="Jing ....................... FAILED"
+        unless:set="jing" />
+    <available property="av.saxon.query" classname="net.sf.saxon.Query" />
+    <echo message="Saxon query ................ OK"
+        if:set="av.saxon.query" />
+    <echo message="Saxon query ................ FAILED"
+        unless:set="av.saxon.query" />
 
-        <xslt style="configure.xsl"
-              in="config.xml"
-	      out="build/build.xml" >
-            <param name="validate" expression="jing" />
-        </xslt>
+  <!--
+ 
+        Compile input data into the person, birth, death and wedding lists.
 
-        <ant dir="build" target="validate-data" />
-
-    </target>
-
-  <description>
-    # Builds genealogy information into the book
-
-    
-
-  </description>
-
-  <property name="schema.dir" value="schema" />
-  <property name="xslt.dir" value="stylesheet" />
-  <property name="build.dir" value="build" />
-  <property name="src.dir" value="src/data" />
-  <property name="test.dir" value="test" />
-  <property name="conf.filename" value="configuration.prop" />
-
-  <!-- Load project specific proprties from the conf. file. -->
-  <available property="conf.file" file="${conf.filename}" />
-  <loadproperties srcFile="${conf.filename}" if:set="conf.file" />
-
-  <!-- For xml validation, the relaxNG is used. -->
-  <taskdef name="jing"
-           classname="com.thaiopensource.relaxng.util.JingTask" />
-
-  <target name="person-list">
-
-    <jing rngfile="${schema.dir}/schema.rnc"
-          compactsyntax="true" >
-      <fileset dir="${src.dir}" includes="*.xml" />
-    </jing>
-
-    <xslt style="${xslt.dir}/makePersonList.xsl"
-          in="src/data.xml"
-	  out="${build.dir}/personList.xml" >
-
-        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
-            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
-
-    </xslt>
-
-    <xslt style="${xslt.dir}/formTextList.xsl"
-          in="${build.dir}/personList.xml"
-	  out="${build.dir}/personList.txt" />
-
-  </target>
-
+  -->
   <target name="lists">
+
+    <antcall target="validate-data" if:set="jing" />
 
     <xslt style="${xslt.dir}/makePersonList.xsl"
           in="src/data.xml"
@@ -101,57 +72,55 @@
   
   </target>
 
-  <target name="person-tree" depends="person-list">
+  <!--
 
-<!--
-    <jing rngfile="${schema.dir}/personList.rnc"
+        Validate input data
+
+  -->
+  <target name="validate-data" >
+    <echo message="Going to validate input data..." />
+    <!-- For xml validation, the relaxNG is used. -->
+    <taskdef name="jing"
+           classname="com.thaiopensource.relaxng.util.JingTask" />
+    <jing rngfile="${schema.dir}/schema.rnc"
           compactsyntax="true" >
-      <fileset dir="${build.dir}" includes="personList.xml" />
+      <fileset dir="${src.dir}" includes="*.xml" />
     </jing>
--->
-
-    <xslt style="${xslt.dir}/makePersonTree.xsl"
-          in="${build.dir}/personList.xml"
-	  out="${build.dir}/personTree.xml" />
-
+    <echo message="OK" />
   </target>
 
-  <target name="family-tree" depends="person-list">
+    <target name="configure" >
 
-    <xslt style="${xslt.dir}/makeFamilyTree.xsl"
-          in="${build.dir}/personList.xml"
-	  out="${build.dir}/familyTree.xml" />
+        <fileset id="data.files" dir="src/data" includes="*" />
+        <property name="data" refid="data.files" />
+        <echo>${data}</echo>
 
-    <xslt style="${xslt.dir}/familyTree2GenTree.xsl"
-          in="${build.dir}/familyTree.xml"
-	  out="${build.dir}/familyTree.tex" />
 
-    <exec executable="xelatex"
-          dir="${build.dir}">
-      <arg file="${build.dir}/JILM_tree.tex" />
-    </exec>
+        <xslt style="configure.xsl"
+              in="config.xml"
+	      out="build/build.xml" >
+            <param name="validate" expression="jing" />
+        </xslt>
 
-  </target>
+        <ant dir="build" target="validate-data" />
 
-  <target name="graph" depends="person-tree">
+    </target>
 
-<!--
-    <jing rngfile="${schema.dir}/personTree.rnc"
-          compactsyntax="true" >
-      <fileset dir="${build.dir}" includes="personTree.xml" />
-    </jing>
--->
+  <description>
+    # Builds genealogy information into the book
 
-    <xslt style="${xslt.dir}/makeGenTree.xsl"
-          in="${build.dir}/personTree.xml"
-	  out="${build.dir}/personTree.tex" />
+    
 
-    <exec executable="xelatex"
-          dir="${build.dir}">
-      <arg file="${build.dir}/*.tex" />
-    </exec>
+  </description>
 
-  </target>
+  <property name="schema.dir" value="schema" />
+  <property name="xslt.dir" value="stylesheet" />
+  <property name="build.dir" value="build" />
+  <property name="test.dir" value="test" />
+  <property name="src.dir" value="src/data" />
+
+  <!-- Load project specific proprties from the conf. file. -->
+
 
   <target name="clean">
     <delete>
@@ -188,15 +157,6 @@
     <xslt style="${xslt.dir}/makeBibliography.xsl"
           in="src/data.xml"
       	  out="${build.dir}/sources.bib" >
-
-        <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
-            value="org.apache.xerces.parsers.XIncludeParserConfiguration" />
-
-    </xslt>
-
-    <xslt style="${xslt.dir}/formLatexList.xsl"
-          in="${build.dir}/personList.xml"
-      	  out="${build.dir}/personList.tex" >
 
         <sysproperty key="org.apache.xerces.xni.parser.XMLParserConfiguration"
             value="org.apache.xerces.parsers.XIncludeParserConfiguration" />

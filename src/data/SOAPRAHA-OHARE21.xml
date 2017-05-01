@@ -10,6 +10,7 @@
     <page><scan>47</scan><page>43</page></page>
     <date>29.5.1877</date>
     <place href="OHARE" house-nr="28" />
+    <born href="KLEPALJAN" />
     <father href="KLEPALJOSEF" />
     <mather href="KROPACEKANNA" />
   </birth>

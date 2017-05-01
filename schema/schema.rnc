@@ -1,4 +1,6 @@
 namespace xi = "http://www.w3.org/2001/XInclude"
+namespace rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+namespace dc="http://purl.org/dc/elements/1.1/"
 
 #
 #  This is a schema to validate input data information.
@@ -7,7 +9,11 @@ namespace xi = "http://www.w3.org/2001/XInclude"
 grammar {
 
   # The root element is just a list
-  start = element list { listContent* }
+  start = (
+    element list { listContent* }
+    | Person
+    | Matrika
+  )
 
   # and inside the list there may be any number of persons defined, any
   # number of source documents referenced and any number of places specified.
@@ -112,6 +118,7 @@ grammar {
 
   matrikaContent = ( 
     attribute id { text }
+    & element rdf:RDF { anyElement } ?
     & Signatura ?
     & element title { text } ?
     & element volume { text } ?
@@ -121,6 +128,13 @@ grammar {
     & element original-name { text } ?
     & Record * 
     & Note *
+  )
+
+  anyElement = (
+    attribute * { text } *
+    & text *
+    & element dc:* { anyElement } *
+    & element rdf:* { anyElement } *
   )
 
   # Unique identifier of the matrika.
