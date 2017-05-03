@@ -36,6 +36,7 @@
     <xsl:import href="formLatexCite.xsl" />
     <xsl:import href="labels_CZ.xsl" />
     <xsl:import href="placeFormat.xsl" />
+    <xsl:import href="formLatexMap.xsl" />
   
     <xd:doc type="stylesheet">
     

@@ -39116,11 +39116,16 @@
       <district>Příbram</district>
       <note>Vorder Glashütten</note>
    </place>
-   <place>
+   <place id="PREDNILHOTA">
       <parish>Přední Lhota</parish>
       <note>Čechy</note>
       <district>Nymburk</district>
       <note>Vorder Lhota</note>
+      <coordinates>
+          <lon>15.0918908</lon>
+          <lat>50.1353397</lat>
+      </coordinates>
+ 
    </place>
    <place>
       <parish>Přední Poříčí</parish>

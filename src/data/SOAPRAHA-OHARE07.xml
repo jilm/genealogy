@@ -1,0 +1,23 @@
+<matrika id="SOAPRAHA-OHARE07">
+
+  <title>Matrika narozených v obci Ohaře.</title>
+  <archiv>Státní oblastní archiv v Praze</archiv>
+  <author>Ohaře, Římskokatolická církev</author>
+  <year>1787--1819</year>
+  <volume>B I.</volume>
+
+  <birth>
+    <page><scan>15</scan></page>
+    <date>27.1.1800</date>
+    <place href="OHARE" house-nr="10" />
+    <born href="RUZEKKATERINA" />
+    <father href="RUZEKJAN" />
+    <mather href="POLAKKATERINA" />
+    <note>
+      sken 15, 1800
+      Kateřína Růžek, otec Růžek Johannes, matka Kateřina, filias, Mathias Polák
+    </note>
+  </birth>
+
+
+</matrika>

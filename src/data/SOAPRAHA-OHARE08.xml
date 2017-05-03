@@ -8,11 +8,20 @@
 
   <birth>
     <page><scan>62</scan><page>60</page></page>
-    <date>29.5.1877</date>
-    <place href="OHARE" house-nr="28" />
-    <born href="" />
-    <father href="KLEPALJOSEF" />
-    <mather href="KROPACEKANNA" />
+    <date>10.9.1836</date>
+    <place href="OHARE" house-nr="56" />
+    <born href="KLEPALJOSEF" />
+    <father href="KLEPALJIRI" />
+    <mather href="RUZEKKATERINA" />
   </birth>
+
+  <note>
+    sken 86, 1842, Ohaře 56,
+    Marie dcera Jiřího Klepala chalupníka, syna Wáclava Klepala víminkáře
+    z Nimužic? č. 11, a matky Kateřiny rozené Nowotné z Domanova č. 9,
+    panství Pděbradského. Matka: Kateřina, dcera Jana Růžka chalupníka
+    z Wohař č. 10, panství ? a matky Kateřiny rozené Polák z Přední Lhotty
+    panství Poděbradského.
+  </note>
 
 </matrika>
