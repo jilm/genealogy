@@ -1,0 +1,22 @@
+<matrika id="SOAPRAHA-PODEBRADY33">
+
+  <title>Matrika oddaných v obci Poděbrady.</title>
+  <archiv>Státní oblastní archiv v Praze</archiv>
+  <author>Poděbrady, Římskokatolická církev</author>
+  <year>1785--1826</year>
+  <volume>IV.</volume>
+
+  <wedding>
+    <page><scan>241</scan></page>
+    <date>29.6.1796</date>
+    <place href="PREDNILHOTA" house-nr="9" />
+    <bride href="POLAKKATERINA" />
+    <bridegroom href="RUZEKJAN" />
+    <note>
+        Junius, Vigesima nona, 1796, Přední Lhota 9
+        Růžek Johannes, filius Wenceslaw Růžek 23 let
+        Polák Katharina filia Mathis Polák, 19 let
+    </note>
+  </wedding>
+
+</matrika>

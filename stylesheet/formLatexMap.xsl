@@ -14,7 +14,10 @@
                 
                 
     <xsl:template match="value[@key = 'map']">
-        \begin{tikzpicture}[scale=0.05]
+        \begin{tikzpicture}[xscale=3, yscale=-3]
+        \input{czlow}
+        \draw (0,0)--(6,0)--(6,4)--(0,4)--(0,0);
+        \draw (0,0.5)--(6,0.5);
         <xsl:call-template name="makePlaceMap">
             <xsl:with-param name="places" select="$personList//place" />
         </xsl:call-template>
@@ -24,9 +27,11 @@
     <xsl:template name="makePlaceMap">
 
         <xsl:param name="places" />
-    
-        <xsl:variable name="width" as="xs:decimal" select="482.5" />
-        <xsl:variable name="height" as="xs:decimal" select="278" />
+
+        <xsl:variable name="ratio" as="xs:decimal" select="278.0 div 482.5" />
+        <xsl:variable name="width" as="xs:decimal" select="6.0" />
+        <xsl:variable name="height" as="xs:decimal" select="$width * $ratio" />
+        <xsl:variable name="yoffset" as="xs:decimal" select="0.4375" />
         <xsl:variable name="north" as="xs:decimal" select="51.0555556" />
         <xsl:variable name="south" as="xs:decimal" select="48.5525" />
         <xsl:variable name="west" as="xs:decimal" select="12.0913889" />
@@ -39,8 +44,8 @@
             <xsl:if test="$c gt 0">
                 <xsl:variable name="coord" select="coordinates" />
                 <xsl:variable name="x" select="($coord/lon/text() - $west) * $width div ($east - $west)" />
-                <xsl:variable name="y" select="($coord/lat/text() - $north) * $height div ($south - $north)" />
-                <xsl:variable name="r" select="math:sqrt($c div math:pi()) * 2.0" />
+                <xsl:variable name="y" select="($coord/lat/text() - $north) * $height div ($south - $north) + $yoffset" />
+                <xsl:variable name="r" select="math:sqrt($c div math:pi()) * 0.01" />
                 \draw (<xsl:value-of select="$x" />,<xsl:value-of select="$y" />) circle [radius=<xsl:value-of select="$r" />];                        
             </xsl:if>
         </xsl:for-each>

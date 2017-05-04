@@ -68,7 +68,7 @@
     
     <xsl:function name="jilm:formCoordinates" as="xs:string">
         <xsl:param name="coord" as="xs:double*" />
-        <xsl:value-of select="concat('(', $coord[1], ',', $coord[2], ')')" />
+        <xsl:value-of select="concat('(', substring(string($coord[1]), 1, 4), ',', substring(string($coord[2] - 4.0),1, 4), ')')" />
     </xsl:function>
     
     <xsl:function name="jilm:next" as="xs:string">

@@ -21,6 +21,7 @@
   <xi:include href="data/SOAPRAHA-OHARE13.xml" />
   <xi:include href="data/SOAPRAHA-OHARE21.xml" />
   <xi:include href="data/SOAPRAHA-OHARE22.xml" />
+  <xi:include href="data/SOAPRAHA-OHARE26.xml" />
   <xi:include href="data/SOAPRAHA-PODEBRADY33.xml" />
   <xi:include href="data/MZABRNO-11054.xml" />
   <xi:include href="data/MZABRNO-11059.xml" />

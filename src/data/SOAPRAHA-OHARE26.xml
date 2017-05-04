@@ -1,0 +1,31 @@
+<matrika id="SOAPRAHA-OHARE26">
+
+  <title>Matrika zemřelých v obci Ohaře.</title>
+  <archiv>Státní oblastní archiv v Praze</archiv>
+  <author>Ohaře, Římskokatolická církev</author>
+  <year>1841--1916</year>
+  <volume>II.</volume>
+
+  <death>
+    <page><scan>80</scan></page>
+    <date>19.10.1859</date>
+    <place href="OHARE" house-nr="56" />
+    <died href="KLEPALJIRI" />
+    <note>
+      October 19, Ohaře N. 56, Klepal Jiří, chalupník z Ohař, 64let
+    </note>
+  </death>
+
+
+  <death>
+    <page><scan>96</scan></page>
+    <date>20.4.1863</date>
+    <place href="OHARE" house-nr="56" />
+    <died href="RUZEKKATERINA" />
+    <note>
+      April 20, Ohaře N. 56, Klepalowa Kateřina, wdowa po Jiřím Klepalovi
+      chalupníkovi z Ohař. 60 let
+    </note>
+  </death>
+
+</matrika>
