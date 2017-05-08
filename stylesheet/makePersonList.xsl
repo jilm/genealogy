@@ -2,8 +2,7 @@
 
 <!--
 
-    Substitute birth and death event directly into the person elements.
-    Result XML document should contain only person and wedding elements.
+    Select only person elements, together with the name.
 
 -->
 <xsl:stylesheet version="2.0"
