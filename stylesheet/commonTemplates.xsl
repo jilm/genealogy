@@ -2,17 +2,62 @@
 
 <!--
 
+    Copyright 2017 Jiri Lidinsky
+
+    This file is part of Genealogy project.
+
+    Genealogy is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Genealogy is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Genealogy. If not, see http://www.gnu.org/licenses/.
+
+-->
+
+<xsl:stylesheet version="2.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:jilm="http://www.lidinsky.cz">
+
+    <xsl:template name="cite">
+        <xsl:param name="event" />
+        <cite>
+            <xsl:attribute name="href" select="$event/../@id" />
+            <xsl:apply-templates select="$event/page" />
+        </cite>
+    </xsl:template>
+
+    <xsl:template match="matrika/page">
+        <xsl:apply-templates select="page" />
+        <xsl:apply-templates select="scan" />
+    </xsl:template>
+
+    <xsl:template match="page/page" >
+        <page><xsl:apply-templates /></page>
+    </xsl:template>
+
+    <xsl:template match="scan">
+        <scan><xsl:apply-templates /></scan>
+    </xsl:template>
+
+    <xsl:template match="date">
+        <xsl:sequence select="jilm:analyze-date(text())" />
+    </xsl:template>
+
+<!--
+
      A place could be entered as a chain of place elements which reference
      each other. This stylesheet collects all of the parts into the one
      place element. In other words it substitute referenced information
      on place of the reference.
 
 -->
-<xsl:stylesheet version="2.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:jilm="http://www.lidinsky.cz" >
-
-    <xsl:output method="xml" encoding="utf-8" indent="yes" />
 
     <xsl:template match="place[text() and not(@href)]" priority="5">
         <place ><parish><xsl:apply-templates /></parish></place>

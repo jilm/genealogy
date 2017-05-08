@@ -2,6 +2,8 @@
 
 <!--
 
+    Takes the raw data on its input and provides a list of all of the
+    weddings.
 
 -->
 <xsl:stylesheet version="2.0"
@@ -10,7 +12,6 @@
     <xsl:import href="placeTemplate.xsl" />
     <xsl:import href="dateTemplate.xsl" />
     <xsl:import href="functions.xsl" />
-
 
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
 
