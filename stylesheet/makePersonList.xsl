@@ -2,14 +2,34 @@
 
 <!--
 
+    Copyright 2017 Jiri Lidinsky
+
+    This file is part of Genealogy project.
+
+    Genealogy is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Genealogy is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Genealogy. If not, see http://www.gnu.org/licenses/.
+
+-->
+
+<!--
+
     Select only person elements, together with the name.
 
 -->
 <xsl:stylesheet version="2.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:import href="placeTemplate.xsl" />
-    <xsl:import href="dateTemplate.xsl" />
+    <xsl:import href="commonTemplates.xsl" />
     <xsl:import href="functions.xsl" />
 
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
@@ -22,7 +42,6 @@
     <xsl:template match="/">
         <list> 
             <xsl:apply-templates select="//person" />
-            <xsl:apply-templates select="//wedding" />
         </list>
     </xsl:template>
 
@@ -38,10 +57,10 @@
             <xsl:attribute name="id" select="$id" />
             <xsl:attribute name="sex" select="@sex" />
             <xsl:variable name="birth_verified"
-                          select="//birth[born[@href = $id]]" />
+                          select="//matrika/birth[born[@href = $id]]" />
             <xsl:variable name="birth" select="birth" />
             <xsl:variable name="death_verified"
-                          select="//death[died[@href = $id]]" />
+                          select="//matrika/death[died[@href = $id]]" />
             <xsl:variable name="death" select="death" />
             <!-- person name -->
             <xsl:apply-templates select="name" />

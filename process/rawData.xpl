@@ -17,8 +17,6 @@
 
     <p:output port="result" primary="true" />
 
-    <p:option name="src-dir" select="'../src/data'" />
-
     <!--
 
         Concatenate all of the xml files.
