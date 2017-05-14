@@ -7,8 +7,7 @@
 <xsl:stylesheet version="2.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:import href="placeTemplate.xsl" />
-    <xsl:import href="dateTemplate.xsl" />
+    <xsl:import href="commonTemplates.xsl" />
     <xsl:import href="functions.xsl" />
 
     <xsl:output method="xml" encoding="utf-8" indent="yes" />
@@ -26,27 +25,13 @@
 
     <xsl:template match="matrika/death">
         <death>
-            <cite>
-              <xsl:attribute name="href" select="../@id" />
-              <xsl:apply-templates select="page" />
-            </cite>
+            <xsl:call-template name="cite">
+                <xsl:with-param name="event" select="." />
+            </xsl:call-template>           
             <xsl:apply-templates select="died" />
             <xsl:apply-templates select="date" />
             <xsl:apply-templates select="place" />
         </death>
-    </xsl:template>
-
-    <xsl:template match="matrika/page">
-        <xsl:apply-templates select="page" />
-        <xsl:apply-templates select="scan" />
-    </xsl:template>
-
-    <xsl:template match="page/page" >
-        <page><xsl:apply-templates /></page>
-    </xsl:template>
-
-    <xsl:template match="scan">
-        <scan><xsl:apply-templates /></scan>
     </xsl:template>
 
     <xsl:template match="person/death">

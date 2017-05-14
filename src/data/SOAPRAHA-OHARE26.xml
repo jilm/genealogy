@@ -28,4 +28,19 @@
     </note>
   </death>
 
+  <death>
+    <page><scan>176</scan></page>
+    <date>1.3.1883</date>
+    <place href="OHARE" house-nr="92" />
+    <died href="KROPACEKANTONIN" />
+    <note>
+      1.3.1883, Ohaře č. 92, dříve panství, nyní okres i hejtmanství kolín.
+      Zemřel Kropáček Antonín, výminkář z Ohař č. 28. bytem v č. 92, rodem
+      z Niskovic, okres Kutná Hora, ženat 48 let. Zemřel v 77. letech na
+      sešlost věkem.
+    </note>
+  </death>
+
+  <note>TODO: najit narozeni Antonina Kropacka, kolem roku 1806 v Miskovicich okres Kutna Hora</note>
+
 </matrika>
