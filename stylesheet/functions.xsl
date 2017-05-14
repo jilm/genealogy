@@ -7,7 +7,8 @@
 -->
 <xsl:stylesheet version="2.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:jilm="http://www.lidinsky.cz" >
+                xmlns:jilm="http://www.lidinsky.cz"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema" >
 
     <xsl:variable name="personList" select="doc('../build/personList.xml')" />
     <xsl:variable name="weddingList" select="doc('../build/weddingList.xml')" />
@@ -82,8 +83,14 @@
 
     <xsl:function name="jilm:analyze-date">
         <xsl:param name="date" />
+        <xsl:variable name="uncertain"
+                      select="contains($date, '?')"
+                      as="xs:boolean" />
+        <xsl:variable name="temp"
+                      select="replace($date, '\?+', '')"
+                      as="xs:string" />
         <xsl:variable name="tokenized"
-                      select="reverse(tokenize($date, '\.'))" />
+                      select="reverse(tokenize($temp, '\.'))" />
         <xsl:variable name="year" select="$tokenized[1]" />
         <xsl:variable name="month" select="$tokenized[2]" />
         <xsl:variable name="day" select="$tokenized[3]" />

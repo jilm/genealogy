@@ -65,17 +65,25 @@
 
     <xsl:template match="place[@href and not(@house-nr)]" >
         <xsl:variable name="ref" select="@href" />
+        <xsl:variable name="referenced"  select="jilm:getPlace($ref)" />
         <place>
-            <xsl:apply-templates select="jilm:getPlace($ref)/*" />
+            <xsl:apply-templates select="$referenced/region" />
+            <xsl:apply-templates select="$referenced/district" />
+            <xsl:apply-templates select="$referenced/parish" />
+            <xsl:apply-templates select="$referenced/coordinates" />
         </place>
     </xsl:template>
 
     <xsl:template match="place[@href and @house-nr]" >
         <xsl:variable name="ref" select="@href" />
+        <xsl:variable name="referenced"  select="jilm:getPlace($ref)" />
         <xsl:variable name="house-nr" select="@house-nr" />
         <place>
+            <xsl:apply-templates select="$referenced/region" />
+            <xsl:apply-templates select="$referenced/district" />
+            <xsl:apply-templates select="$referenced/parish" />
             <house-nr><xsl:value-of select="$house-nr" /></house-nr>
-            <xsl:apply-templates select="jilm:getPlace($ref)/*" />
+            <xsl:apply-templates select="$referenced/coordinates" />
         </place>
     </xsl:template>
 

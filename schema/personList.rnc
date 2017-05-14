@@ -1,4 +1,5 @@
 namespace xi = "http://www.w3.org/2001/XInclude"
+namespace xs = "http://www.w3.org/2001/XMLSchema"
 
 #
 #  This schema validates the flat person list.
@@ -32,7 +33,7 @@ grammar {
   )
 
   # An identifier which may be referenced by the href attribute
-  ID = ( attribute id { text } )
+  ID = attribute id { text }
 
   # The name of the person.
   Name = element name { nameContent }
@@ -76,26 +77,24 @@ grammar {
   Place = element place { placeContent }
 
   dateContent = ( 
-    element year { xs:integer } 
-    , element month { xs:integer } ?
-    , element day { xs:integer } ?
+    element year { xsd:integer } 
+    , element month { xsd:integer } ?
+    , element day { xsd:integer } ?
   )
 
   placeContent = ( 
-    text | (
       element region { text } ?
       , element district { text } ?
-      , element parish { text } ?
+      , element parish { text }
       , element house-nr { text } ?
       , Coordinates ?
-    )
   )
 
-  Coordinates = element { coordinatesContent }
+  Coordinates = element coordinates { coordinatesContent }
 
   coordinatesContent = (
-    element lon { xs:double }
-    , element lat { xs:double }
+    element lon { xsd:double }
+    , element lat { xsd:double }
   )
 
   Include = element xi:include {
