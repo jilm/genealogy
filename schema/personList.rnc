@@ -8,10 +8,10 @@ namespace xi = "http://www.w3.org/2001/XInclude"
 grammar {
 
   # The root element is just a list
-  start = element list { listContent* }
+  start = element list { listContent }
 
   # and inside the list there may be any number of persons defined.
-  listContent = ( Person* )
+  listContent = ( Person * )
 
   # A person definition
   Person = element person { personContent }
@@ -31,7 +31,10 @@ grammar {
       , Death ?
   )
 
-    # The name of the person.
+  # An identifier which may be referenced by the href attribute
+  ID = ( attribute id { text } )
+
+  # The name of the person.
   Name = element name { nameContent }
 
   # The first and the second part of the person name. The second name should
@@ -47,6 +50,12 @@ grammar {
 
   # The death information
   Death = element death { eventContent }
+
+  # a reference to father
+  Father = element father { Reference }
+  
+  # A reference to mather
+  Mather = element mather { Reference }
 
   # If there are information about a source, where one may verify given
   # information, than the verified, shoud be true, otherwise false.
@@ -78,20 +87,16 @@ grammar {
       , element district { text } ?
       , element parish { text } ?
       , element house-nr { text } ?
-      , element coordinates ? {
-        element lon { xs:double }
-        , element lat ( xs:double }
-      }
+      , Coordinates ?
     )
   )
 
-  # a reference to father
-  Father = element father { Reference }
-  
-  # A reference to mather
-  Mather = element mather { Reference }
+  Coordinates = element { coordinatesContent }
 
-  ID = ( attribute id { text } )
+  coordinatesContent = (
+    element lon { xs:double }
+    , element lat { xs:double }
+  )
 
   Include = element xi:include {
     attribute parse { text },

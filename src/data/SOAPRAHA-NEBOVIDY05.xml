@@ -1,0 +1,24 @@
+<matrika id="SOAPRAHA-NEBOVIDY05">
+
+    <volume>V.</volume>
+    <author>Nebovidy, Římskokatolická církev</author>
+    <year>1784--1825</year>
+    <archiv>Státní oblastní archiv v Praze</archiv>
+    <title>Matrika narozených v obci Nebovidy okres Kolín</title>
+
+    <birth>
+        <page><scan>448</scan></page>
+        <date>18.2.1815</date>
+        <place href="OPATOVICEKOLIN" house-nr="4" />
+        <born href="CHAROUZBARBORA" />
+        <father href="CHAROUZFRANTISEK" />
+        <mather href="BENESANNA" />
+        <note>
+           18.2.1815, Opatovice 4, okres Kolín
+           otec: Charouz Franc, půlsedlák
+           matka: Anna dcera Jana Beneše? sedláka z ???
+           poznámka: 12.11.1835
+        </note>
+    </birth>
+
+</matrika>

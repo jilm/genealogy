@@ -6,3 +6,6 @@ $NOVOTNYKATERINA Kateřina Novotná
 $RUZEKJAN Jan Růžek * 1773
 $POLAKKATERINA Kateřina Poláková * 1777
 $POLAKMATEJ Matěj Polák
+$CHAROUZFRANTISEK František Charouz
+$BENESANNA Anna Benešová
+  
