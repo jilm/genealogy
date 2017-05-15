@@ -110,32 +110,6 @@
     </name>
     <birth><date>1799</date></birth>
   </person>
-  
-  <matrika id="MZA-11086">
-    <signatura>11086</signatura>
-    <archiv>MZABrno</archiv>
-    <title>Matrika oddaných v obci ?.</title>
-    <author>Římskokatolická církev</author>
-    <volume></volume>
-    <year></year>
-
-    <wedding>
-      <date>1825</date>
-      <place href="NIMPSOV" house-nr="26"/>
-      <page><scan>332</scan></page>
-      <bride href="NESVARAMARIEANNA" />
-      <bridegroom href="PAVLIKMATHIAS" />
-    </wedding>
-
-    <wedding>
-      <date>1862</date>
-      <place href="NIMPSOV"/>
-      <page><scan>347</scan></page>
-      <bride href="KREJCIKATERINA" />
-      <bridegroom href="PAVLIKANTONIN" />
-    </wedding>
-    
-  </matrika>
 
   <person id="PAVLIKLUDMILA" sex="female">
     <name>
@@ -148,10 +122,6 @@
       <place>Moravské Budějovice</place>
     </birth>
     <death><date>13.2.1988</date></death>
-    <wedding cite="MO-MORAVSKEBUDEJOVICE-10682" scan="142" page="280">
-      <date>1.2.1935</date>
-      <place>Moravské Budějovice</place>
-    </wedding>
     <father href="PAVLIKFRANTISEK" />
     <mather href="VOJTECHANTONIE" />
   </person>
@@ -202,32 +172,6 @@
     <father href="VOJTECHJAKUB" />
     <mather href="PAPOUSEKROSALIE" />
   </person>
-
-  <matrika id="MZA-10608">
-
-    <signatura>10608</signatura>
-    <title>Matrika oddaných v obci Lukov.</title>
-    <year>1831--1931</year>
-
-    <wedding>
-      <page><scan>36</scan><page>67</page></page>
-      <date>18.10.1887</date>
-      <place href="LUKOV" />
-      <bride href="VOJTECHANTONIE" />
-      <bridegroom href="PAVLIKFRANTISEK" />
-      <note>
-        18. října 1887
-        Lukov 24
-        František Pavlík, čeledín v Lukově, obr. zemský 18. prapor, manželský
-        syn žijících katolíků: Antonína Pavlíka, domkáře v Nimpšově a
-        Kateřiny, rozené Krejčí (25 let)
-        Lukov 61
-        Antonia Vojtěch, služka v Lukově, manželská dcera katolických rodičů:
-        Jakuba Vojtěcha, domkáře v Lukově a Rosalie rozené Papoušek (19 let)
-      </note>
-    </wedding>
-
-  </matrika>
 
   <person id="VOJTECHJAKUB" sex="male" >
     <name>
@@ -304,32 +248,6 @@
   </person>
 
 
-  <matrika id="MZA-10608">
-
-    <signatura>10608</signatura>
-    <archiv>MZABrno</archiv>
-    <title>Matrika oddaných v obci Lukov.</title>
-    <author>Římskokatolická církev</author>
-    <volume></volume>
-    <year></year>
-
-    <wedding>
-      <page><scan>20</scan><page>32</page></page>
-      <date>19.6.1860</date>
-      <place href="LUKOV" />
-      <note>
-        Lukov 15; Jakob Wojtech Schunidr??? ??? in Lukau, 
-        sohn der katolishn ??? chs nach ??? Filip Wojtech ??? in Lukau ???
-        und Petronia geb. Vyhnalek ???; 30let; Rosalia Papouschek,
-        Dienstmagd (sluzebna) tochter der ? + Johan Papouschek,
-        ??? in Obr??? ??? in Lukau, Nr. 12, ??? 23 let.
-      </note>
-      <bridegroom href="VOJTECHJAKUB"/>
-      <bride href="PAPOUSEKROSALIE"/>
-    </wedding>
-    
-  </matrika>
-
   <matrika id="MZA-10602">
     <signatura>10602</signatura>
     <archiv>MZABrno</archiv>
@@ -345,27 +263,6 @@
       <mather href="WYHNALEKPETRONELLA" />
     </birth>
 
-  </matrika>
-  
-  <matrika id="MZA-10682">
-    <signatura>10682</signatura>
-    <archiv>MZABrno</archiv>
-    <title>Matrika oddaných v obci Moravské Budějovice.</title>
-    <author>Římskokatolická církev</author>
-    
-    <wedding>
-      <page><scan>142</scan><page>280</page></page>
-      <date>1.2.1932</date>
-      <place>Mor. Bud.</place>
-      <note>ženich Lusk Ferdinand, dělník v Moravských Budějovicích, vojín v záloze děl. pl. č. 8, do Myslibořic příslušný manželský syn Luska Františka, dělníka v Krnčicích a Terezie rozeené Pavel Koukal z Mastníku. Rodiče oba kattolíci, oba mrtvi.
-      ženich 34 let, narozen 25.5.1897 v Blížkovicícch okres moravské Budějovvice, VIII pagg 264
-      nevěsta Pavlíková Ludmila u matky v Mor. Budějovicích, sem příslušná manželská dcera Františka Pavlíka, dělníka v Heřmanicích a Autonie rozené Jakub Vojtěcch z Lukova, rodiče oba katolíci, otec zemřel, matka žije
-      nevěsta 25 let, narozena 6.11.1906, Mor. Budějovice heřmanice, VI pag 6.
-      Svědkové: Navrátil Karel, dělník, Svoboda Anttonín, domkář v Heřmanicích č. 272, obba katolíci.</note>
-      <bridegroom href="VOJTECHJAKUB"/>
-      <bride href="PAVLIKLUDMILA"/>
-    </wedding>    
-    
   </matrika>
 
   <matrika id="MZA-10603">

@@ -28,7 +28,7 @@
     <xsl:template match="matrika/wedding">
         <wedding>
             <xsl:call-template name="cite">
-                <xsl:with-param name="event" salect="." />
+                <xsl:with-param name="event" select="." />
             </xsl:call-template>
             <xsl:apply-templates select="date" />
             <xsl:apply-templates select="place" />

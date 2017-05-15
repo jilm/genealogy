@@ -1,0 +1,25 @@
+﻿  <matrika id="MZA-11086">
+    <signatura>11086</signatura>
+    <archiv>MZABrno</archiv>
+    <title>Matrika oddaných v obci ?.</title>
+    <author>Římskokatolická církev</author>
+    <volume></volume>
+    <year></year>
+
+    <wedding>
+      <date>1825</date>
+      <place href="NIMPSOV" house-nr="26"/>
+      <page><scan>332</scan></page>
+      <bride href="NESVARAMARIEANNA" />
+      <bridegroom href="PAVLIKMATHIAS" />
+    </wedding>
+
+    <wedding>
+      <date>1862</date>
+      <place href="NIMPSOV"/>
+      <page><scan>347</scan></page>
+      <bride href="KREJCIKATERINA" />
+      <bridegroom href="PAVLIKANTONIN" />
+    </wedding>
+    
+  </matrika>

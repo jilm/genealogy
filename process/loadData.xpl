@@ -5,7 +5,7 @@
     xmlns:c="http://www.w3.org/ns/xproc-step"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:jilm="http://www.lidinsky.cz"
-    name="raw-data"
+    name="load-raw-data"
     type="jilm:raw-data-processing">
 
     <p:import href="common.xpl" />
@@ -46,14 +46,32 @@
 
     </p:viewport>
 
-    <p:rename match="c:directory" new-name="list" />
+    <p:rename name="raw-data" match="c:directory" new-name="list" />
+
+    <!-- Create a person list. -->
 
     <jilm:transform stylesheet="../stylesheet/makePersonList.xsl" />
 
-        <p:validate-with-relax-ng assert-valid="false">
-            <p:input port="schema" >
-                <p:data href="../schema/personList.rnc" />
-            </p:input>
-        </p:validate-with-relax-ng>
+    <p:validate-with-relax-ng assert-valid="false">
+        <p:input port="schema" >
+            <p:data href="../schema/personList.rnc" />
+        </p:input>
+    </p:validate-with-relax-ng>
+
+    <p:sink />
+
+    <!-- Create a wedding list. -->
+
+    <p:xslt>
+        <p:input port="source">
+            <p:pipe step="raw-data" port="result" />
+        </p:input>
+        <p:input port="stylesheet" >
+            <p:document href="../stylesheet/makeWeddingList.xsl" />
+        </p:input>
+        <p:input port="parameters" >
+            <p:empty />
+        </p:input>
+    </p:xslt>
 
 </p:declare-step> 

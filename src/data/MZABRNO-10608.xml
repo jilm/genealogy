@@ -1,0 +1,44 @@
+﻿
+  <matrika id="MZA-10608">
+
+    <signatura>10608</signatura>
+    <archiv>MZABrno</archiv>
+    <title>Matrika oddaných v obci Lukov.</title>
+    <author>Římskokatolická církev</author>
+    <volume></volume>
+    <year>1831--1931</year>
+
+    <wedding>
+      <page><scan>20</scan><page>32</page></page>
+      <date>19.6.1860</date>
+      <place href="LUKOV" />
+      <note>
+        Lukov 15; Jakob Wojtech Schunidr??? ??? in Lukau, 
+        sohn der katolishn ??? chs nach ??? Filip Wojtech ??? in Lukau ???
+        und Petronia geb. Vyhnalek ???; 30let; Rosalia Papouschek,
+        Dienstmagd (sluzebna) tochter der ? + Johan Papouschek,
+        ??? in Obr??? ??? in Lukau, Nr. 12, ??? 23 let.
+      </note>
+      <bridegroom href="VOJTECHJAKUB"/>
+      <bride href="PAPOUSEKROSALIE"/>
+    </wedding>
+    
+    <wedding>
+      <page><scan>36</scan><page>67</page></page>
+      <date>18.10.1887</date>
+      <place href="LUKOV" />
+      <bride href="VOJTECHANTONIE" />
+      <bridegroom href="PAVLIKFRANTISEK" />
+      <note>
+        18. října 1887
+        Lukov 24
+        František Pavlík, čeledín v Lukově, obr. zemský 18. prapor, manželský
+        syn žijících katolíků: Antonína Pavlíka, domkáře v Nimpšově a
+        Kateřiny, rozené Krejčí (25 let)
+        Lukov 61
+        Antonia Vojtěch, služka v Lukově, manželská dcera katolických rodičů:
+        Jakuba Vojtěcha, domkáře v Lukově a Rosalie rozené Papoušek (19 let)
+      </note>
+    </wedding>
+
+  </matrika>

@@ -17,7 +17,16 @@
 #    along with Genealogy. If not, see http://www.gnu.org/licenses/.
 #
 
-Cite
+namespace xi = "http://www.w3.org/2001/XInclude"
+namespace xs = "http://www.w3.org/2001/XMLSchema"
+
+Cite = element cite { citeContent }
+
+citeContent = (
+    attribute href { text }
+    , element scan { xsd:integer } ?
+    , element page { xsd:integer } ?
+)
 
 # An information about birth, death or wedding must contain at least date or
 # place to be usefull
