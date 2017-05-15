@@ -1,0 +1,57 @@
+#
+#    Copyright 2017 Jiri Lidinsky
+#
+#    This file is part of Genealogy project.
+#
+#    Genealogy is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    Genealogy is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with Genealogy. If not, see http://www.gnu.org/licenses/.
+#
+
+Cite
+
+# An information about birth, death or wedding must contain at least date or
+# place to be usefull
+DatePlace = (( Date , Place ) | Date | Place )
+
+Date = element date { dateContent }
+
+dateContent = ( 
+    element year { xsd:integer } 
+    , element month { xsd:integer } ?
+    , element day { xsd:integer } ?
+)
+
+Place = element place { placeContent }
+
+placeContent = ( 
+    element region { text } ?
+    , element district { text } ?
+    , element parish { text }
+    , element house-nr { text } ?
+    , Coordinates ?
+)
+
+Coordinates = element coordinates { coordinatesContent }
+
+coordinatesContent = (
+    element lon { xsd:double }
+    , element lat { xsd:double }
+)
+
+Include = element xi:include {
+    attribute parse { text },
+    attribute href { text }
+}
+
+Reference = ( attribute href { text } )
+
