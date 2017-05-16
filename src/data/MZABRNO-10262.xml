@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <matrika id="MZA-10262">
+
+    <signatura>10262</signatura>
+    <title>Matrika narozených v obci Horní Újezd.</title>
+    <volume>Ji 595; 1418</volume>
+    <note>Horni Ujezd, scan: 2--16</note>
+    <year>1784--1797</year>
+    <author>Římskokatolická církev</author>
+
+    <birth>
+      <page><scan>15</scan></page>
+      <date>17.8.1796</date>
+      <place href="HUJEZD" house-nr="3" />
+      <born href="BEROUNTHERESIE" />
+      <father href="BEROUNJOHANN" />
+      <mather href="RUZICKAMARGARETA" />
+    </birth>
+
+  </matrika>

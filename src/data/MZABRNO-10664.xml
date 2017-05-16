@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <matrika id="MZABRNO-10664">
+    <signatura>10664</signatura>
+    <archiv>Moravský zemský archiv Brno</archiv>
+    <title>Matrika narozených v obci Dolní Víska, Heřmanice (Moravské Budějovice), Horní Víska, Jackov, Lažínky, Moravské Budějovice, Nová Ulice, Nové Syrovice, Podolí.</title>
+    <author>Římskokatolická církev</author>
+    <year>1881--1902</year>
+    <volume>Tř 70</volume>
+    
+    <birth>
+      <page><scan>361</scan></page>
+      <url>http://actapublica.eu/matriky/brno/prohlizec/7287/?strana=361</url>
+      <date>11.3.1902</date>
+      <place house-nr="37" >Heřmanice</place>
+      <born href="PAVLIKMATHILDA" />
+      <note>
+         Otec: František Pavlík, dělník při dráze v Heřmanicích, manželský
+         syn Antonína Pavlíka, zedníka v Nimpšově a Antonie rozené Vojtěch.
+         18/10 1887
+         
+         Matka: Antonie, manželská dcera Jakuba Vojtěcha, krejčího v Lukově
+         a Rozálie Papoušek (z Heřmanic)
+         Rodičové tito byli dne 18. října 1887 v Kukově církevně oddání
+         1/9 1862
+         
+         oddána 4/10 1927
+         
+         TODO:
+      </note>
+    <father href="PAVLIKFRANTISEK" />
+    <mather href="VOJTECHANTONIE" />
+    </birth>
+  </matrika>

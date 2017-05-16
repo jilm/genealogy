@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<matrika id="MZABRNO-11078">
+    <signatura>11078</signatura>
+    <title>Matrika narozených</title>
+    <archiv>Moravský zemský archiv Brno</archiv>
+    <author>Velký Újezd (římskokatolická církev)</author>
+    <year>1828--1861</year>
+    <volume>Ji 508; 2102</volume>
+
+    <birth>
+      <page><scan>22</scan></page>
+      <place href="NIMPSOV" house-nr="26" />
+      <date>30.12.1832</date>
+      <born href="PAVLIKANTONIN" />
+      <father href="PAVLIKMATHIAS" />
+      <mather href="NESVARAMARIEANNA" />
+      <note>TODO: poznamka 1862</note>
+    </birth>
+</matrika>

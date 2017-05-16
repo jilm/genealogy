@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<matrika id="MZABRNO-10603">
+
+    <signatura>10603</signatura>
+    <title><title>Matrika narozených pro obce Lukov, Jakubov a Vícenice.</title>
+    <author>Římskokatolický farní úřad Lukov</author>
+    <year>1858--1871</year>
+    <volume>Ji 466; 2160; V.</volume>
+    <archiv>Moravský zemský archiv Brno</archiv>
+
+    <birth>
+      <page><scan>20</scan></page>
+      <date>14.1.1868</date>
+      <place href="LUKOV" house-nr="68" />
+      <born href="VOJTECHANTONIE" />
+      <father href="VOJTECHJAKUB" />
+      <mather href="PAPOUSEKROSALIE" />
+    </birth>
+</matrika>

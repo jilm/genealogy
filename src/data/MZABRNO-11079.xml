@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+   
+<matrika id="MZABRNO-11079">
+
+    <signatura>11079</signatura>
+    <title>Matrika narozených v obci Dědice, Hornice, Kojatice, Michálka, Nimpšov, Spetice, Velký Újezd.</title>
+    <author>Římskokatolická církev, Velký Újezd</author>
+    <volume>Ji~509; 2103</volume>
+    <year>1861--1885</year>
+
+    <birth>
+      <date>1.9.1862</date>
+      <place href="NIMPSOV" house-nr="26" />
+      <page><scan>16</scan><page>45</page></page>
+      <born href="PAVLIKFRANTISEK" />
+      <father href="PAVLIKANTONIN" />
+      <mather href="KREJCIKATERINA" />
+      <note>
+      </note>
+    </birth>
+</matrika>

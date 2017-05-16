@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<matrika id="MZABRNO-10260">
+
+    <signatura>10260</signatura>
+    <archiv>Moravský zemský archiv Brno</archiv>
+    <title>Matrika narozených v obci Horní Újezd.</title>
+    <author>Horní Újezd, Římskokatolická církev</author>
+    <year>1726--1774</year>
+    <volume>Ji 593; 1416</volume>
+    
+    <birth>
+      <page><scan>75</scan></page>
+      <url>http://actapublica.eu/matriky/brno/prohlizec/6372/?strana=75</url>
+      <date>29.7.1761</date>
+      <place href="HUJEZD" />
+      <born href="RUZICKAMARGARETA" />
+      <note>
+        Mathias Růžička Margareta Time?
+      </note>
+      <father href="RUZICKAMATHIAS" />
+      <mather href="MARGARETA" />
+    </birth>
+  </matrika>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<matrika id="MZABRNO-10602">
+
+    <signatura>10602</signatura>
+    <archiv>Moravský zemský archiv Brno</archiv>
+    <title>Matrika narozených pro obce Lukov, Jakubov a Vícenice od roku 1824 do roku 1857.</title>
+    <author>Římskokatolický farní úřad Lukov</author>
+    <year>1824--1857</year>
+    <volume>Ji 465; 2159; IV.</volume>
+
+    <birth>
+      <page><scan>8</scan><page>13</page></page>
+      <date>16.4.1830</date>
+      <place href="LUKOV" house-nr="15" />
+      <born href="VOJTECHJAKUB" />
+      <father href="VOJTECHFILIP" />
+      <mather href="WYHNALEKPETRONELLA" />
+    </birth>
+
+</matrika>

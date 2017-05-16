@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+             
+  <matrika id="MZA-10268">
+
+    <signatura>10268</signatura>
+    <archiv>MZABrno</archiv>
+    <title>Matrika oddaných v obci Horní Újezd.</title>
+    <author>Římskokatolická církev</author>
+    <volume></volume>
+    <year>1682--1784</year>
+
+    <wedding>
+      <page><scan>79</scan></page>
+      <bridegroom href="BEROUNJOHANN" />
+      <bride href="RUZICKAMARGARETA" />
+      <place>Horní Újezd</place>
+      <date>28. Octobri 1781</date>
+      <note>
+        Beroun Johannes, (N3) Margareta Ružka (N18)
+      </note>
+    </wedding>
+  </matrika>

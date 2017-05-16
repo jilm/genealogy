@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <matrika id="MZA-10263">
+    <signatura>10263</signatura>
+    <archiv>MZABrno</archiv>
+    <title>Matrika narozených v obci Horní Újezd.</title>
+    <author>Římskokatolická církev</author>
+    
+    <birth>
+      <url>http://actapublica.eu/matriky/brno/prohlizec/6375/?strana=39</url>
+      <date>4.9.1836</date>
+      <place href="HUJEZD" house-nr="47" />
+      <born href="PAPOUSEKROSALIE" />
+      <note>
+      10263, scan 39, Horni ujezd 47, 1836
+      Rosalia Papouschek, dcera Johana Papouschka a Therezie Johann Beroun
+      </note>
+      <father href="PAPOUSEKJOHANN" />
+      <mather href="BEROUNTHERESIE" />
+    </birth>
+  </matrika>
