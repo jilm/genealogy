@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <list>
 
@@ -33,39 +33,7 @@
     <parish>Nimpšov</parish>
   </place>
 
-  <matrika id="MZA-11078">
-    <signatura>11078</signatura>
-    <title>Matrika narozených</title>
 
-    <birth>
-      <page><scan>22</scan></page>
-      <place href="NIMPSOV" house-nr="26" />
-      <date>1832</date>
-      <born href="PAVLIKANTONIN" />
-      <father href="PAVLIKMATHIAS" />
-      <mather href="NESVARAMARIEANNA" />
-    </birth>
-  </matrika>
-
-  <matrika id="MZA-11079">
-
-    <signatura>11079</signatura>
-    <title>Matrika narozených v obci Dědice, Hornice, Kojatice, Michálka, Nimpšov, Spetice, Velký Újezd.</title>
-    <author>Římskokatolická církev, Velký Újezd</author>
-    <volume>Ji~509; 2103</volume>
-    <year>1861--1885</year>
-
-    <birth>
-      <date>1. september 1862</date>
-      <place href="NIMPSOV" house-nr="26" />
-      <page><scan>16</scan><page>45</page></page>
-      <born href="PAVLIKFRANTISEK" />
-      <father href="PAVLIKANTONIN" />
-      <mather href="KREJCIKATERINA" />
-      <note>
-      </note>
-    </birth>
-  </matrika>
 
   <person id="KREJCIKATERINA" sex="female">
     <name>
@@ -131,13 +99,7 @@
       <first>Mathilda</first>
       <second>Pavlíková</second>
     </name>
-    <birth cite="MN-MORAVSKEBUDEJOVICE-10664" scan="361" page="717">
-      <date>11.3.1902</date>
-      <place>Heřmanice</place>
-    </birth>
     <wedding><date>4.10.1927</date></wedding>
-    <father href="PAVLIKFRANTISEK" />
-    <mather href="VOJTECHANTONIE" />
   </person>
 
   <person id="PAVLIKFRANTISKA" sex="female">
@@ -155,8 +117,6 @@
     <father href="PAVLIKFRANTISEK" />
     <mather href="VOJTECHANTONIE" />
   </person>
-
-
 
   <person id="VOJTECHANTONIE" sex="female">
     <name>
@@ -247,121 +207,12 @@
     </name>
   </person>
 
-
-  <matrika id="MZA-10602">
-    <signatura>10602</signatura>
-    <archiv>MZABrno</archiv>
-    <title>Matrika narozených v obci Lukov.</title>
-    <author>Římskokatolická církev</author>
-
-    <birth>
-      <page><scan>8</scan><page>13</page></page>
-      <date>16.4.1830</date>
-      <place href="LUKOV" house-nr="15" />
-      <born href="VOJTECHJAKUB" />
-      <father href="VOJTECHFILIP" />
-      <mather href="WYHNALEKPETRONELLA" />
-    </birth>
-
-  </matrika>
-
-  <matrika id="MZA-10603">
-    <signatura>10603</signatura>
-    <title>Matrika narozených v obci Lukov, 1858--1871</title>
-    <author>Římskokatolická církev</author>
-
-    <birth>
-      <page><scan>20</scan></page>
-      <date>14.1.1868</date>
-      <place href="LUKOV" house-nr="68" />
-      <born href="VOJTECHANTONIE" />
-      <father href="VOJTECHJAKUB" />
-      <mather href="PAPOUSEKROSALIE" />
-    </birth>
-  </matrika>
-
-  <matrika id="MZA-10260">
-    <signatura>10260</signatura>
-    <archiv>MZABrno</archiv>
-    <title>Matrika narozených v obci Horní Újezd.</title>
-    <author>Římskokatolická církev</author>
-    
-    <birth>
-      <url>http://actapublica.eu/matriky/brno/prohlizec/6372/?strana=75</url>
-      <date>29. July 1761</date>
-      <place href="HUJEZD" />
-      <born href="RUZICKAMARGARETA" />
-      <page><scan>75</scan></page>
-      <note>
-        Mathias Růžička Margareta Time?
-      </note>
-      <father href="RUZICKAMATHIAS" />
-      <mather href="MARGARETA" />
-    </birth>
-  </matrika>
-
   <person id="RUZICKAMATHIAS" sex="male">
     <name>
       <first>Mathias</first>
       <second>Růžička</second>
     </name>
   </person>
-  
-  
-  <matrika id="MZA-10263">
-    <signatura>10263</signatura>
-    <archiv>MZABrno</archiv>
-    <title>Matrika narozených v obci Horní Újezd.</title>
-    <author>Římskokatolická církev</author>
-    
-    <birth>
-      <url>http://actapublica.eu/matriky/brno/prohlizec/6375/?strana=39</url>
-      <date>4.9.1836</date>
-      <place href="HUJEZD" house-nr="47" />
-      <born href="PAPOUSEKROSALIE" />
-      <note>
-      10263, scan 39, Horni ujezd 47, 1836
-      Rosalia Papouschek, dcera Johana Papouschka a Therezie Johann Beroun
-      </note>
-      <father href="PAPOUSEKJOHANN" />
-      <mather href="BEROUNTHERESIE" />
-    </birth>
-  </matrika>
-  
-  <matrika id="MZA-10268">
-
-    <signatura>10268</signatura>
-    <archiv>MZABrno</archiv>
-    <title>Matrika oddaných v obci Horní Újezd.</title>
-    <author>Římskokatolická církev</author>
-    <volume></volume>
-    <year>1682--1784</year>
-
-    <wedding>
-      <page><scan>79</scan></page>
-      <bridegroom href="BEROUNJOHANN" />
-      <bride href="RUZICKAMARGARETA" />
-      <place>Horní Újezd</place>
-      <date>28. Octobri 1781</date>
-      <note>
-        Beroun Johannes, (N3) Margareta Ružka (N18)
-      </note>
-    </wedding>
-  </matrika>
-  
-  <matrika id="MZA-10269">
-    <signatura>10269</signatura>
-    <title>Matrika oddaných v obci ?.</title>
-    <author>Římskokatolická církev</author>
-    <wedding>
-      <page><scan>10</scan></page>
-      <bridegroom href="PAPOUSEKJOHANN" />
-      <bride href="BEROUNTHERESIE" />
-      <note>
-    10269, scan 10, 1815 Johann Sohn der Jakub Papoushek 24let, Theresia tochter Johann Beroun , Oujezd Nr. 47, 18 let
-      </note>
-    </wedding>
-  </matrika>
 
   <person id="BEROUNJOHANN" sex="male">
     <name>
@@ -383,24 +234,6 @@
     </name>
   </person>
 
-  <matrika id="MZA-10262">
 
-    <signatura>10262</signatura>
-    <title>Matrika narozených v obci Horní Újezd.</title>
-    <volume>Ji 595; 1418</volume>
-    <note>Horni Ujezd, scan: 2--16</note>
-    <year>1784--1797</year>
-    <author>Římskokatolická církev</author>
-
-    <birth>
-      <page><scan>15</scan></page>
-      <date>17.8.1796</date>
-      <place href="HUJEZD" house-nr="3" />
-      <born href="BEROUNTHERESIE" />
-      <father href="BEROUNJOHANN" />
-      <mather href="RUZICKAMARGARETA" />
-    </birth>
-
-  </matrika>
 
 </list>
