@@ -1,0 +1,98 @@
+<matrika id="SOATREBON-4147">
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="http://digi.ceskearchivy.cz/4174">
+   <dc:title xml:lang="cs">Matriční kniha Chřešťovice č.12, O 1818-1864</dc:title>
+   <dc:title xml:lang="en">Parish register Chřešťovice No.12,  1818-1864</dc:title>
+   <dc:creator xml:lang="cs">Farní úřad Chřešťovice</dc:creator>
+   <dc:creator xml:lang="en">Parish office Chřešťovice</dc:creator>
+   <dc:subject xml:lang="cs">Sbírka matrik SOA v Třeboni</dc:subject>
+   <dc:subject xml:lang="cs">matriční knihy</dc:subject>
+   <dc:subject xml:lang="cs">matriky</dc:subject>
+   <dc:subject xml:lang="cs">digitalizovaný obsah</dc:subject>
+   <dc:subject xml:lang="en">parish registers</dc:subject>
+   <dc:subject xml:lang="en">digitized content</dc:subject>
+   <dc:description xml:lang="cs">Matriční kniha č.12 Chřešťovice.</dc:description>
+   <dc:description xml:lang="cs">Datace: NAROZENÍ: -, ODDANÍ: 1818/1864, ZEMŘELÍ: -.</dc:description>
+   <dc:description xml:lang="cs">Zápisy pro obce: Březí, Dobešice, Chřešťovice, Jehnědno, Karvašiny, Kluky, Olešná, Podolsko, Rastory, Temešvár, Údražské Chalupy,Březí, Dobešice, Chřešťovice, Jehnědno, Karvašiny, Kluky, Olešná, Podolsko, Rastory, Temešvár, Údražské Chalupy.</dc:description>
+   <dc:description xml:lang="cs">Stran: 275</dc:description>
+   <dc:description xml:lang="en">Parish register 12 Chřešťovice.</dc:description>
+   <dc:description xml:lang="en">Time extent: BIRTH: -, MARRIAGE: 1818/1864, DEATH: -.</dc:description>
+   <dc:description xml:lang="en">Records of: Březí, Dobešice, Chřešťovice, Jehnědno, Karvašiny, Kluky, Olešná, Podolsko, Rastory, Temešvár, Údražské Chalupy,Březí, Dobešice, Chřešťovice, Jehnědno, Karvašiny, Kluky, Olešná, Podolsko, Rastory, Temešvár, Údražské Chalupy.</dc:description>
+   <dc:description xml:lang="en">Pages: 275</dc:description>
+   <dc:publisher xml:lang="cs">Farní úřad Chřešťovice</dc:publisher>
+   <dc:publisher xml:lang="en">Parish office Chřešťovice</dc:publisher>
+   <dc:date>1818/1864</dc:date>
+   <dc:type xml:lang="cs">matriční kniha</dc:type>
+   <dc:type xml:lang="en">parish register</dc:type>
+   <dc:identifier>http://digi.ceskearchivy.cz/4174</dc:identifier>
+   <dc:source>ČR - Státní oblastní archiv v Třeboni / State regional archives Třeboň</dc:source>
+   <dc:language>cze</dc:language>
+   <dc:coverage>Temporal: 1818/1864</dc:coverage>
+   <dc:coverage>Spatial: Březí</dc:coverage>
+   <dc:coverage>Spatial: Dobešice</dc:coverage>
+   <dc:coverage>Spatial: Chřešťovice</dc:coverage>
+   <dc:coverage>Spatial: Jehnědno</dc:coverage>
+   <dc:coverage>Spatial: Karvašiny</dc:coverage>
+   <dc:coverage>Spatial: Kluky</dc:coverage>
+   <dc:coverage>Spatial: Olešná</dc:coverage>
+   <dc:coverage>Spatial: Podolsko</dc:coverage>
+   <dc:coverage>Spatial: Rastory</dc:coverage>
+   <dc:coverage>Spatial: Temešvár</dc:coverage>
+   <dc:coverage>Spatial: Údražské Chalupy,Březí</dc:coverage>
+   <dc:coverage>Spatial: Dobešice</dc:coverage>
+   <dc:coverage>Spatial: Chřešťovice</dc:coverage>
+   <dc:coverage>Spatial: Jehnědno</dc:coverage>
+   <dc:coverage>Spatial: Karvašiny</dc:coverage>
+   <dc:coverage>Spatial: Kluky</dc:coverage>
+   <dc:coverage>Spatial: Olešná</dc:coverage>
+   <dc:coverage>Spatial: Podolsko</dc:coverage>
+   <dc:coverage>Spatial: Rastory</dc:coverage>
+   <dc:coverage>Spatial: Temešvár</dc:coverage>
+   <dc:coverage>Spatial: Údražské Chalupy</dc:coverage>
+   <dc:coverage></dc:coverage>
+  </rdf:Description>
+</rdf:RDF>
+
+    <note>
+
+19: 1847 Březí
+30: 1860 Volešná
+44: 1863 Volešná
+53: 1846 Dobešice
+
+71: 1864 Jehněčensko 
+100: 1860 Jehnědlo
+125: 1833
+139: 1849 Klauk
+150: 1857 Klauk
+166: 1826
+
+
+    </note>
+
+    <wedding>
+        <page><scan>52</scan></page>
+        <date>29.1.1845</date>
+        <place>Velká Doubrava 50</place>
+        <bride href="SIMEKMARIE" />
+        <bridegroom href="MAREKVACLAV" />
+        <note>
+            1845 Januar 29
+            Welka Doubrava No. 50
+
+            Wáclav Marek neb. Zavadil, syn ??? z Velké Doubravy No. 50
+            syn Alžběty Markové z Welké Doubravy ??? potom provdána ???
+            23 let, Dobešice No. 5
+
+            Marie dcera Františka Šimka chalupníka z Dobešic No. 9
+            27 let,
+
+            TODO: Marie Simkova * 1818
+            TODO: Vaclav Marek * 1822
+        </note>
+    </wedding>
+
+</matrika>
