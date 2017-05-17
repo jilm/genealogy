@@ -26,10 +26,6 @@
       <first>Josef</first>
       <second>Klepal</second>
     </name>
-    <birth>
-      <date>10.9.1836</date>
-      <place href="OHARE" house-nr="56" />
-    </birth>
     <notes>podruh, Ohaře c. 28</notes>
     <father href="KLEPALJIRI" />
     <mather href="RUZEKKATERINA" />

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<matrika id="MZABRNO-11055">
+    <title>Matrika narozených v obci Chroustov, Dolní Vilémovice, Plešice, Třebenice, Valeč</title>
+    <author>Valeč, římskokatolická církev</author>
+    <volume>Ji 733; 1509</volume>
+    <archiv>Moravský zemský archiv Brno</archiv>
+    <year>1825--1851</year>
+
+    <birth>
+        <page><scan>116</scan></page>
+        <date>16.9.1836</date>
+        <place href="WALTSCH" house-nr="50" />
+        <born href="JONASFRANTISKA" />
+        <father href="JONASJAKUB" />
+        <mather href="MANFRANTISKA" />
+    </birth>
+</matrika>

@@ -17,8 +17,6 @@
 
     </p:documentation>
 
-    <p:output port="result" primary="true" />
-
     <!--
 
         Concatenate all of the xml files.
@@ -52,13 +50,15 @@
 
     <jilm:transform stylesheet="../stylesheet/makePersonList.xsl" />
 
+    <!--
     <p:validate-with-relax-ng assert-valid="false">
         <p:input port="schema" >
             <p:data href="../schema/personList.rnc" />
         </p:input>
     </p:validate-with-relax-ng>
+    -->
 
-    <p:sink />
+    <p:store href="../build/personList.xml" />
 
     <!-- Create a wedding list. -->
 
@@ -73,5 +73,39 @@
             <p:empty />
         </p:input>
     </p:xslt>
+
+    <p:store href="../build/weddingList.xml" />
+
+    <!-- Create a birth list. -->
+
+    <p:xslt>
+        <p:input port="source">
+            <p:pipe step="raw-data" port="result" />
+        </p:input>
+        <p:input port="stylesheet" >
+            <p:document href="../stylesheet/makeBirthList.xsl" />
+        </p:input>
+        <p:input port="parameters" >
+            <p:empty />
+        </p:input>
+    </p:xslt>
+
+    <p:store href="../build/birthList.xml" />
+
+    <!-- Create a death list. -->
+
+    <p:xslt>
+        <p:input port="source">
+            <p:pipe step="raw-data" port="result" />
+        </p:input>
+        <p:input port="stylesheet" >
+            <p:document href="../stylesheet/makeDeathList.xsl" />
+        </p:input>
+        <p:input port="parameters" >
+            <p:empty />
+        </p:input>
+    </p:xslt>
+
+    <p:store href="../build/deathList.xml" />
 
 </p:declare-step> 

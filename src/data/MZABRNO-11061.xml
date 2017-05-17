@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<matrika id="MZABRNO-11061">
+
+<title>Matrika oddaných v obci Chroustov, Dolní Vilémovice, Plešice, Třebenice, Valeč</title>
+<author>Valeč, římskokatolická církev</author>
+<volume>Tř 32</volume>
+<archiv>Moravský zemský archiv Brno</archiv>
+<year>1852--1903</year>
+
+    <wedding>
+        <page><scan>62</scan><page>131</page></page>
+        <url>http://actapublica.eu/matriky/brno/prohlizec/7090/?strana=62</url>
+        <date>6.9.1859</date>
+        <place href="WALTSCH" house-nr="54" />
+        <bride href="JONASFRANTISKA" />
+        <bridegroom href="OKRINAJAKUB" />
+    </wedding>
+</matrika>

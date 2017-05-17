@@ -42,5 +42,113 @@
         <xsl:value-of select="$year" />
     </xsl:template>
 
+    <xsl:template match="place[district and house-nr]" priority="3" >
+        <xsl:value-of select="concat(parish/text(), ' ', house-nr/text(), ' okres ', district/text())" />
+    </xsl:template>
+
+    <xsl:template match="place[district]" priority="2" >
+        <xsl:value-of select="concat(parish/text(), ' okres ', district/text())" />
+    </xsl:template>
+
+    <xsl:template match="place" priority="1">
+        <xsl:value-of select="parish/text()" />
+    </xsl:template>
+
+    <!-- Birth -->
+
+    <xsl:template match="birth[cite]" priority="3">
+        <inline class="verified">
+            <xsl:next-match />
+        </inline>
+    </xsl:template>
+
+    <xsl:template match="birth[date and place]" priority="2">
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+        <xsl:variable name="place">
+            <xsl:apply-templates select="place" />
+        </xsl:variable>
+        <xsl:value-of select="concat('* ', $date, ' ', $place)" />
+    </xsl:template>
+
+    <xsl:template match="birth[date]" priority="1">
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+        <xsl:value-of select="concat('* ', $date)" />
+    </xsl:template>
+
+    <xsl:template match="birth[place]" priority="1">
+        <xsl:variable name="place">
+            <xsl:apply-templates select="place" />
+        </xsl:variable>
+        <xsl:value-of select="concat('* ', $place)" />
+    </xsl:template>
+
+    <!-- Death -->
+
+    <xsl:template match="death[cite]" priority="3">
+        <inline class="verified">
+            <xsl:next-match />
+        </inline>
+    </xsl:template>
+
+    <xsl:template match="death[date and place]" priority="2">
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+        <xsl:variable name="place">
+            <xsl:apply-templates select="place" />
+        </xsl:variable>
+        <xsl:value-of select="concat('+ ', $date, ' ', $place)" />
+    </xsl:template>
+
+    <xsl:template match="death[date]" priority="1">
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+        <xsl:value-of select="concat('+ ', $date)" />
+    </xsl:template>
+
+    <xsl:template match="death[place]" priority="1">
+        <xsl:variable name="place">
+            <xsl:apply-templates select="place" />
+        </xsl:variable>
+        <xsl:value-of select="concat('+ ', $place)" />
+    </xsl:template>
+
+    <!-- Wedding -->
+
+    <xsl:template match="wedding[cite]" priority="3">
+        <inline class="verified">
+            <xsl:next-match />
+        </inline>
+    </xsl:template>
+
+    <xsl:template match="wedding[date and place]" priority="2">
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+        <xsl:variable name="place">
+            <xsl:apply-templates select="place" />
+        </xsl:variable>
+        <xsl:value-of select="concat('w ', $date, ' ', $place)" />
+    </xsl:template>
+
+    <xsl:template match="wedding[date]" priority="1">
+        <xsl:variable name="date">
+            <xsl:apply-templates select="date" />
+        </xsl:variable>
+        <xsl:value-of select="concat('w ', $date)" />
+    </xsl:template>
+
+    <xsl:template match="wedding[place]" priority="1">
+        <xsl:variable name="place">
+            <xsl:apply-templates select="place" />
+        </xsl:variable>
+        <xsl:value-of select="concat('w ', $place)" />
+    </xsl:template>
+
 
 </xsl:stylesheet>

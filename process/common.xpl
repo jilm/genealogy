@@ -51,11 +51,13 @@
             </p:input>
         </p:xslt>
 
+  <!--
         <p:validate-with-relax-ng>
             <p:input port="schema" >
                 <p:data href="../schema/schema.rnc" />
             </p:input>
         </p:validate-with-relax-ng>
+  -->
     </p:declare-step>
 
 
