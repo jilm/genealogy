@@ -1,13 +1,37 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
+<?xml version="1.0" encoding="utf-8"?>
+             
 <matrika id="MZABRNO-11061">
 
-<title>Matrika oddaných v obci Chroustov, Dolní Vilémovice, Plešice, Třebenice, Valeč</title>
-<author>Valeč, římskokatolická církev</author>
-<volume>Tř 32</volume>
-<archiv>Moravský zemský archiv Brno</archiv>
-<year>1852--1903</year>
+    <signatura>11061</signatura>
+    <archiv>MZABrno</archiv>
+    <title>Matrika oddaných v obci Chroustov, Dolní Vilémovice, Plešice, Třebenice, Valeč.</title>
+    <author>Valeč, Římskokatolická církev</author>
+    <volume>Tř 32</volume>
+    <year>1852--1903</year>
 
+    <wedding>
+      <page><scan>100</scan></page>
+      <bridegroom href="OKRINAALOIS" />
+      <bride href="SKALAMARIE" />
+      <place house-nr="50">Valeč</place>
+      <date>9.2.1896</date>
+      <note>
+         Ženich: Okřina Alois, obuvník ve Valči, katolík, svobodný, 23 roků
+         starý syn katolíka Jakuba Okřiny, domkáře a obuvníka ve Valči a jeho
+         žijící katolické manželky Františky rozené Jonáš Jakub
+         23 let, narozen 27.2.1873
+         
+         Nevěsta: Skálová Marie, bydlící ve Valči č. III. katolička, svobodná
+         21 roků stará dcera katolíka Františka Skály, domkáře v Stíčanech
+         okres Chrudim a jeho žijící katolické manželky Marie rozené Vaigl
+         Karel
+         21 let, narozena 21.12.1875
+         
+         Svědkové: Jakub Okřina obuvník ve Valči, Ján Okřina obuvník ve Valči
+         oba katolíci.
+      </note>
+    </wedding>
+    
     <wedding>
         <page><scan>62</scan><page>131</page></page>
         <url>http://actapublica.eu/matriky/brno/prohlizec/7090/?strana=62</url>
@@ -15,5 +39,6 @@
         <place href="WALTSCH" house-nr="54" />
         <bride href="JONASFRANTISKA" />
         <bridegroom href="OKRINAJAKUB" />
-    </wedding>
-</matrika>
+    </wedding>    
+    
+  </matrika>
