@@ -137,39 +137,23 @@
 
 
   <person sex="female" id="LAHNJOSEFA">
-
     <name>
-
       <first>Josefa</first>
-
       <second>Lánová</second>
-
       <married>Lukešová</married>
-
     </name>
-
     <birth><date>12.2.1812</date></birth>
-
-    <wedding href="TRNOVA04:21" />
-
     <father href="LAHNFRANTISEK" />
-
     <mather href="SALLINGERJOSEFA" />
-
   </person>
 
 
 
   <person sex="male" id="LAHNFRANTISEK">
-
     <name>
-
       <first>František</first>
-
       <second>Láhn</second>
-
     </name>
-
   </person>
 
 

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<matrika id="SOATREBON-7635">
+
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="http://digi.ceskearchivy.cz/7635">
+   <dc:title xml:lang="cs">Matriční kniha Střížov č.21, O 1852-1925</dc:title>
+   <dc:title xml:lang="en">Parish register Střížov No.21,  1852-1925</dc:title>
+   <dc:creator xml:lang="cs">Farní úřad Střížov</dc:creator>
+   <dc:creator xml:lang="en">Parish office Střížov</dc:creator>
+   <dc:subject xml:lang="cs">Sbírka matrik SOA v Třeboni</dc:subject>
+   <dc:subject xml:lang="cs">matriční knihy</dc:subject>
+   <dc:subject xml:lang="cs">matriky</dc:subject>
+   <dc:subject xml:lang="cs">digitalizovaný obsah</dc:subject>
+   <dc:subject xml:lang="en">parish registers</dc:subject>
+   <dc:subject xml:lang="en">digitized content</dc:subject>
+   <dc:description xml:lang="cs">Matriční kniha č.21 Střížov.</dc:description>
+   <dc:description xml:lang="cs">Datace: NAROZENÍ: -, ODDANÍ: 1852/1925, ZEMŘELÍ: -.</dc:description>
+   <dc:description xml:lang="cs">Zápisy pro obce: Borovnice, Doubravice, Hamr, Hůrka, Jedovary, Komařice, Lomec, Nedabyle, Nová Ves, Nový Mlýn, Pašinovice, Řevňovice, Sedlo, Stradov, Strážkovice, Střížov, Veselka,Borovnice, Doubravice, Hamr, Hůrka, Jedovary, Komařice, Lomec, Nedabyle, Nová Ves, Nový Mlýn, Pašinovice, Řevňovice, Sedlo, Stradov, Strážkovice, Střížov, Veselka.</dc:description>
+   <dc:description xml:lang="cs">Stran: 468</dc:description>
+   <dc:description xml:lang="en">Parish register 21 Střížov.</dc:description>
+   <dc:description xml:lang="en">Time extent: BIRTH: -, MARRIAGE: 1852/1925, DEATH: -.</dc:description>
+   <dc:description xml:lang="en">Records of: Borovnice, Doubravice, Hamr, Hůrka, Jedovary, Komařice, Lomec, Nedabyle, Nová Ves, Nový Mlýn, Pašinovice, Řevňovice, Sedlo, Stradov, Strážkovice, Střížov, Veselka,Borovnice, Doubravice, Hamr, Hůrka, Jedovary, Komařice, Lomec, Nedabyle, Nová Ves, Nový Mlýn, Pašinovice, Řevňovice, Sedlo, Stradov, Strážkovice, Střížov, Veselka.</dc:description>
+   <dc:description xml:lang="en">Pages: 468</dc:description>
+   <dc:publisher xml:lang="cs">Farní úřad Střížov</dc:publisher>
+   <dc:publisher xml:lang="en">Parish office Střížov</dc:publisher>
+   <dc:date>1852/1925</dc:date>
+   <dc:type xml:lang="cs">matriční kniha</dc:type>
+   <dc:type xml:lang="en">parish register</dc:type>
+   <dc:identifier>http://digi.ceskearchivy.cz/7635</dc:identifier>
+   <dc:source>ČR - Státní oblastní archiv v Třeboni / State regional archives Třeboň</dc:source>
+   <dc:language>cze</dc:language>
+   <dc:coverage>Temporal: 1852/1925</dc:coverage>
+   <dc:coverage>Spatial: Borovnice</dc:coverage>
+   <dc:coverage>Spatial: Doubravice</dc:coverage>
+   <dc:coverage>Spatial: Hamr</dc:coverage>
+   <dc:coverage>Spatial: Hůrka</dc:coverage>
+   <dc:coverage>Spatial: Jedovary</dc:coverage>
+   <dc:coverage>Spatial: Komařice</dc:coverage>
+   <dc:coverage>Spatial: Lomec</dc:coverage>
+   <dc:coverage>Spatial: Nedabyle</dc:coverage>
+   <dc:coverage>Spatial: Nová Ves</dc:coverage>
+   <dc:coverage>Spatial: Nový Mlýn</dc:coverage>
+   <dc:coverage>Spatial: Pašinovice</dc:coverage>
+   <dc:coverage>Spatial: Řevňovice</dc:coverage>
+   <dc:coverage>Spatial: Sedlo</dc:coverage>
+   <dc:coverage>Spatial: Stradov</dc:coverage>
+   <dc:coverage>Spatial: Strážkovice</dc:coverage>
+   <dc:coverage>Spatial: Střížov</dc:coverage>
+   <dc:coverage>Spatial: Veselka,Borovnice</dc:coverage>
+   <dc:coverage>Spatial: Doubravice</dc:coverage>
+   <dc:coverage>Spatial: Hamr</dc:coverage>
+   <dc:coverage>Spatial: Hůrka</dc:coverage>
+   <dc:coverage>Spatial: Jedovary</dc:coverage>
+   <dc:coverage>Spatial: Komařice</dc:coverage>
+   <dc:coverage>Spatial: Lomec</dc:coverage>
+   <dc:coverage>Spatial: Nedabyle</dc:coverage>
+   <dc:coverage>Spatial: Nová Ves</dc:coverage>
+   <dc:coverage>Spatial: Nový Mlýn</dc:coverage>
+   <dc:coverage>Spatial: Pašinovice</dc:coverage>
+   <dc:coverage>Spatial: Řevňovice</dc:coverage>
+   <dc:coverage>Spatial: Sedlo</dc:coverage>
+   <dc:coverage>Spatial: Stradov</dc:coverage>
+   <dc:coverage>Spatial: Strážkovice</dc:coverage>
+   <dc:coverage>Spatial: Střížov</dc:coverage>
+   <dc:coverage>Spatial: Veselka</dc:coverage>
+   <dc:coverage></dc:coverage>
+  </rdf:Description>
+</rdf:RDF>
+
+    <wedding>
+        <page><scan>204</scan></page>
+        <date>15.5.1888</date>
+        <place house-nr="1">Lomec</place>
+        <bride href="KRIZMARIE" />
+        <bridegroom href="PAVELMARTIN" />
+        <note>
+            15. květen 1888, Stráškovice č. 1 okres politický Budějovický,
+            soudní Trhosvinenský. Lomec č. 1 okres politický a soudní
+            Budějovický
+
+            Martin Pavel, krejčí v Stráškovicích č. 1, manželský syn Františka
+            Pavla výměnkáře v Stráškovicích č. 1 a jeho manželky marie
+            rodem zeman ze Stráškovic č. 11
+            25 let, ženich jest plnoletý dle farní knihy narozených č. IXX.
+            list 166
+
+            Marie Kříž, manželská dcera Jana Kříže sedláka v Lomci č. 1
+            a jeho manželky + Rozálie rozené Vaclík z Komářic č. 18
+            21 let, nevěsta neplnoletá dle knihy narozených č. IXX list 238
+        </note>
+    </wedding>
+
+</matrika>

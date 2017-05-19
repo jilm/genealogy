@@ -68,10 +68,6 @@
                 František Tesař, polýr a domkář ve Vejvanovicích, č. d. 53
       </note>
     </birth>
-    <wedding cite="MO-VALEC-11061" page="203" scan="100">
-      <date>9.2.1897</date>
-      <place>Valeč</place>
-    </wedding>
     <father href="SKALAFRANTISEK" />
     <mather href="VAIGLMARIE" />
     <note>Ke svatbě předložila křestní list Vejvanovice</note>
@@ -87,10 +83,6 @@
       <date>29.4.1852</date>
       <place>Vejvanovice</place>
     </birth>
-    <wedding cite="MO-CHRUDIM-3735" page="26">
-      <date>7.2.1871</date>
-      <place>Stíčany</place>
-    </wedding>
     <father href="VAIGLKAREL" />
     <mather href="DANDMARIE" />
     <note>V roce 1897 stále žijící; otec pravděpodobně Vaigl Karel</note>
@@ -101,6 +93,7 @@
       <first>Marie</first>
       <second>Dandovy</second>
     </name>
+    <birth><place>Kostelce č. 10 okres Rychnov</place></birth>
     <note>z Kostelce nad Orlicí č. d. 10 hejtmanství rychnovského</note>
   </person>
 
@@ -140,10 +133,6 @@
       <date>1805</date>
       <place>Stíčany</place>
     </birth>
-    <wedding cite="MO-CHRUDIM-1053" scan="79" page="85">
-      <date>24.1.1826</date>
-      <place>Stíčany č. 29</place>
-    </wedding>
     <note>ze Stíčan c.d. 30 hejtmanstvi chrudimského</note>
     <father href="DITRICHJOSEF" />
     <mather href="MEJSKYANNA" />
@@ -299,7 +288,6 @@
       <married>Jonášová</married>
     </name>
     <birth href="MZABRNO-11054-28-MANNFRANCISKA" />
-    <wedding href="MZABRNO-11060-60-JONASMANN" />
   </person>
 
   <person id="OKRINAJAKUB" sex="male">
@@ -472,10 +460,6 @@
       <date>16.7.1804</date>
       <place>Valeč 27</place>
     </birth>
-    <wedding cite="MO-VALEC-11059" page="41" scan="49">
-      <date>29.6.1824</date>
-      <place>Valeč 54</place>
-    </wedding>
     <father href="ONDRACEKJOSEF" />
   </person>
 

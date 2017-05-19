@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<matrika id="SOAZAMRSK-3735">
+
+    <signatura>3735</signatura>
+    <year>1840--1877</year>
+    <title>Matrika oddaných v obci Vejvanovice (1842-I/1877), Úhřetice (VI/1840-IX/1877), Úhřetická Lhota (1842-V/1877), Dvakačovice (1842-II/1877), Stíčany (VII/1842-X/1876), Bezděkov (1842-XI/1877)</title>
+    <archiv>SOAZAMRSK</archiv>
+    <author>Římskokatolická církev</author>
+    <volume>V.</volume>
+
+    <wedding>
+        <page><scan>26</scan></page>
+        <date>7.2.1871</date>
+        <place house-nr="38">Stíčany</place>
+        <bride href="VAIGLMARIE" />
+        <bridegroom href="SKALAFRANTISEK" />
+        <note>
+            Skála František, domkář a tovaryš zednický ze Stíčan č. 29
+            manželský syn + Jana Skály domkáře ze Stíčan č. 29 a manželky
+            jeho Anny rodem Jozefa Ditricha, krupaře ze Stíčan č. 31
+            katolíků vesměs okresního hejtmanství Chrudimského. Po třech
+            29. ledna, 2. a 5. února 1871 ve zdejším farním chrámu páně
+            prošlých ohláškách oddal jsem tyto snoubence já: Antonín Kalina
+            27 let, 25 nov. 1843
+
+            Marie Vajglová, obývatelkyně v Vejvanovicích č. 38, manželská
+            dcera Jana Vajgla, souseda v Chocni a manželky jeho Marie
+            rozené Dandova z Kostelce č. 10, katolíků okr. hejtmanství
+            Rychnov. Otec nezletilé nevěsty vlastnoručně podepsaný svolil
+            k tomuto sňatku.
+            18 let, 29. apl 1852
+        </note>
+    </wedding>
+
+</matrika>

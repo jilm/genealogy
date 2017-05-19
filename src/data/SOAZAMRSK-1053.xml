@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<matrika id="SOAZAMRSK-1053">
+
+    <signatura>1053</signatura>
+    <year>1811--1841</year>
+    <title>Matrika oddaných v obci Vejvanovice (1842-I/1877), Úhřetice (VI/1840-IX/1877), Úhřetická Lhota (1842-V/1877), Dvakačovice (1842-II/1877), Stíčany (VII/1842-X/1876), Bezděkov (1842-XI/1877)</title>
+    <archiv>SOAZAMRSK</archiv>
+    <author>Římskokatolická církev</author>
+    <volume>IV.</volume>
+
+    <wedding>
+        <page><scan>79</scan></page>
+        <date>24.1.1826</date>
+        <place house-nr="29" >Stíčany</place>
+        <bride href="DITRICHANNA" />
+        <bridegroom href="SKALAJOSEF" />
+        <note>
+        </note>
+    </wedding>
+
+</matrika>

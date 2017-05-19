@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
   
-  <matrika id="MZA-10269">
+  <matrika id="MZABRNO-10269">
     <signatura>10269</signatura>
     <title>Matrika oddaných v obci ?.</title>
     <author>Římskokatolická církev</author>
     <wedding>
       <page><scan>10</scan></page>
+      <date>22.11.1815</date>
+      <place house-nr="4"  >Horní Újezd</place>
       <bridegroom href="PAPOUSEKJOHANN" />
       <bride href="BEROUNTHERESIE" />
       <note>

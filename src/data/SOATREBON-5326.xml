@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<matrika id="SOATREBON-5326">
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="http://digi.ceskearchivy.cz/5326">
+   <dc:title xml:lang="cs">Matriční kniha Lomec č.15, O 1846-1893</dc:title>
+   <dc:title xml:lang="en">Parish register Lomec No.15,  1846-1893</dc:title>
+   <dc:creator xml:lang="cs">Farní úřad Lomec</dc:creator>
+   <dc:creator xml:lang="en">Parish office Lomec</dc:creator>
+   <dc:subject xml:lang="cs">Sbírka matrik SOA v Třeboni</dc:subject>
+   <dc:subject xml:lang="cs">matriční knihy</dc:subject>
+   <dc:subject xml:lang="cs">matriky</dc:subject>
+   <dc:subject xml:lang="cs">digitalizovaný obsah</dc:subject>
+   <dc:subject xml:lang="en">parish registers</dc:subject>
+   <dc:subject xml:lang="en">digitized content</dc:subject>
+   <dc:description xml:lang="cs">Matriční kniha č.15 Lomec.</dc:description>
+   <dc:description xml:lang="cs">Datace: NAROZENÍ: -, ODDANÍ: 1846/1893, ZEMŘELÍ: -.</dc:description>
+   <dc:description xml:lang="cs">Zápisy pro obce: Černěves, Háj, Krtely, Lomec, Malovice, Malovičky, Nestanice, Obora, Setuň,Černěves, Háj, Krtely, Lomec, Malovice, Malovičky, Nestanice, Obora, Setuň.</dc:description>
+   <dc:description xml:lang="cs">Stran: 180</dc:description>
+   <dc:description xml:lang="en">Parish register 15 Lomec.</dc:description>
+   <dc:description xml:lang="en">Time extent: BIRTH: -, MARRIAGE: 1846/1893, DEATH: -.</dc:description>
+   <dc:description xml:lang="en">Records of: Černěves, Háj, Krtely, Lomec, Malovice, Malovičky, Nestanice, Obora, Setuň,Černěves, Háj, Krtely, Lomec, Malovice, Malovičky, Nestanice, Obora, Setuň.</dc:description>
+   <dc:description xml:lang="en">Pages: 180</dc:description>
+   <dc:publisher xml:lang="cs">Farní úřad Lomec</dc:publisher>
+   <dc:publisher xml:lang="en">Parish office Lomec</dc:publisher>
+   <dc:date>1846/1893</dc:date>
+   <dc:type xml:lang="cs">matriční kniha</dc:type>
+   <dc:type xml:lang="en">parish register</dc:type>
+   <dc:identifier>http://digi.ceskearchivy.cz/5326</dc:identifier>
+   <dc:source>ČR - Státní oblastní archiv v Třeboni / State regional archives Třeboň</dc:source>
+   <dc:language>cze</dc:language>
+   <dc:coverage>Temporal: 1846/1893</dc:coverage>
+   <dc:coverage>Spatial: Černěves</dc:coverage>
+   <dc:coverage>Spatial: Háj</dc:coverage>
+   <dc:coverage>Spatial: Krtely</dc:coverage>
+   <dc:coverage>Spatial: Lomec</dc:coverage>
+   <dc:coverage>Spatial: Malovice</dc:coverage>
+   <dc:coverage>Spatial: Malovičky</dc:coverage>
+   <dc:coverage>Spatial: Nestanice</dc:coverage>
+   <dc:coverage>Spatial: Obora</dc:coverage>
+   <dc:coverage>Spatial: Setuň,Černěves</dc:coverage>
+   <dc:coverage>Spatial: Háj</dc:coverage>
+   <dc:coverage>Spatial: Krtely</dc:coverage>
+   <dc:coverage>Spatial: Lomec</dc:coverage>
+   <dc:coverage>Spatial: Malovice</dc:coverage>
+   <dc:coverage>Spatial: Malovičky</dc:coverage>
+   <dc:coverage>Spatial: Nestanice</dc:coverage>
+   <dc:coverage>Spatial: Obora</dc:coverage>
+   <dc:coverage>Spatial: Setuň</dc:coverage>
+   <dc:coverage></dc:coverage>
+  </rdf:Description>
+</rdf:RDF>
+
+<note>
+Asi neni roztrideno podle obci
+5: 1846
+14: 1848
+25: 1851 Velke Malovice
+35: 1853 Netolice
+45: 1855 Protivin
+55: 1858 
+65: 1860
+85: 1865 Hlaska
+100: 1869 Velke Malovice
+120: 1875
+140: 1884
+150: 1887
+155: 1889
+
+152 - 155, neni svatba Marie Křížové
+
+
+</note>
+
+</matrika>

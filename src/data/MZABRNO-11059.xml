@@ -5,6 +5,7 @@
 <volume>Ji 735; 1510</volume>
 <archiv>Moravský zemský archiv Brno</archiv>
 <year>1784--1824</year>
+
 <wedding>
 <page><scan>13</scan></page>
 <date>2.6.1811</date>
@@ -18,4 +19,21 @@ Plešice 8
 Nevěsta: Anna Tochter Paul Bodl, Plešice 6., 21let
 </note>
 </wedding>
+
+    <wedding>
+        <page><scan>49</scan></page>
+        <date>29.6.1824</date>
+        <place house-nr="54" >Valeč</place>
+        <bride href="ONDRACEKANNA" />
+        <bridegroom href="OKRINAVACLAV" />
+        <note>
+            Wenzl Okřina, sohn Johann Okřina ??? Waletch No. 54 ??? 
+            Anna geboren Chromy? 22 let
+
+            Anna Tochter der Joseph Ondráček ??? Waletch No. 31, ???
+            Katarina geboren ??? 20 let
+        </note>
+    </wedding>
+
+
 </matrika></list>
