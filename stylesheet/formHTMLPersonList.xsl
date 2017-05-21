@@ -28,6 +28,7 @@
 
     <xsl:import href="formHTMLCommonTemplates.xsl" />
     <xsl:import href="functions.xsl" />
+    <xsl:import href="acquisition.xsl" />
 
     <xd:doc type="stylesheet">
     
@@ -35,6 +36,8 @@
     </xd:doc>
 
     <xsl:output method="html" encoding="utf-8" />
+
+    <xsl:variable name="infer" select="doc('../build/infer.xml')" />
 
     <xsl:template match="/">
         <html>
@@ -57,9 +60,36 @@
         <tr>
             <td><xsl:apply-templates select="name/first" /></td>
             <td><xsl:apply-templates select="name/second" /></td>
-            <td><xsl:apply-templates select="$birth" /></td>
-            <td><xsl:apply-templates select="$death" /></td>
-            <td><xsl:apply-templates select="$wedding" /></td>
+            <td>
+                <xsl:choose>
+                    <xsl:when test="exists($birth)">
+                        <xsl:apply-templates select="$birth" />
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="$infer//birth[../@id = $pid]/date" />
+                    </xsl:otherwise>
+                </xsl:choose>
+            </td>
+            <td>
+                <xsl:choose>
+                    <xsl:when test="exists($death)">
+                        <xsl:apply-templates select="$death" />
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="$infer//death[../@id = $pid]/date" />
+                    </xsl:otherwise>
+                </xsl:choose>
+            </td>
+            <td>
+                <xsl:choose>
+                    <xsl:when test="exists($wedding)">
+                        <xsl:apply-templates select="$wedding" />
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="$infer//wedding[../@id = $pid]/date" />
+                    </xsl:otherwise>
+                </xsl:choose>
+            </td>
         </tr>
     </xsl:template>
 

@@ -30,6 +30,22 @@
     
     </xd:doc>
 
+    <xsl:template match="date[interval]">
+        <xsl:apply-templates />
+    </xsl:template>
+
+    <xsl:template match="interval[min and max]" priority="3">
+        <xsl:value-of select="concat(min/year, '--', max/year)" />
+    </xsl:template>
+
+    <xsl:template match="interval[min]" priority="2">
+        <xsl:value-of select="concat('&gt;', min/year)" />
+    </xsl:template>
+    
+    <xsl:template match="interval[max]" priority="2">
+        <xsl:value-of select="concat('&lt;', max/year)" />
+    </xsl:template>
+
     <xsl:template match="date[day and month and year]" priority="5">
         <xsl:variable name="day" select="day" />
         <xsl:variable name="month" select="month" />

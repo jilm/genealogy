@@ -77,7 +77,7 @@
       <first>Antonín</first>
       <second>Kropáček</second>
     </name>
-    <birth><date>1806???</date></birth>
+    <birth><date>1806</date><note>???</note></birth>
     <note>Chalupník z Ohař č. 28</note>
   </person>
 
@@ -87,10 +87,6 @@
       <second>Charouzová</second>
       <married>Kropáčková</married>
     </name>
-    <birth>
-      <date>18.2.1815</date>
-      <place>Opatovice</place>
-    </birth>
     <death>
       <date>14.9.1898</date>
       <place href="OHARE" house-nr="92" />

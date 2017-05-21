@@ -86,7 +86,7 @@
       <first>Kateřina</first>
       <second>Marková</second>
     </name>
-    <wedding><date>11.1.19??</date></wedding>
+    <note> wedding: 11.1.19??</note>
   </person>
   
   <person id="LIDINSKYANTONIN" sex="male">
@@ -1029,7 +1029,7 @@
       <date>13.3.1894</date>
     </birth>
     <death>
-      <date>4.12.1944(45)</date>
+      <date>4.12.1944</date>
     </death>
     <father href="PAVELMARTIN" />
     <mather href="KRIZMARIE" />
@@ -1383,7 +1383,8 @@
       <date>1925</date>
     </birth>
     <death>
-      <date>1983(1988???)</date>
+      <date>1983</date>
+      <note>1988???</note>
     </death>
     <wedding><date>1950</date></wedding>
     <father href="LIDINSKYTOMAS" />

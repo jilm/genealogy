@@ -49,6 +49,8 @@
             <xsl:apply-templates select="born" />
             <xsl:apply-templates select="date" />
             <xsl:apply-templates select="place" />
+            <xsl:apply-templates select="mather" />
+            <xsl:apply-templates select="father" />
         </birth>
     </xsl:template>
 
@@ -60,6 +62,8 @@
             </born>
             <xsl:apply-templates select="date" />
             <xsl:apply-templates select="place" />
+            <xsl:apply-templates select="../mather" />
+            <xsl:apply-templates select="../father" />
         </birth>
     </xsl:template>
 
@@ -67,6 +71,18 @@
       <born>
         <xsl:attribute name="href" select="@href" />
       </born>
+    </xsl:template>
+
+    <xsl:template match="father">
+        <father>
+            <xsl:attribute name="href" select="@href" />
+        </father>
+    </xsl:template>
+
+    <xsl:template match="mather">
+        <mather>
+            <xsl:attribute name="href" select="@href" />
+        </mather>
     </xsl:template>
 
 </xsl:stylesheet>
