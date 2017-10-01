@@ -28,7 +28,7 @@ for $i in $person-list//person
     
     let $birth-year := xs:integer($birth[1]/date/year/text())
     let $wedding-year := xs:integer($wedding[1]/date/year/text())
-    let $death-year := number($death[1]/date/year/text())
+    let $death-year := xs:integer($death[1]/date/year/text())
 
     let $children-birth := $birth-list//birth[father/@href = $pid or mather/@href = $pid]
     let $children-birth-year := $children-birth/date/year/text()
@@ -93,8 +93,12 @@ for $i in $person-list//person
 
     (:---------------------------------------------------------------- BIRTH :)
 
-    let $max-birth-date := min(($wedding-year - $MIN-WEDDING-AGE, $children-birth-min-year - $MIN-WEDDING-AGE, $parent-death-years))
-    let $min-birth-date := max(($death-year - $MAX-AGE, $parent-wedding-years))
+    let $temp1 := if (exists($wedding-year)) then ($wedding-year - $MIN-WEDDING-AGE) else ()
+    let $temp2 := if (exists($children-birth-min-year)) then ($children-birth-min-year - $MIN-WEDDING-AGE) else ()
+    let $temp3 := if (exists($death-year)) then ($death-year - $MAX-AGE) else ()
+
+    let $max-birth-date := min(($temp1, $temp2, $parent-death-years))
+    let $min-birth-date := max(($temp3, $parent-wedding-years))
 
     let $wrapped-min-birth-date := if (exists($min-birth-date)) then (
         <min><year>{$min-birth-date}</year></min>

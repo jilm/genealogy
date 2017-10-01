@@ -1,0 +1,10 @@
+ant clean
+ant lists
+ant book
+cd build
+xelatex book.tex
+makeindex book
+bibtex book
+xelatex book.tex
+xelatex book.tex
+cd ..
