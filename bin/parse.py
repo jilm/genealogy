@@ -7,6 +7,12 @@ from collections import deque
 
 lang_dictionary = {'narozen': 'born', 'narozena': 'born', 'otec': 'father', 'matka': 'mather'}
 
+def translate(word):
+    if word in lang_dictionary:
+        return lang_dictionary[word]
+    else:
+        return word
+
 def parse_line(line):
     record = {}
     # Each record starts with optional referece which is enclosed by the
@@ -16,6 +22,7 @@ def parse_line(line):
         record['reference'] = ref
     keys = deque(re.findall(',\s*([\w\-]*):', tail))
     keys_translated = map(translate, keys)
+    print(keys_translated)
     values = deque(re.split(',\s*[\w\-]+:\s*', tail))
     # first value contains a date and a place
     dateplace = deque(re.split('\s*,\s*', values.popleft()))
@@ -30,10 +37,10 @@ def parse_line(line):
             continue
         print('unknown value', value)
     # process key, value pairs
-    for key in keys:
+    for key in keys_translated:
         value = values.popleft()
         record[key] = parse_person(value)
-    print(record)
+    return record
 
 def parse_person(text):
     person = {}
@@ -78,11 +85,6 @@ def parse_job(text):
 def map_birth_record_to_person(birth_record):
     pass
 
-def translate(word):
-    if word in lang_dictionary:
-        return lang_dictionary[word]
-    else:
-        return word
 
 # Initialization
 # Load the list of places
@@ -95,17 +97,23 @@ for place in root.findall('place/parish'):
 # list of jobs
 job_list = set(('nájemník', 'půlláník', 'převozník', 'přívozník'))
 
-lang_dictionary = {'narozen': 'born', 'narozena': 'born', 'otec': 'father', 'matka': 'mather'}
-
 parse_funct_list = (parse_place, parse_job)
 
 # Load and parse data from standard input
 record_list = list()
 for line in sys.stdin.read().split('\n'):
     if len(line.strip()) > 0:
+        print(len(line.strip()))
         record_list.append(parse_line(line))
 
 print(record_list)
 
-person_list = ()
+person_list = list()
        
+for record in record_list:
+    if 'born' in record:
+        person = {}
+        person['name'] = record['born']['name']
+        person_list.append(person)
+
+print(person_list)
