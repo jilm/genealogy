@@ -23,7 +23,8 @@
 
 <xsl:stylesheet version="2.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xd="http://www.pnp-software.com/XSLTdoc" >
+    xmlns:xd="http://www.pnp-software.com/XSLTdoc"
+    xmlns:jilm="http://www.lidinsky.cz" >
 
     <xsl:import href="substituteValue.xsl" />
     <xsl:import href="nameFormat.xsl" />
@@ -37,6 +38,19 @@
     <xsl:import href="labels_CZ.xsl" />
     <xsl:import href="placeFormat.xsl" />
     <xsl:import href="formLatexMap.xsl" />
+
+    <xsl:function name="jilm:table-code">
+        <xsl:param name="count" as="xsd:integer" />
+        <xsl:param name="code" />
+        <xsl:choose>
+            <xsl:when test="$count le 0">
+                <xsl:value-of select="$code" />
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="jilm:table-code($count - 1, concat('l', $code))" />
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:function>
   
     <xd:doc type="stylesheet">
     
@@ -87,7 +101,7 @@
 
 \mainmatter
 
-<xsl:apply-templates select="/html/body/chapter/*[../h1/text() != 'Úvod']"/>
+<xsl:apply-templates select="/html/body"/>
 
 \appendix
 
@@ -155,6 +169,36 @@
     </xd:doc>
     <xsl:template match="h1">
         \chapter{<xsl:apply-templates />}
+    </xsl:template>
+
+    <xsl:template match="h2">
+        \section{<xsl:apply-templates />}
+    </xsl:template>
+
+    <xsl:template match="ol">
+        \begin{enumerate}
+            <xsl:apply-templates />
+        \end{enumerate}
+    </xsl:template>
+
+    <xsl:template match="li">
+        \item <xsl:apply-templates />
+    </xsl:template>
+
+    <xsl:template match="table">
+        <xsl:variable name="cols" select="count(tr[1]/td | tr[1]/th)" />
+        <xsl:variable name="code" select="jilm:table-code(cols, '')" />
+        \begin{table}<xsl:value-of select="concat('{', $code, '}')" />
+            <xsl:apply-templates />
+        \end{table}
+    </xsl:template>
+
+    <xsl:template match="tr">
+        <xsl:apply-templates />\\
+    </xsl:template>
+
+    <xsl:template match="td|th">
+        &amp; <xsl:apply-templates />
     </xsl:template>
 
     <xd:doc>

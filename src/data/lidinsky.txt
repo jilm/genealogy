@@ -5,4 +5,8 @@
 [SOATREBON:4135:23] 12.10.1882, Lipovsko 13, narozen: Václav Lidinský, otec: Antonín Lidinský, nájemník, Lipovsko 13, otec-otce: Jan Lidinský, převozník, Lipovsko 10, matka-otce: Marie Veselá, Bojenice 24 okres Milevsko, matka: Marie Málková, otec-matky: František Málek, nájemník, Smoleč 44, matka-matky: Kateřina Kozáková, Slabšice 27 okres Písek, kmotr: František Kolář, půlláník, Vranov 2
  
 [SOATREBON:4135:27] 19.12.1882, Smoleč 48 okres Písek, narozena: Anna Lidinská, otec: Josef Lidinský, nájemník, Smoleč 48, otec-otce: Antonín Lidinský, podruh, Březí 18, matka-otce: Marie Kolářová, Březí okres Písek, matka: Kateřina Rodová, otec-matky: Josef Rod, podruh, Březí 3, matka-matky: Marie Lejčařová, Jehnidlo 33 okres Písek
+
+[SOATREBON:4127:243] 30.4.1812, Lipovsko 10, narozen: Antonius Lidinský, otec: Mathias Lidinský, transvector, matka: Elisabetha Klouček, kmotr: Johannes Mrzena, Lipovsko, kmotra: Elizabetha Kostohryz
+
+[SOATREBON:4127:207] 10.5.1805, Lipovsko 10, narozana: 
  
