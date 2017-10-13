@@ -6,3 +6,7 @@
  
 [SOATREBON:4135:27] 19.12.1882, Smoleč 48 okres Písek, narozena: Anna Lidinská, otec: Josef Lidinský, nájemník, Smoleč 48, otec-otce: Antonín Lidinský, podruh, Březí 18, matka-otce: Marie Kolářová, Březí okres Písek, matka: Kateřina Rodová, otec-matky: Josef Rod, podruh, Březí 3, matka-matky: Marie Lejčařová, Jehnidlo 33 okres Písek
  
+[:4136:300] 28.10.1813, Lipovsko 10, zemřel: Jan Lidinský, 60 let
+
+[:4144:300] 29.12.1839, Vranov 13, zemřela: Alžběta Lidinská, 52 let rozená: Klouček, vdova, manžel: Matěj Lidinský, domkář, Vranov
+
