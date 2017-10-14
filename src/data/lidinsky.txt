@@ -10,3 +10,6 @@
 
 [SOATREBON:4127:207] 10.5.1805, Lipovsko 10, narozana: 
  
+[:4136:300] 28.10.1813, Lipovsko 10, zemřel: Jan Lidinský, 60 let
+
+[:4144:300] 29.12.1839, Vranov 13, zemřela: Alžběta Lidinská, 52 let rozená: Klouček, vdova, manžel: Matěj Lidinský, domkář, Vranov
