@@ -24,6 +24,7 @@
 <xsl:stylesheet version="2.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xd="http://www.pnp-software.com/XSLTdoc"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns:jilm="http://www.lidinsky.cz" >
 
     <xsl:import href="substituteValue.xsl" />
@@ -175,7 +176,7 @@
         \section{<xsl:apply-templates />}
     </xsl:template>
 
-    <xsl:template match="ol">
+    <xsl:template match="ol | ul | dl">
         \begin{enumerate}
             <xsl:apply-templates />
         \end{enumerate}
@@ -186,19 +187,23 @@
     </xsl:template>
 
     <xsl:template match="table">
-        <xsl:variable name="cols" select="count(tr[1]/td | tr[1]/th)" />
-        <xsl:variable name="code" select="jilm:table-code(cols, '')" />
-        \begin{table}<xsl:value-of select="concat('{', $code, '}')" />
+        <xsl:variable name="cols" select="count(tr[1]/td | tr[1]/th) - 1" />
+        <xsl:variable name="code" select="jilm:table-code($cols, '')" />
+        \begin{tabular}<xsl:value-of select="concat('{', $code, '}')" />
             <xsl:apply-templates />
-        \end{table}
+        \end{tabular}
     </xsl:template>
 
     <xsl:template match="tr">
         <xsl:apply-templates />\\
     </xsl:template>
 
-    <xsl:template match="td|th">
+    <xsl:template match="td[position() > 1] | th[position() > 1]">
         &amp; <xsl:apply-templates />
+    </xsl:template>
+
+    <xsl:template match="td[1] | th[1]">
+        <xsl:apply-templates />
     </xsl:template>
 
     <xd:doc>
