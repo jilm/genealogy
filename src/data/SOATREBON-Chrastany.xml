@@ -1,4 +1,16 @@
-Matrika oddaných v obci Chráštany 4138
+
+<list>
+
+<!--
+                   Matrika oddaných v obci Chráštany 4138
+-->
+
+  <wedding>
+    <page><scan>101</scan></page>
+    <date>13.2.1838</date>
+    <bridegroom href="" />
+    <bride href="" />
+    <note>
 
 scan 101:
 
@@ -8,9 +20,20 @@ scan 101:
 Nevěsta: Březí-Smoleč 11, Anna Maria dcera Josef Kolář, domkář na Březí č. 11
     a matky Evy rozené ? ve Smolči, 23 let
 
+    </note>
+  </wedding>
+
 Matrika oddaných v obci Chráštany 4139
 
 scan 1-6: špatně čitelný
+
+
+  <wedding>
+    <page><scan>52</scan></page>
+    <date>25.1.1853</date>
+    <bridegroom href="" />
+    <bride href="" />
+    <note>
 
 scan 52:
 
@@ -21,7 +44,17 @@ Nevěsta: Marie, dcera + Jana Lidinskýho, domkáře z Vranova č. 10 kraje
     Budějovického podokres Milevsko a matky Marie dcery Jana Veselýho
     chalupníka z Bohonic č. 24 a matky Marie rozené Alex z Bohonic, 20 let
 
+    </note>
+  </wedding>
+
 Matrika oddaných v obci Chráštany 4140
+
+  <wedding>
+    <page><scan>52</scan></page>
+    <date>26.11.1867</date>
+    <bridegroom href="" />
+    <bride href="" />
+    <note>
 
 scan 52:
 
@@ -36,6 +69,9 @@ Nevěsta: Antonia Kolářová, dcera Jana Koláře, 1/2 láníka ve Vranově č.
     křestní matriky č VI strana 164
 Nevěsta narozena v Sepekovách 27. května 1850 dle křestního listu, Matrika
     křestní č. V strana 125
+
+    </note>
+  </wedding>
 
 scan 118:
 
@@ -223,3 +259,16 @@ Nevěsta: Marie Lidinská narozená na Lipovsku č. 10, manželská dcera
     a Anny rodem Strnadové z Doubravy č. 2, okresní soud a úřad Týn nad Vltavou
 Ženich narozen dne 23. února 1899, ovdověl dne 8. června 1931, nevěsta
     narozena dle matriční knihy XIV strana 39 dne 17. listopadu 1909
+
+Matrika zemřelých 4147
+
+scan 72:
+
+1. března 1899, Vranov číslo 3 okres Bechyně, hejtmanství Milevsko
+Veronika Lidinská, žebračka ve Vranově, vdova po Vojtěchu Lidinském
+rodem N. z V. více není známo. Vada srdce
+
+scan 142:
+
+
+</list>
