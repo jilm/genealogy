@@ -176,10 +176,16 @@
         \section{<xsl:apply-templates />}
     </xsl:template>
 
-    <xsl:template match="ol | ul | dl">
+    <xsl:template match="ol | dl">
         \begin{enumerate}
             <xsl:apply-templates />
         \end{enumerate}
+    </xsl:template>
+
+    <xsl:template match="ul">
+        \begin{itemize}
+            <xsl:apply-templates />
+        \end{itemize}
     </xsl:template>
 
     <xsl:template match="li">
@@ -187,7 +193,7 @@
     </xsl:template>
 
     <xsl:template match="table">
-        <xsl:variable name="cols" select="count(tr[1]/td | tr[1]/th) - 1" />
+        <xsl:variable name="cols" select="count(tr[1]/td | tr[1]/th)" />
         <xsl:variable name="code" select="jilm:table-code($cols, '')" />
         \begin{tabular}<xsl:value-of select="concat('{', $code, '}')" />
             <xsl:apply-templates />

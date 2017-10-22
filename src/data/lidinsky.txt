@@ -6,6 +6,28 @@
  
 [SOATREBON:4135:27] 19.12.1882, Smoleč 48 okres Písek, narozena: Anna Lidinská, otec: Josef Lidinský, nájemník, Smoleč 48, otec-otce: Antonín Lidinský, podruh, Březí 18, matka-otce: Marie Kolářová, Březí okres Písek, matka: Kateřina Rodová, otec-matky: Josef Rod, podruh, Březí 3, matka-matky: Marie Lejčařová, Jehnidlo 33 okres Písek
 
+[:4135:31] 16.4.1883, Lipovsko 10, narozen: Antonín Lidinský, otec: Jan Lidinský, domkář, Lipovsko 10, otec-otce: Jan Lidinský, domkář, Lipovsko 10, matka-otce: Marie Veselá, Bojenice okres Milevsko, matka: Antonie Kolářová, otec-matky: Jan Kolář, půlláník, Vranov 2 okres Milevsko, matka-matky: Anna Bláhová
+
+[:4135:80] 25.11.1885, Lipovsko 10, narozena: Kateřina Lidinská, otec: Jan Lidinský, domkář, Lipovsko 10, otec-otce: Jan Lidinský, Lipovsko 10, domkář, otec-otce: Jan Lidinský, domkář, Lipovsko 10, matka-otce: Marie Veselá, Bojenice okres Milevsko, matka: Antonie Kolářová, otec-matky: Jan Kolář, výměnkář, Vranov 2 okres Milevsko, matka-matky: Anna Bláhová, Jamný okres Písek
+
+[:4135:95] 12.9.1886, Vranov 2 okres Milevsko, narozena: Marie Lidinská, otec: Antonín Lidinský, nájemník, Vranov 2, otec-otce: Jan Lidinský, převozník, Lipovsko 10, matka-otce: Marie Veselá, Bojenice 24 okres Milevsko, matka: Marie Málková, otec-matky: František Málek, nájemník, Smoleč 444, matka-matky: Kateřina Kozáková, Slabčice 24 okres Písek
+
+[:96] 14.9.1886, Nemějice 25 okres Písek, narozen: Jan Lidinský, otec: Josef Lidinský, nájemník, Nemějice 25, otec-otce: Antonín Lidinský, podruh, Březí 18, matka-otce: Marie Kolářová, Březí okres Písek, matka: Kateřina Rodová, otec-matky: Josef Rod, podruh, Březí 3, matka-matky: Marie Lejčařová, Jehnidlo 33 okres Písek
+
+[:130] 23.5.1888, Lipovsko 10, narozena: Antonie Lidinská, otec: Jan Lidinský, domkář, Lipovsko 10, otec-otce: Jan Lidinský, domkář, Lipovsko 10, matka-otce: Marie Veselá, Bojenice okres Milevsko, matka: Antonie Kolářová, otec-matky: Jan Kolář, výměnkář, Vranov 2 okres Milevsko, matka-matky: Anna Bláhová, Jehnidlo okres Písek
+
+[:170] 29.8.1890, Lipovsko 10, narozena: Anna Lidinská, otec: Jan Lidinský, domkář, Lipovsko 10, otec-otce: Jan Lidinský, domkář, Lipovsko 10, matka-otce: Marie Veselá, Bojenice, matka: Antonie Kolářová, otec-matky: Jan Kolář, výměnkář, Vranov 2 okres Bechyně, matka-matky: Anna Bláhová, Jehnidlo okres Písek
+
+[:4135:215] 23.1.1893, Lipovsko 10, narozena: Josefa Lidinská, otec: Jan Lidinský, domkář, Lipovsko 10, otec-otce: Jan Lidinský, domkář, Lipovsko 10, matka-otce: Marie Veselá, Bojenice, matka: Antonie Kolářová, otec-matky: Jan Kolář, výměnkář, Vranov 2, matka-matky: Anna Bláhová, Jamný okres Písek
+
+[:4135:270] 13.4.1895, Doubrava 51 okres Týn nad Vltavou, narozen: Tomáš Lidinský, otec: Jan Lidinský, nádeník, Hladná 52, nemanželský, matka: Anna Lidinská, otec-matky: Antonín Lidinský, nádeník, Pařezí 25, matka-matky: Marie Kolářová, Březí 11 okres Milevsko, matka: Kateřina Marková, otec-matky: Václav Marek, nájemník, Doubrava 51, matka-matky: Marie Timeková, Dobešice 5 okres Písek
+
+[:4135:304] 23.6.1896, Březí-Smoleč 16, narozena: Anna Lidinská, otec: Jan Lidinský, nádeník, Lipovsko 10, otec-otce: Jan Lidinský, domkář, Lipovsko 10, matka-otce: Antonie Kolářová, Vranov 2 okres Bechyně, matka: Krystýna Kolářová, otec-matky: Jan Kolář, domkář, Březí-Smoleč 16, matka-matky: Antonie Tupá, Smoleč 6
+
+[:4134:27] 5.1.1871, Vranov 10, narozen: František Lidinský, otec: Jan Lidinský, domkář, Vranov 10, otec-otece: Jan Lidinský, domkář, Vranov 10, matka-otce: Marie Veselá, Bojenice, matka: Antonie Kolářová, otec-matky: Jan Kolář, půlláník, Vranov 2, matka-matky: Anna Bláhová, Jamný
+
+[:4134:84] 29.5.1873, Lipovsko 10, narozena: Marie Lidinská, otec: Jan Lidinský, domkář, Lipovsko 10, otec-otce: Jan Lidinský, domkář, Lipovsko, matka-otce: Marie Veselá, Bojenice, matka: Antonie Kolářová, otec-matky: Jan Kolář, půlláník, Vranov 2, matka-matky: Anna Bláhová, Jamný
+
 [SOATREBON:4127:243] 30.4.1812, Lipovsko 10, narozen: Antonius Lidinský, otec: Mathias Lidinský, transvector, matka: Elisabetha Klouček, kmotr: Johannes Mrzena, Lipovsko, kmotra: Elizabetha Kostohryz
 
 [SOATREBON:4127:207] 10.5.1805, Lipovsko 10, narozana: 
