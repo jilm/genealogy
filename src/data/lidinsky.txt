@@ -24,14 +24,27 @@
 
 [:4135:304] 23.6.1896, Březí-Smoleč 16, narozena: Anna Lidinská, otec: Jan Lidinský, nádeník, Lipovsko 10, otec-otce: Jan Lidinský, domkář, Lipovsko 10, matka-otce: Antonie Kolářová, Vranov 2 okres Bechyně, matka: Krystýna Kolářová, otec-matky: Jan Kolář, domkář, Březí-Smoleč 16, matka-matky: Antonie Tupá, Smoleč 6
 
-[:4134:27] 5.1.1871, Vranov 10, narozen: František Lidinský, otec: Jan Lidinský, domkář, Vranov 10, otec-otece: Jan Lidinský, domkář, Vranov 10, matka-otce: Marie Veselá, Bojenice, matka: Antonie Kolářová, otec-matky: Jan Kolář, půlláník, Vranov 2, matka-matky: Anna Bláhová, Jamný
+[:4134:27] 5.1.1871, Vranov 10, narozen: František Lidinský, otec: Jan Lidinský, domkář, Vranov 10, otec-otce: Jan Lidinský, domkář, Vranov 10, matka-otce: Marie Veselá, Bojenice, matka: Antonie Kolářová, otec-matky: Jan Kolář, půlláník, Vranov 2, matka-matky: Anna Bláhová, Jamný
 
 [:4134:84] 29.5.1873, Lipovsko 10, narozena: Marie Lidinská, otec: Jan Lidinský, domkář, Lipovsko 10, otec-otce: Jan Lidinský, domkář, Lipovsko, matka-otce: Marie Veselá, Bojenice, matka: Antonie Kolářová, otec-matky: Jan Kolář, půlláník, Vranov 2, matka-matky: Anna Bláhová, Jamný
 
 [SOATREBON:4127:243] 30.4.1812, Lipovsko 10, narozen: Antonius Lidinský, otec: Mathias Lidinský, transvector, matka: Elisabetha Klouček, kmotr: Johannes Mrzena, Lipovsko, kmotra: Elizabetha Kostohryz
 
-[SOATREBON:4127:207] 10.5.1805, Lipovsko 10, narozana: 
+[SOATREBON:4127:207] 10.5.1805, Lipovsko 10, narozena: 
  
 [:4136:300] 28.10.1813, Lipovsko 10, zemřel: Jan Lidinský, 60 let
 
 [:4144:300] 29.12.1839, Vranov 13, zemřela: Alžběta Lidinská, 52 let, vdova, rozená: Klouček, manžel: Matěj Lidinský, domkář, Vranov
+
+
+
+[SOATREBON:3761:30] 7.10.1674, Horní Záhoří, oddání: Martin Lidinský, Kateřina Kubová, otec-nevěsty: Bartoloměj Kuba, Záhoří
+# [:29] 1674 kmotrové: Dorota Lidinská, kantorka ze Záhoří, kmotr: Jan Lidinský, kantor, kmotr: Martin Lidinský, kantor mladší ze Záhoří
+# [:28] kmotr: Jan Lidinský, kantor, 
+# [:33] 22. September 1675, z Záhoří, Martina Lidinského, kantora, Kateřiny, manželky jeho, Waczlaw, syn pokřtěný, kmotrové: Václav Skoumal, mlynář, ??? Jan Povolný, též ze Záhoří
+# [:36] kmotr: Anna Lidinská, kantorka, 
+# [:37] 1676
+# [:40] 15.9.1676 oddáni Martin Krupička (Strmilov) a Dorota Lidinská (otec Jan, kantor záhořský, Záhoří) 
+# [:41] 26.10.1676 pohřbena Dorota Lidinská, kantorka záhořská, kolem 56let, Záhoří
+# [:49] 14.2.1678 oddáni vdovec Jan Lidinský (Záhoří) a vdova Anna Kolářova (po +Jiřím, Jetětice)
+# [:150] 8.9.1699 pokřtěn Václav, otec Matěj Lidinský Kalec (Tkadlec), matka Dorota, Třešně

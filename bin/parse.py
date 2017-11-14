@@ -5,20 +5,12 @@ import re
 import sys
 import datetime
 import xml.etree.ElementTree as etree
+import dictionary
+import job
+import comparator
 from collections import deque
 
-lang_dictionary = {'narozen': 'born', 'narozena': 'born', 'otec': 'father', 'matka': 'mather', 'zemřel': 'died', 'zemřela': 'died', 'vdova': 'widow', 'roků': 'years', 'let': 'years'}
-# list of jobs
-job_list = set(('nájemník', 'půlláník', 'převozník', 'přívozník', 'podruh', 'domkář', 'nádeník', 'kaplan', 'domkářka'))
 status_list = set(('widow', 'single', 'married'))
-print('nájemník' in job_list)
-
-def translate(word):
-    """ Takes argument, and return value from the dictionary. """
-    if word in lang_dictionary:
-        return lang_dictionary[word]
-    else:
-        return word
 
 def parse_line(line):
     record = {}
@@ -29,7 +21,7 @@ def parse_line(line):
         record['reference'] = ref
     # split a line, where delimiter is a word that ends by the semicolon
     keys = deque(re.findall(',\s*([\S\-]*):', tail))
-    keys_translated = map(translate, keys)
+    keys_translated = map(dictionary.translate, keys)
     values = deque(re.split(',\s*[\S\-]+:\s*', tail))
     # first value contains a date and a place
     dateplace = deque(re.split('\s*,\s*', values.popleft()))
@@ -51,7 +43,7 @@ def parse_line(line):
 
 def parse_person(text):
     person = {}
-    values = deque(map(translate, re.split('\s*,\s*', text)))
+    values = deque(map(dictionary.translate, re.split('\s*,\s*', text)))
     person['name'] = values.popleft()
     for value in values:
         for parse_funct in parse_funct_list:
@@ -87,7 +79,7 @@ def parse_place(text):
             return 'place', parish
 
 def parse_job(text):
-    if text in job_list:
+    if text in job.job_list:
         return 'job', text
 
 def parse_status(text):
@@ -97,13 +89,21 @@ def parse_status(text):
 def parse_age(text):
     match = re.search('([0-9]+)\s+(\S+)', text)
     if match:
-        if translate(match.group(2)) == 'years':
+        if dictionary.translate(match.group(2)) == 'years':
             return 'age', int(match.group(1))
 
 def complain(text):
     print(text)
 
 def map_birth_record_to_person(birth_record):
+    pass
+
+def compare(birth_record, death_record):
+    """ Takes birth and death record and return a real number between zero
+    and one, where zero means, that given records belongs to completly
+    different people whereas one means that these records describe the same
+    person. """
+    # Compare names
     pass
 
 
@@ -119,25 +119,31 @@ for place in root.findall('place/parish'):
 parse_funct_list = (parse_place, parse_job, parse_status, parse_age, complain)
 
 # Load and parse data from standard input
-record_list = list()
+birth_record_list = list()
+death_record_list = list()
 for line in sys.stdin.read().split('\n'):
     if len(line.strip()) > 0:
-        record_list.append(parse_line(line))
-
-print(record_list)
+        record = parse_line(line)
+        if 'born' in record:
+            birth_record_list.append(record)
+        elif 'death' in record:
+            death_record_list.append(record)
 
 person_list = list()
        
-for record in record_list:
-    if 'born' in record:
-        p = person.Person(record['born']['name'])
-        p.birth_date = record['date']
-        person_list.append(p)
-    if 'died' in record:
-        p = person.Person(record['died']['name'])
-        p.death_date = record['date']
-        p.age = record['died']['age']
-        person_list.append(p)
+for record in birth_record_list:
+    p = person.Person(record['born']['name'])
+    p.birth_date = record['date']
+    person_list.append(p)
 
+for record in death_record_list:
+    p = person.Person(record['died']['name'])
+    p.death_date = record['date']
+    p.age = record['died']['age']
+    person_list.append(p)
 
 for p in person_list: print(p)
+
+for i in birth_record_list:
+    for j in death_record_list:
+        print(i.name, j.name, comparator.compare_names(i.name, j.name))

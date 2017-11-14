@@ -25,7 +25,7 @@ class Person:
         return s
 
     def is_alive(self, date):
-        """ Return true, if it is likely, that the person is aleve."""
+        """ Return true, if it is likely, that the person is alive."""
         pass
     
     def get_birth_date(self):
@@ -34,3 +34,8 @@ class Person:
         elif self.death_date:
             if self.age:
                 return datetime.date(self.death_date.year - self.age, self.death_date.month, self.death_date.day)
+
+    def set_birth_record(self, record):
+        self.birth_record = record
+
+    

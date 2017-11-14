@@ -1,16 +1,31 @@
 <list>
 
+    <!-- Generace G -->
+
     <person id="LIDINSKYMATEJ" sex="male">
         <name>Matěj Lidinský</name>
+        <death source="SOATREBON:4136:308">
+            <date>15.7.1815</date>
+            <place>Lipovsko 19</place>
+            <age>33</age>
+        </death>
     </person>
 
     <person id="KLOUCEKALZBETA" sex="female">
         <name>Alžběta Kloučková</name>
+        <death source="SOATREBON:4144:101">
+            <date>29.12.1839</date>
+            <place>Vranov 13</place>
+            <age>52</age>
+        </death>
     </person>
 
-    <person id="RODMARIE" sex="female">
-        <name>Marie Rodová</name>
-    </person>
+    <wedding>
+        <man href="LIDINSKYMATEJ" />
+        <wife href="KLOUCEKALZBETA" />
+    </wedding>
+
+    <!-- Generace G +1 -->
 
     <person id="LIDINSKYJOSEF" sex="male">
         <name>Josef Lidinský</name>
@@ -18,15 +33,32 @@
         <mather href="KLOUCEKALZBETA" />
     </person>
 
+    <person id="RODMARIE" sex="female">
+        <name>Marie Rodová</name>
+    </person>
+
+    <wedding source="SOATREBON:4138:51">
+        <date>22.11.1836</date>
+        <man href="LIDINSKYJOSEF" />
+        <wife href="RODMARIE" />
+        <note>Josef 28 let, Lipovsko 10, Marie 27 let, Nemějice 18</note>
+    </wedding>
+
     <person id="LIDINSKYANTONIN" sex="male">
         <name>Antonín Lidinský</name>
-        <father href="LIDINSKYMATEJ" />
-        <mather href="KLOUCEKALZBETA" />
+        <birth source="SOATREBON:4130:437">
+            <date>30.4.1811</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYMATEJ" />
+            <mather href="KLOUCEKALZBETA" />
+            <godfather>Jan Mrzena, mlynář z Lipovska</godfather>
+            <godmather>Alžběta Kostohryz</godmather>
+        </birth>
     </person>
 
     <person id="KOLARMARIE">
         <name>Marie Kolářová</name>
-        <death source="SOATREBON:2051:58">
+        <death source="SOATREBON:4146:58">
             <date>2.2.1874</date>
             <place>Březí 18</place>
             <age>59</age>
@@ -39,22 +71,55 @@
         </death>
     </person>
 
+    <wedding source="SOATREBON:4138:101">
+        <date>13.2.1838</date>
+        <man href="LIDINSKYANTONIN" />
+        <wife href="KOLARMARIE" />
+        <note>Antonín 26 let, Lipovsko 10, Marie 23 let, Březí-Smoleč</note>
+    </wedding>
+
+
     <person id="LIDINSKYJAN" sex="male">
         <name>Jan Lidinský</name>
         <father href="LIDINSKYMATEJ" />
         <mather href="KLOUCEKALZBETA" />
+        <death source="SOATREBON:4144:258">
+            <date>19.5.1850</date>
+            <place>Lipovsko 10</place>
+            <age>40</age>
+            <cause>Ouplavice</cause>
+        </death>
     </person>
 
-    <!--
-    
-        Děti Josefa Lidinskýho a Marie Rod
+    <person id="VESELYMARIE" sex="female">
+        <name>Marie Veselá</name>
+    </person>
 
-    -->
+    <wedding>
+        <man href="LIDINSKYJAN" />
+        <wife href="VESELYMARIE" />
+    </wedding>
+
+    <person id="LIDINSKYMARIE" sex="female">
+        <name>Marie Lidinská</name>
+        <birth source="SOATREBON:4127:261">
+            <date>12.6.1815</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYMATEJ" />
+            <mather href="KLOUCEKALZBETA" />
+        </birth>
+        <death source="SOATREBON:4136:327">
+            <date>8.4.1819</date>
+            <place>Lipovsko 10</place>
+            <age>4</age>
+        </death>
+    </person>
+
+    <!-- Generace G +2 -->
 
     <person id="LIDINSKYJAN1837" sex="male">
         <name>Jan Lidinský</name>
-        <birth>
-            <source archive="SOATREBON" href="4131" scan="110" />
+        <birth source="SOATREBON:4131:110">
             <date>23.4.1834</date>
             <place>Lipovsko 10</place>
             <father href="LIDINSKYJOSEF" />
@@ -70,7 +135,7 @@
     <person id="LIDINSKYFRANZ">
         <name>Franz Lidinský</name>
         <birth>
-            <source archive="SOATREBON" href="4131" scan="221" />
+            <source source="SOATREBON:4131:221" />
             <date>14.12.1839</date>
             <place>Lipovsko 10</place>
             <father href="LIDINSKYJOSEF" />
@@ -85,8 +150,7 @@
 
     <person id="LIDINSKYJOSEF1844">
         <name>Josef Lidinský</name>
-        <birth>
-            <source archive="SOATREBON" href="4131" scan="380" />
+        <birth source="SOATREBON:4131:380">
             <date>21.12.1844</date>
             <place>Lipovsko 10</place>
             <father href="LIDINSKYJOSEF" />
@@ -102,8 +166,7 @@
 
     <person id="LIDINSKYMARIE1847">
         <name>Marie Lidinská</name>
-        <birth>
-            <source archive="SOATREBON" href="4131" scan="294" />
+        <birth source="SOATREBON:4131:294">
             <date>11.1.1847</date>
             <place>Lipovsko 10</place>
             <father href="LIDINSKYJOSEF" />
@@ -117,7 +180,7 @@
         </birth>
     </person>
 
-    <person>
+    <person id="LIDINSKYVOJTECH2">
         <name>Vojtěch Lidinský</name>
         <birth source="SOATREBON:4132:19">
             <date>23.4.1848</date>
@@ -132,9 +195,26 @@
                 rozené Matějka?  Z ???
             </note>
         </birth>
+        <death source="SOATREBON:3569:107">
+            <date>15.11.1897</date>
+            <place>Hluboká-Podhradí 68</place>
+            <age>49</age>
+            <cause>Srdeční vada</cause>
+        </death>
     </person>
 
-    <person>
+    <person id="SLAMAVERONIKA">
+        <name>Veronika Slámová</name>
+        <birth><place>Munice</place></birth>
+    </person>
+
+    <wedding>
+        <date>1.2.1876</date>
+        <man href="LIDINSKYVOJTECH2" />
+        <wife href="SLAMAVERONIKA" />
+    </wedding>
+
+    <person id="LIDINSKYMATEJ2">
         <name>Matěj Lidinský</name>
         <birth source="SOATREBON:4132:82">
             <date>3.5.1852</date>
@@ -159,6 +239,32 @@
     
     -->
 
+    <person id="LIDINSKYJOSEF2A" sex="male">
+        <name>Josef Lidinský</name>
+        <birth source="SOATREBON:4131:383">
+            <date>16.3.1845</date>
+            <place>Březí 12</place>
+            <father href="LIDINSKYANTONIN" />
+            <mather href="KOLARMARIE" />
+            <note>
+                16, 17 Marz 1845, Březy 12, narozen Lidinský Josef,
+                otec: Lidinský Anton, podruh z Březy, syn Matěje Lidinskýho
+                přívozníka na Lipovsku a Alžběty rozené Klouček.
+                Matka:  Marie dcera Josefa Koláře, domkáře z Březí.
+            </note>
+        </birth>
+    </person>
+
+    <person id="RODKATERINA" sex="female">
+        <name>Kateřina Rodová</name>
+    </person>
+
+    <wedding>
+        <man href="LIDINSKYJOSEF2A" />
+        <wife href="RODKATERINA" />
+    </wedding>
+
+
     <person id="LIDINSKYANNA">
         <name><first>Anna Marie</first><second>Lidinská</second></name>
         <birth source="SOATREBON:4131:238">
@@ -173,9 +279,15 @@
                 Jozefa Koláře, domkáře z Březí, ???
             </note>
         </birth>
+        <death source="SOATREBON:4146:29">
+            <date>12.6.1871</date>
+            <place>Nemějice 23</place>
+            <age>30</age>
+        </death>
     </person>
 
-    <person>
+
+    <person id="LIDINSKYJAN2A">
         <name>Jan Lidinský</name>
         <birth source="SOATREBON:4131:334">
             <date>27.12.1842</date>
@@ -225,7 +337,7 @@
         </death>
     </person>
 
-    <person>
+    <person id="LIDINSKYVOJTECH2A">
         <name>Vojtěch Lidinský</name>
         <birth source="SOATREBON:4132:99">
             <date>17.4.1853</date>
@@ -242,7 +354,7 @@
         </birth>
     </person>
 
-    <person>
+    <person id="LIDINSKYFRANTISEK2A">
         <name>František Lidinský</name>
         <birth source="SOATREBON:4132:161">
             <date>1.4.1856</date>
@@ -260,7 +372,7 @@
         </birth>
     </person>
 
-    <person>
+    <person id="LIDINSKYMARIE2A">
         <name>Marie Lidinská</name>
         <birth source="SOATREBON:4132:343">
             <date>2.10.1859</date>
@@ -285,7 +397,19 @@
     
     -->
 
-    <person>
+    <person id="LIDINSKYMARIEANNA2J">
+        <name>Marie Anna Lidinská</name>
+        <birth source="SOATREBON:4131:434">
+            <date>12.12.1833</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYJAN" />
+            <mather href="VESELYMARIE" />
+            <note>
+            </note>
+        </birth>
+    </person>
+
+    <person id="LIDINSKYANTONIN2J">
         <name>Antonín Lidinský</name>
         <birth source="SOATREBON:4132:22">
             <date>30.6.1848</date>
@@ -302,7 +426,16 @@
         </birth>
     </person>
 
-    <person>
+    <person id="MALEKMARIE">
+        <name>Marie Málková</name>
+    </person>
+
+    <wedding>
+        <man href="LIDINSKYANTONIN2J" />
+        <wife href="MALEKMARIE" />
+    </wedding>
+
+    <person id="LIDINSKYJAN2J">
         <name>Jan Lidinský</name>
         <birth source="SOATREBON:4131:164">
             <date>2.6.1835</date>
@@ -318,7 +451,16 @@
         </birth>
     </person>
 
-    <person>
+    <person id="KOLARANTONIE">
+        <name>Antonie Kolářová</name>
+    </person>
+
+    <wedding>
+        <man href="LIDINSKYJAN2J" />
+        <wife href="KOLARANTONIE" />
+    </wedding>
+
+    <person id="LIDINSKYROZALIE2J">
         <name>Rozálie Lidinská</name>
         <birth source="SOATREBON:4131:62">
             <date>11.4.1836</date>
@@ -333,7 +475,7 @@
         </birth>
     </person>
 
-    <person>
+    <person id="LIDINSKYFRANTISEK2J">
         <name>František Lidinský</name>
         <birth source="SOATREBON:4131:422">
             <date>19.5.1846</date>
@@ -356,7 +498,7 @@
 
     -->
 
-    <person>
+    <person id="LIDINSKYJAN3A">
         <name>Jan Lidinský</name>
         <birth source="SOATREBON:4133:84">
             <date>6.9.1862</date>
@@ -370,9 +512,19 @@
         </birth>
     </person>
 
-    <person>
+    <person id="MAREKKATERINA">
+        <name>Kateřina Marková</name>
+    </person>
+
+    <wedding>
+        <man href="LIDINSKYJAN3A" />
+        <wife href="MAREKKATERINA" />
+    </wedding>
+
+    <person id="LIDINSKYJOSEF3A">
         <name>Josef Lidinský</name>
         <birth>
+            <date>1867</date>
             <mather href="LIDINSKYANNA" />
         </birth>
     </person>
@@ -383,13 +535,13 @@
     
     -->
 
-    <person>
+    <person id="LIDINSKYANNA3J">
         <name>Anna Lidinská</name>
         <birth source="SOATREBON:4135:27">
             <date>19.12.1882</date>
             <place>Smoleč 48</place>
-            <father href="" />
-            <mather href="" />
+            <father href="LIDINSKYJOSEF2A" />
+            <mather href="RODKATERINA" />
             <note>
                 19. A 20. Prosince 1882, Smoleč č 48 okres Písek, narozena
                 Anna Lidinská, otec: Josef Lidinský, nájemník ve Smolči č. 48,
@@ -401,49 +553,254 @@
         </birth>
     </person>
 
-
-
-
-    <person id="LIDINSKYKATERINA">
-        <name>Kateřina Lidinská</name>
-    </person>
-
-    <person>
-        <name>Antonie Lidinská</name>
-        <birth>
-            <source archive="SOATREBON" href="10113" scan="151" />
-            <date>10.6.1904</date>
-            <place>Lipovsko 10</place>
-            <mather href="LIDINSKYKATERINA" />
+    <person id="LIDINSKYCHLAPEC3J">
+        <name>Mrtvý-chlapec Lidinská</name>
+        <birth source="SOATREBON:4135:79">
+            <date>4.11.1885</date>
+            <place>Nemějice 1</place>
+            <father href="LIDINSKYJOSEF2A" />
+            <mather href="RODKATERINA" />
             <note>
-                10, 11. Června 1904, Lipovsko 10 (Vranov), narozena Antonie, 
-                matka Kateřina Lidinská, svobodná dcera Jana Lidinskýho domkáře
-                v Lipovsku č. 10 okres Bechyně a matky Antonie rozené Kolářové
-                z Vranova č. 2, okres Bechyně, hejtmanství Milevsko, narozena 
-                25.11.1885. Kmotra: Krekulová Marie, domkářka v 
-                Jetěticích č. 32. Křtil Josef Hrnčíř kaplan. Oddána s 
-                Bedřichem Dvořákem v Chřešťovicích 1929?
+                4. Listopad 1885, Nemějice č. 1? Okres Písek, mrtvě narozený
+                chlapec, otec: Josef Lidinský, nájemník v Nemějicích čč. ?
+                manželský syn Antonína Lidinskýho podruha ze Březí č. 18
+                a Marie rozené Kolář z Březí okres Písek. Matka Kateřina
+                manželská dcera Josefa Roda, podruha z Březí č. 3 a Marie
+                rozené Lejčař z Jehnidla č. 33 okres Písek.
             </note>
         </birth>
     </person>
 
-    <person>
+    <person id="LIDINSKYJAN3J">
+        <name>Jan Lidinský</name>
+        <birth source="SOATREBON:4135:96">
+            <date>14.9.1886</date>
+            <place>Nemějice 25</place>
+            <father href="LIDINSKYJOSEF2A" />
+            <mather href="RODKATERINA" />
+            <note>
+                14 září 1886, Nemějice č. 25 okres Písek. Narozen Jan Lidinský
+                a mrtvě narozené děvče Lidinský. Otec: Josef Lidinský, nájemník
+                v Nemějicích č. 25, manželský syn Antonína Lidinskýho, podruha
+                ze Březí č. 18 a Marie rozené Kolář z Březí okres Písek.
+                Matka: Kateřina, manželská dcera Josefa Roda, podruha
+                z Březí č. 3 a Marie rozené Lejčař z Jehnidla č. 33 okres Písek.
+            </note>
+        </birth>
+    </person>
+
+    <!--
+    
+        Děti Anton9na Lidinskýho a Marie M8lek
+    
+    -->
+
+    <person id="LIDINSKYVACLAV3A">
         <name>Václav Lidinský</name>
-        <birth>
-            <source archive="SOATREBON" href="4135" scan="23" />
+        <birth source="SOATREBON:4135:23">
             <date>12.10.1882</date>
             <place>Lipovsko 13</place>
-            <note>
-                12, 13. Října 1882, Vranov Lipovsko č. 13 okres Milevsko,
-                narozen Václav Lidinský, syn Antonína Lidinskýho, nájemníka
-                ve Vranově Lipovsku č. 13, manželský syn Jana Lidinskýho
-                přívozníka na Lipovsku č. 10 a Marie rozené Veselý z
-                Bojenic č. 24 okres Milevsko a matky Marie, manželské dcery
-                Františka Málka, nájemníka ze Smolče č. 44 a Kateřiny rozené
-                Kozák ze Slabšic č. 27, okres Písek. Kmotr: František Kolář,
-                ½ láník z Vranova č. 2 a manželka jeho Antonie.
-            </note>
+            <father href="LIDINSKYANTONIN2J" />
+            <mather href="MALEKKATERINA" />
         </birth>
+        <note>
+            12, 13. Října 1882, Vranov Lipovsko č. 13 okres Milevsko, narozen
+            Václav Lidinský, syn Antonína Lidinskýho, nájemníka ve Vranově
+            Lipovsku č. 13, manželský syn Jana Lidinskýho přívozníka na
+            Lipovsku č. 10 a Marie rozené Veselý z Bojenic č. 24 okres
+            Milevsko a matky Marie, manželské dcery Františka Málka,
+            nájemníka ze Smolče č. 44 a Kateřiny rozené Kozák ze
+            Slabšic č. 27, okres Písek. Kmotr: František Kolář, ½ láník
+            z Vranova č. 2 a manželka jeho Antonie.
+        </note>
     </person>
+
+    <person id="LIDINSKYMARIE3A">
+        <name>Marie Lidinská</name>
+        <birth source="SOATREBON:4135:95">
+            <date>12.9.1886</date>
+            <place>Vranov 2</place>
+            <father href="LIDINSKYANTONIN2J" />
+            <mather href="MALEKKATERINA" />
+        </birth>
+        <note>
+            12, 13. Září 1886, Vranov č. 2 okres Milevsko, narozena Marie
+            Lidinský, otec: Antonín Lidinský, nájemník ve Vranově č. 2,
+            manželský syn Jana Lidinskýho, převozníka na Lipovsku č. 10
+            a Marie rezené Veselý z Bojenic č. 24 okres Milevsko.
+            Matka: Marie, manželská dcera Františka Málka nájemníka ze
+            Smolče č. 444 a Kateřiny rezené Kozák ze Slabčic č. 24 okres Písek.
+        </note>
+    </person>
+
+
+    <!--
+    
+        Děti Anton9na Lidinskýho a Marie Malek
+    
+    -->
+
+    <person id="LIDINSKYANTONIN3J">
+        <name>Antonín Lidinský</name>
+        <birth source="SOATREBON:4135:31">
+            <date>16.4.1883</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYJAN2J" />
+            <mather href="KOLARANTONIE" />
+        </birth>
+        <note>
+            16. 17. Duben 1883, Wranov - Lipovsko č. 10, narozen Antonín
+            Lidinský, otec Jan Lidinský, domkář na Lipovsku č. 10, manželský
+            syn Jana Lidinskýho, domkáře na Lipovsku č. 10 a Marie, rozené
+            Veselý z Bojenic, okres Milevsko. Matka Antonie, manželská dcera
+            Jana Koláře ½ láníka z Vranova č. 2 okres Milevsko a Anny rozené
+            Bláha z ???
+        </note>
+    </person>
+
+    <person id="LIDINSKYKATERINA3J">
+        <name>Kateřina Lidinská</name>
+        <birth source="SOATREBON:4135:80">
+            <date>25.11.1885</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYJAN2J" />
+            <mather href="KOLARANTONIE" />
+        </birth>
+        <note>
+            25, 26 listopad 1885, Vranov - Lipovsko č. 10 okres Milevský,
+            narozena Kateřina Lidinská, otec: Jan Lidinský domkář na
+            Lipovsku č. 10, manželský syn Jana Lidinskýho, domkáře na
+            Lipovsku č. 10 a Marie rozené Veselý z Bojenic okres Milevsko,
+            matka: Antonie, manželská dcera Jana Koláře, výměnkáře z
+            Vranova č. 2, okres Milevsko a Anny rozené Bláha z
+            Jamnýho okres Písek.
+        </note>
+    </person>
+
+    <person id="LIDINSKYANTONIE3J">
+        <name>Antonie Lidinská</name>
+        <birth source="SOATREBON:4135:130">
+            <date>23.5.1888</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYJAN2J" />
+            <mather href="KOLARANTONIE" />
+        </birth>
+        <note>
+            23, 24. Květen 1888, Lipovsko č. 10, narozena Antonie Lidinský
+            (+21.9.1889), otec: Jan Lidinský, domkář na Lipovsku č. 10,
+            manželský syn Jana Lidinskýho, domkáře na Lipovsku č. 10
+            a Marie rozené Veselý z Bojenic, okres Milevsko, Matka: Antonie,
+            manželská dcera Jana Koláře, výměnkáře z Vranova č. 2, okres
+            Milevsko a Anny rozené Bláha z Jehnidla okres Písek.
+        </note>
+    </person>
+
+    <person id="LIDINSKYANNA3JA">
+        <name>Anna Lidinská</name>
+        <birth source="SOATREBON:4135:170">
+            <date>29.8.1890</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYJAN2J" />
+            <mather href="KOLARANTONIE" />
+        </birth>
+        <note>
+            29, 30 srpen 1890, Vranov- Lipovsko č. 10, narozena Anna Lidinská,
+            otec: Jan Lidinský, domkář na Lipovsku č. 10, manželský syn
+            Jana Lidinskýho, domkáře na Lipovsku č. 10 a jeho manželky
+            Marie rozené Veselá v Bojenicích. Matka: Antonie, manželská dcera
+            Jana Koláře, výměnkáře ve Vranově č. 2 okres Bechyně hejtmanství
+            Milevsko a jeho manželky Anny Bláhové z Jamnýho okres
+            a hejtmanství Písek.
+        </note>
+    </person>
+
+    <person id="LIDINSKYJOSEFA3JA">
+        <name>Josefa Lidinská</name>
+        <birth source="SOATREBON:4135:215">
+            <date>23.1.1893</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYJAN2J" />
+            <mather href="KOLARANTONIE" />
+        </birth>
+        <note>
+            23, 24 leden 1893, Vranov-Lipovsko č. 10, narozena Josefa Lidinský,
+            otec: Jan Lidinský, domkář na Lipovsku č. 10 manželský syn
+            Jana Lidinskýho, domkáře na Lipovsku č. 10 a jeho manželky
+            Marie rozené Veselý v Bojenicích, Milevsko. Matka: Antonie,
+            manželská dcera Jana Koláře, výměnkáře ve Vranově č. 2 a jeho
+            manželky Anny rozené Bláhové z Jamnýho, Písek.
+        </note>
+    </person>
+
+    <!--
+    
+        Děti Jana Lidinskýho a Kateřiny Markové
+    
+    -->
+
+    <person id="LIDINSKYTOMAS">
+        <name>Tomáš Lidinský</name>
+        <birth source="SOATREBON:4135:270">
+            <date>13.4.1895</date>
+            <place>Doubrava 51</place>
+            <father href="LIDINSKYJAN3A" />
+            <mather href="MAREKKATERINA" />
+        </birth>
+        <note>
+            13, 14 dubna 1895, doubrava č. 51, okres a hejtmanství
+            Týn nad Vltavou, narozen Tomáš Lidinský, otec: Lidinský Jan,
+            nádeník v Hladné č. 52, nemanželský syn Anny Lidinské,
+            manželské dcery Antonína Lidinského nádeníka v Pařezí č. 25
+            a jeho manželky Marie rodem Kolář z Březí 11 okres,
+            hejtmanství Milevsko. Matka: Kateřina, manželská dcera
+            Václava Marka, nájemníka v Doubravě č. 51 a jeho manželky
+            Marie rozené Timekové z Dobešic č. 5, okres a hejtmanství Písek.
+        </note>
+    </person>
+
+<!--
+
+  Pamětní kniha obce Rakov
+  Irena Cejnarová
+  Vydala Irena Cejnarová vlastním nákladem v Prácheňském nakladatelství v Písku
+  1. vydání 2012
+
+  Josef Lidinský, narozen 19.7.1878, dělník ve Vranově č. 6, z Lipovska čp. 10,
+  otec Antonín Lidinský, syn Jana Lidinského, převozníka na Lipovsku č. 10
+  a matky Marie, dcery Jana Veselého, půlláníka z Bojenič, čp. 24. Matka
+  Maria, dcera Františka Málka, nájemníka ze Smolče čp. 44, a Kateřiny
+  dcery Jana Kozáka, domkáře ze Slabčic čp. 27.
+
+  Manželka Kristina, narozena 9.11.1884, manželská dcera Jana Svobody, obecního
+  slouhy ve Smolči čp. 14, syn Martina Svobody, slouhy ve Smolči čp. 39, a 
+  Rosálie, rodem Matějková z Křenovic. Matka Kateřina, manželská dcera Františka
+  Drhy, čeledína ve Smolči čp. 29, a Marie rodem Proboštová z Hněvkovic. Oddáni
+  byli dne 21.1.1908 v Chrášťanech. Josefovi bylo 29 let, Kristině 23 let. 
+  Prohlášky proběhly 5, 12 a 19.1.1908 v Chrášťanech.
+
+  Jejich děti: Václav * 1908 ženat, voják v Týně nad Vltavou
+               Josef  * 1910 ženat, po otci na chalupě
+               Marie  * 1912 provdána do Biliny
+               Karel  * 1916 Chrášťany +1999
+               Antonie * 1919 +1919, 5 týdnů, mentálně postižená
+               Anastásie * 1921 provdána do Slabčic
+               Vlasta * 1923 vdaná Harabková, Praha 9
+               Jaroslav * 1925 Olešná
+               Milada * 1928 vdaná, Smoleč  
+
+  Josef Lidinský, narozen 9.8.1910, zemědělský dělník v Rakově čp. 7, naozen
+  v Písecké Smolči čp. 39. Syn Josefa Lidinského, domkáře v Rakově čp. 7
+  a Kristiny rodem Svobodová z Písecké Smolče čp. 39. Manželka Marie narozená
+  18.9.1912 v Písecké Smolči čp. 36, dcera + Josefa Veselého, domkáře tamtéž
+  a Marie rodem Kostohryzová z Olešné čp. 41 a Antonín Hrubant, mlynář z
+  Písecké Smolče --- Bouda čp. 33.
+
+  V roce 1930 žádal Josef Lidinský obecní úřad v Rakově o povolení stavby
+  nového domku. Po prohlídce staré chalupy bylo komisí doporučeno aby byl
+  starý dům zbourán. Dům byl dosud dřevěný. Nový dům nemohl byt postaven 
+  na starých základech, musel být postaven na parcele blíže ke kovárně.
+  V roce 1831 byl zkolaudová a bylo povoleno jeho užívání.
+
+-->
 
 </list>
