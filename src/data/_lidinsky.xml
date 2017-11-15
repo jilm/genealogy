@@ -120,7 +120,7 @@
     <person id="LIDINSKYJAN1837" sex="male">
         <name>Jan Lidinský</name>
         <birth source="SOATREBON:4131:110">
-            <date>23.4.1834</date>
+            <date>23.4.1837</date>
             <place>Lipovsko 10</place>
             <father href="LIDINSKYJOSEF" />
             <mather href="RODMARIE" />
@@ -589,6 +589,44 @@
         </birth>
     </person>
 
+    <person id="LIDINSKYMARIE3J">
+        <name>Marie Lidinská</name>
+        <birth source="SOATREBON:4134:211">
+            <date>21.5.1878</date>
+            <place>Březí-Smoleč 19</place>
+            <father href="LIDINSKYJOSEF2A" />
+            <mather href="RODKATERINA" />
+            <note>
+                21, 22 květen 1878, Březí -Smoleč 19, narozena Marie Lidinská
+                otec: Josef Lidinský, nájemník v Březí Smoleč č 19,
+                syn Antonína Lidinskýho podruha v Březí č. 18 a Marie dcery
+                Josefa Koláře domkáře v Březí. Matka: Kateřina dcera
+                Josefa Roda podruha v Březí č. 3 a Marrie dcery
+                Františka Lejčára domkáře z Jehnidla č. 33
+            </note>
+        </birth>
+    </person>
+
+
+    <person id="LIDINSKYFRANTISEK3JK">
+        <name>František Lidinský</name>
+        <birth source="SOATREBON:4134:265">
+            <date>14.9.1880</date>
+            <place>Březí-Smoleč 18</place>
+            <father href="LIDINSKYJOSEF2A" />
+            <mather href="RODKATERINA" />
+            <note>
+                14, 15 září 1880, Smoleč č. 18, narozen František Lidinský,
+                otec: Josef Lidinský, nájemník ve Smolči č. 18, syn Antonína
+                Lidinskýho, podruha v Březí č. 18 a Marie rozené Kolář
+                z Březí okdres Písek. Matka: Kateřina dcera Josefa Roda,
+                podruha v Březí č. 3 a Marie rozené Lejčař z Jehnidla č. 33
+                okres Písek.
+            </note>
+        </birth>
+    </person>
+
+
     <!--
     
         Děti Anton9na Lidinskýho a Marie M8lek
@@ -601,7 +639,7 @@
             <date>12.10.1882</date>
             <place>Lipovsko 13</place>
             <father href="LIDINSKYANTONIN2J" />
-            <mather href="MALEKKATERINA" />
+            <mather href="MALEKMARIE" />
         </birth>
         <note>
             12, 13. Října 1882, Vranov Lipovsko č. 13 okres Milevsko, narozen
@@ -621,7 +659,7 @@
             <date>12.9.1886</date>
             <place>Vranov 2</place>
             <father href="LIDINSKYANTONIN2J" />
-            <mather href="MALEKKATERINA" />
+            <mather href="MALEKMARIE" />
         </birth>
         <note>
             12, 13. Září 1886, Vranov č. 2 okres Milevsko, narozena Marie
@@ -633,10 +671,46 @@
         </note>
     </person>
 
+    <person id="LIDINSKYJOSEF3AM">
+        <name>Josef Lidinský</name>
+        <birth source="SOATREBON:4134:215">
+            <date>19.7.1878</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYANTONIN2J" />
+            <mather href="MALEKMARIE" />
+        </birth>
+        <note>
+            19, 20 červenec 1878, Vrranov-Lipovsko 10, narozen Josef Lidinský
+            otec: Antonín Lidinský, nájemník ve VVranově č. 10 syn Jana
+            Lidinskýho přívozníka na Lipovsku 10 a Marie dcery Jana Veselýho
+            ½ láníka z Bojenic č. 24, mattka: Marrrie dcera Franttiška Málka
+            nájemníka zee Smolče č 44 a Kateřiny dcery Jana Kozáka ddomkáře
+            ze SSmolče čč. 27
+        </note>
+    </person>
+
+    <person id="LIDINSKYANTONIN3AM">
+        <name>Antonín Lidinský</name>
+        <birth source="SOATREBON:4134:268">
+            <date>26.11.1880</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYANTONIN2J" />
+            <mather href="MALEKMARIE" />
+        </birth>
+        <note>
+            26. Listopadu 1880, Lipovsko 10, narozen Antonín Lidinský,
+            otec: Antonín Lidinský, nájemník na Lipovsku č. 10, syn
+            Jana Lidinskýho přívozníka na Lipovsku č. 10 a Marie rozené
+            Veselý z Bojenic č. 24. Okres Milevsko. Matka: Marie dcera
+            Františka Málka, nájemníka ze Smolče č.”44 a Kateřiny rozené
+            Kozák ze Slabšic č. 27 okres Písek
+        </note>
+    </person>
+
 
     <!--
     
-        Děti Anton9na Lidinskýho a Marie Malek
+        Děti Jana Lidinskýho a Antonie Kolář
     
     -->
 
@@ -732,6 +806,62 @@
         </note>
     </person>
 
+    <person id="LIDINSKYFRANTISEK3JA" sex="male">
+        <name>František Lidinský</name>
+        <birth source="SOATREBON:4134:27">
+            <date>5.1.1871</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYJAN2J" />
+            <mather href="KOLARANTONIE" />
+        </birth>
+        <note>
+            5, 7 ledna 1871, Vranov 10, narozen František Lidinský,
+            otec: Jan Lidinský, domkář ve Vranově č. 10, syn Jana Lidinskýho,
+            domkáře ve Vranově č. 10 a matky Marie dcery Jana Veseelýho
+            ½ láníka v Bojenicích. Matka: Antonie vlastní dcera Jana Koláře
+            ½ láníka ve Vranově č. 2 a matky Anny dcery Tomáše Bláhy,
+            sedláka z Jamnýho.
+        </note>
+    </person>
+
+    <person id="LIDINSKYMARIE3JA" sex="female">
+        <name>Marie Lidinská</name>
+        <birth source="SOATREBON:4134:84">
+            <date>29.5.1873</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYJAN2J" />
+            <mather href="KOLARANTONIE" />
+        </birth>
+        <note>
+            29 května, 1 vervna, 1873, Vranov Lipovsko 10 narozena
+            Marie Lidinská, otec: Jan Lidinský, domkář ve Vranově
+            Lipovsku č. 10, syn Jana Lidinskýho domkáře v Lipovsku
+            a matky Marie dcery Jana Veselýho ½ láníka v Bojenicích.
+            Matka: Antonie, vlastní dcera Jana Koláře ½ láníkaa ve
+            Vranově č 2 a matky Anny dcery Tomáše Bláhy,  sedláka
+            z Jamnýho
+        </note>
+    </person>
+
+    <person id="LIDINSKYKAREL3JA" sex="male">
+        <name>Karel Lidinský</name>
+        <birth source="SOATREBON:4134:220">
+            <date>11.10.1878</date>
+            <place>Lipovsko 10</place>
+            <father href="LIDINSKYJAN2J" />
+            <mather href="KOLARANTONIE" />
+        </birth>
+        <note>
+            11, 12. Října 1878, Vranov-Lipovsko 10, narozen Karel Lidinský,
+            otec: Jan Lidinský, domkář v Lipovsku 10, syn Jana Lidinskýho,
+            domkáře na Lipovsku 10 a Marie rozené Veseelý z Nemějic. Matka:
+            Antoine dcera Jana Koláře, ½ láníka ve Vranově č. 2 a Anny rozené
+            Bláha z Jamnýho.
+        </note>
+    </person>
+
+
+
     <!--
     
         Děti Jana Lidinskýho a Kateřiny Markové
@@ -793,7 +923,7 @@
   a Kristiny rodem Svobodová z Písecké Smolče čp. 39. Manželka Marie narozená
   18.9.1912 v Písecké Smolči čp. 36, dcera + Josefa Veselého, domkáře tamtéž
   a Marie rodem Kostohryzová z Olešné čp. 41 a Antonín Hrubant, mlynář z
-  Písecké Smolče --- Bouda čp. 33.
+  Písecké Smolče - Bouda čp. 33.
 
   V roce 1930 žádal Josef Lidinský obecní úřad v Rakově o povolení stavby
   nového domku. Po prohlídce staré chalupy bylo komisí doporučeno aby byl
