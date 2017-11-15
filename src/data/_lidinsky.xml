@@ -1,5 +1,37 @@
 <list>
 
+    <!--
+    
+        Jan Lidinsky, prozatim ho neumim zaradit nikam do rodokmenu
+
+    -->
+
+    <person>
+        <name>Kateřina Lidinská</name>
+        <death sourc="SOATREBON:4144:314">
+            <date>24.1.1823</date>
+            <place>Lipovsko 10</place>
+            <age>58</age>
+            <note>Pravděpodobně vdova po Janu Lidinském, převozníkovi</note>
+        </death>
+    </person>
+
+    <!-- TODO:
+    
+    [SOATREBON:4144:312] 18. November 1813, Lipovsko 10, zemřel Jan Lidinský
+    převozník, 60 let
+
+    [SOATREBON:4144:313] 7. Augustus 1817, Lipovsko 10, zemřela Anna Lidinská,
+    dcera ? Lidinskýho, převozníka? mat. Anny, 2 měsíce?
+    
+    [SOATREBON:4144:283] 12.12.1851, Lipovsko 10, zemřela Marie dcera Josefa
+    Lidinskýho, podruha z Lipovska č. 10 a Marie rozené Rotová z nemějic,
+    10 let, chřadnutí.
+
+    Z matriky 4144 prohledány stránky: 301:end
+
+    -->
+
     <!-- Generace G -->
 
     <person id="LIDINSKYMATEJ" sex="male">
@@ -8,6 +40,7 @@
             <date>15.7.1815</date>
             <place>Lipovsko 19</place>
             <age>33</age>
+            <note>SOATREBON:4144:312</note>
         </death>
     </person>
 
@@ -112,6 +145,7 @@
             <date>8.4.1819</date>
             <place>Lipovsko 10</place>
             <age>4</age>
+            <note>SOATREBON:4144:313</note>
         </death>
     </person>
 
@@ -321,6 +355,13 @@
                 domkáře z Březí a matky ??? , poznámka 19 september 1852
             </note>
         </birth>
+        <death source="SOATREBON:4144:305">
+            <date>19.9.1852</date>
+            <place>Březí 12</place>
+            <age>5</age>
+            <cause>zápal vnitřní</cause>
+        </death>
+        <!--
         <death source="SOATREBON:2051:29">
             <date>1871</date>
             <place>Nemějice 23</place>
@@ -335,6 +376,7 @@
                 Antonín Lidinský matka: Marie Kolář
             </note>
         </death>
+        -->
     </person>
 
     <person id="LIDINSKYVOJTECH2A">
